@@ -3,9 +3,9 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { LessonComponent } from './lesson/lesson.component';
-import { QuestionsComponent } from './questions/questions.component';
-import { HomeComponent } from './home/home.component';
+import { LessonComponent } from './components/lesson/lesson.component';
+import { QuestionsComponent } from './components/questions/questions.component';
+import { HomeComponent } from './components/home/home.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
