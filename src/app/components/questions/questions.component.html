@@ -17,7 +17,7 @@
                     text="{{question.title}}" (tap)="loadQuestion(i)"></Button>
             </StackLayout>
         </StackLayout>
-        <StackLayout tkMainContent>
+        <StackLayout tkMainContent *ngIf="question!=undefined">
             <StackLayout class="home-panel">
                 <Image src="~/assets/images/mrsinha.png" width="200" height="200"></Image>
                 <Label class="h2" text="{{question.title}}"></Label>
