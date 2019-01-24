@@ -9,6 +9,8 @@ import { QuestionsComponent } from './components/questions/questions.component';
 import { HomeComponent } from './components/home/home.component';
 import { QuestionComponent } from './components/question/question.component';
 
+import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
+
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
@@ -22,7 +24,8 @@ import { QuestionComponent } from './components/question/question.component';
     imports: [
         NativeScriptModule,
         AppRoutingModule,
-        NativeScriptHttpModule
+        NativeScriptHttpModule,
+        NativeScriptUISideDrawerModule,
     ],
     declarations: [
         AppComponent,
