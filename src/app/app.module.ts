@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { LessonComponent } from './components/lesson/lesson.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { HomeComponent } from './components/home/home.component';
+import { QuestionComponent } from './components/question/question.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -25,7 +26,8 @@ import { HomeComponent } from './components/home/home.component';
         AppComponent,
         LessonComponent,
         QuestionsComponent,
-        HomeComponent
+        HomeComponent,
+        QuestionComponent
     ],
     providers: [],
     schemas: [

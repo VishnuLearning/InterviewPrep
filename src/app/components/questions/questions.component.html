@@ -1,1 +1,30 @@
-<Button text="questions works!" class="btn btn-primary"></Button>
+<ActionBar title="Questions" class="action-bar">
+    <StackLayout orientation="horizontal" horizontalAlignment="left" (tap)="onOpenDrawerTap()">
+        <Image src="~/assets/images/menu.png" class="action-image"></Image>
+        <Label text="Questions" class="action-label"></Label>
+    </StackLayout>
+</ActionBar>
+
+
+<GridLayout rows="*" height="1500px" (swipe)="onSwipe($event)">
+    <RadSideDrawer>
+        <StackLayout tkDrawerContent backgroundColor="gray">
+            <StackLayout height="60" style="text-align: center; vertical-align: center;">
+                <Label text="Questions"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Button *ngFor="let question of questions; let i = index"
+                    text="{{question.title}}" (tap)="loadQuestion(i)"></Button>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout tkMainContent>
+            <StackLayout class="home-panel">
+                <Image src="~/assets/images/mrsinha.png" width="200" height="200"></Image>
+                <Label class="h2" text="{{question.title}}"></Label>
+                <Label class="body" textWrap="true" text="{{question.text}}"></Label>
+            </StackLayout>
+        </StackLayout>
+    </RadSideDrawer>
+</GridLayout>
+
+<!--<Button *ngFor="let question of questions" text="{{question.title}}"></Button>-->

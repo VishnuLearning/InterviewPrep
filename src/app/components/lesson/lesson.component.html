@@ -1,1 +1,6 @@
-<Button text="lesson works!" class="btn btn-primary"></Button>
+<StackLayout *ngFor="let lesson of lessons">
+    <Button text="{{lesson.name}}" class="btn btn-primary" [nsRouterLink]="['/home/lesson', path+'/'+lesson.path]"
+        *ngIf="!lesson.path.endsWith('.json')"></Button>
+    <Button text="{{lesson.name}}" class="btn btn-primary" [nsRouterLink]="['/home/questions', path+'/'+lesson.path]"
+        *ngIf="lesson.path.endsWith('.json')"></Button>
+</StackLayout>
