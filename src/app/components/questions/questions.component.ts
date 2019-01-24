@@ -48,20 +48,32 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	ngOnInit(): void {
 		this.sub = this.route.params.subscribe(params => {
 			this.path = params['path'];
-			//console.log(this.path);
-			this.pathservice.getQuestions(this.path)
-				.subscribe(
-					(d: Question[]) => {
-						this.question = d[0];
-						this.questions = d;
+			console.log(this.path);
+			// this.pathservice.getQuestions(this.path)
+			// 	.subscribe(
+			// 		(d: Question[]) => {
+			// 			this.question = d[0];
+			// 			this.questions = d;
 
+			// 		},
+			// 		(error) => {
+			// 			console.log(error);
+			// 		}
+			// 	)
+			this.pathservice.getQuestions2(this.path)
+				.subscribe(
+					(d: Response) => {
+						var x = JSON.parse(d.text()).data;
+						console.log(x);
+						this.questions = [];
+						this.question=this.questions[0];
 					},
 					(error) => {
 						console.log(error);
 					}
 				)
-		})
-
+		});
+		console.log(this.questions);
 	}
 
 	ngOnDestroy() {

@@ -1,6 +1,10 @@
 [
     {
-        "name": "Artificial Intelligence",
-        "path": "AI.json"
+        "name": "General",
+        "path": "General"
+    },
+    {
+        "name": "Technical",
+        "path": "Technical"
     }
 ]

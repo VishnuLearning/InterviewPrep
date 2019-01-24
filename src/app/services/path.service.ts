@@ -23,6 +23,12 @@ export class PathService {
         ).pipe(map((response: Response) => response.json().data));
     }
 
+    getQuestions2(path: string) {
+        return this.http.get(path,
+            { headers: this.getCommonHeaders() }
+        ).pipe(catchError(this.handleErrors));
+    }
+
     getCommonHeaders() {
         let headers = new Headers();
         headers.append("Content-Type", "application/json");

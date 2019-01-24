@@ -23,13 +23,13 @@ export class LessonComponent implements OnInit, OnDestroy {
 	ngOnInit(): void {
 		this.sub = this.route.params.subscribe(params => {
 			this.path = params['path'];
-			if (this.path == undefined) this.path = "~/Lessons";
+			if (this.path == undefined) this.path = "~/assets/Lessons";
 			//console.log(this.path);
 			this.pathservice.getLessons(this.path)
 				.subscribe(
 					(d: Response) => {
 						this.lessons = JSON.parse(d.text());
-						//console.log(this.lessons);
+						console.log(this.lessons);
 					},
 					(error) => {
 						console.log(error);
