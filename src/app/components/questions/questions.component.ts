@@ -1,7 +1,7 @@
 import { ViewChild } from "@angular/core";
 import { RadSideDrawerComponent, SideDrawerType } from "nativescript-ui-sidedrawer/angular";
 import { Component, OnInit, OnDestroy } from "@angular/core";
-import { Response } from "@angular/http";
+// import { Response } from "@angular/http";
 import { PathService } from "../../services/path.service";
 import { Router, ActivatedRoute } from '@angular/router';
 import { Question } from "../../classes/question";
@@ -28,6 +28,13 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	qnum: number;
 	private sub: any;
 	ttsOptions: SpeakOptions;
+	AvatarImages = ['julia_full.png','julia_mouth_wide5.png','julia_mouth_wide5.png','julia_mouth_narrow_o.png','julia_mouth_wide_y.png',
+	'julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_w.png','julia_mouth_narrow_o.png',
+	'julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_u.png','julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_wide_sh.png',
+	'julia_mouth_wide5.png','julia_mouth_wide_sh.png','julia_mouth_wide_sh.png','julia_mouth_wide_th.png','julia_mouth_wide_f.png',
+	'julia_mouth_wide_sh.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_closed.png'];
+	avatar = "";
+	timing = 160;
 
 	constructor(private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute) {
 		this.questions = [];
@@ -47,7 +54,18 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 		this.qnum = i;
 	}
 
+	animateAvatar(): void {
+        console.log("Button was pressed");
+        let i = 0;
+        let speakinterval = setInterval(() => { 
+            this.avatar = this.AvatarImages[this.question.visemes[i]];
+            i++;
+            if (i == this.question.visemes.length) clearInterval(speakinterval);
+        }, this.timing);
+    }
+
 	textToSpeech(){
+		this.animateAvatar();
 		this.ttsOptions = {
 			text: this.question.text,
 			pitch: 1.0,
