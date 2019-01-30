@@ -1,6 +1,8 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NativeScriptHttpModule } from "nativescript-angular";
+import {TNSTextToSpeech } from "nativescript-texttospeech";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -26,6 +28,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
         AppRoutingModule,
         NativeScriptHttpModule,
         NativeScriptUISideDrawerModule,
+        NativeScriptFormsModule
     ],
     declarations: [
         AppComponent,
@@ -34,7 +37,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
         HomeComponent,
         QuestionComponent
     ],
-    providers: [],
+    providers: [TNSTextToSpeech],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

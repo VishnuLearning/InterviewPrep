@@ -10,7 +10,20 @@
     height: 40;
 }
 
+#sprite1 {
+    width:4400px;
+    height:200px;
+    background: url("~/assets/images/mr_sinha_sprite.png") 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .action-label {
     font-size: 24;
     font-weight: bold;
+}
+
+#sprite{
+    background-image: url("~/assets/images/mr_sinha_sprite.png");
+    position: 0px;
 }

@@ -19,9 +19,11 @@
         </StackLayout>
         <StackLayout tkMainContent *ngIf="question!=undefined">
             <StackLayout class="home-panel">
-                <Image src="~/assets/images/mrsinha.png" width="200" height="200"></Image>
+                <Image id="sprite" src="~/assets/images/dr_sinha/julia_full.png" width="150px" height="150px" stretch="aspectFit">
+                </Image>
                 <Label class="h2" text="{{question.title}}"></Label>
                 <Label class="body" textWrap="true" text="{{question.text}}"></Label>
+                <Button (tap)="textToSpeech()" text="Speak"></Button>
             </StackLayout>
         </StackLayout>
     </RadSideDrawer>

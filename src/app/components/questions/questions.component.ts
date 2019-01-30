@@ -6,6 +6,7 @@ import { PathService } from "../../services/path.service";
 import { Router, ActivatedRoute } from '@angular/router';
 import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
+import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 
 @Component({
 	selector: "Questions",
@@ -26,8 +27,9 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	question: Question;
 	qnum: number;
 	private sub: any;
+	ttsOptions: SpeakOptions;
 
-	constructor(private pathservice: PathService, private route: ActivatedRoute) {
+	constructor(private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute) {
 		this.questions = [];
 		this.qnum = 0;
 	}
@@ -43,6 +45,17 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	loadQuestion(i: number) {
 		this.question = this.questions[i];
 		this.qnum = i;
+	}
+
+	textToSpeech(){
+		this.ttsOptions = {
+			text: this.question.text,
+			pitch: 1.0,
+			finishedCallback: () => {
+				console.log("I'm Done");
+			}
+		};
+		this.tts.speak(this.ttsOptions);
 	}
 
 	ngOnInit(): void {
