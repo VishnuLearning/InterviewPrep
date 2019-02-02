@@ -1,12 +1,12 @@
 import { ViewChild } from "@angular/core";
 import { RadSideDrawerComponent, SideDrawerType } from "nativescript-ui-sidedrawer/angular";
 import { Component, OnInit, OnDestroy } from "@angular/core";
-import { Response } from "@angular/http";
+// import { Response } from "@angular/http";
 import { PathService } from "../../services/path.service";
 import { Router, ActivatedRoute } from '@angular/router';
 import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
-import { routeReuseStrategyLog } from "nativescript-angular";
+import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 
 @Component({
 	selector: "Questions",
@@ -29,8 +29,16 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	qnum: number;
 	title:string;
 	private sub: any;
+	ttsOptions: SpeakOptions;
+	AvatarImages = ['julia_full.png','julia_mouth_wide5.png','julia_mouth_wide5.png','julia_mouth_narrow_o.png','julia_mouth_wide_y.png',
+	'julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_w.png','julia_mouth_narrow_o.png',
+	'julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_u.png','julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_wide_sh.png',
+	'julia_mouth_wide5.png','julia_mouth_wide_sh.png','julia_mouth_wide_sh.png','julia_mouth_wide_th.png','julia_mouth_wide_f.png',
+	'julia_mouth_wide_sh.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_closed.png'];
+	avatar = "";
+	timing = 160;
 
-	constructor(private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
+	constructor(private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
 		this.questions = [];
 		this.qnum = 0;
 		var u = decodeURI(router.url);
@@ -48,6 +56,28 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	loadQuestion(i: number) {
 		this.question = this.questions[i];
 		this.qnum = i;
+	}
+
+	animateAvatar(): void {
+        console.log("Button was pressed");
+        let i = 0;
+        let speakinterval = setInterval(() => { 
+            this.avatar = this.AvatarImages[this.question.visemes[i]];
+            i++;
+            if (i == this.question.visemes.length) clearInterval(speakinterval);
+        }, this.timing);
+    }
+
+	textToSpeech(){
+		this.animateAvatar();
+		this.ttsOptions = {
+			text: this.question.text,
+			pitch: 1.0,
+			finishedCallback: () => {
+				console.log("I'm Done");
+			}
+		};
+		this.tts.speak(this.ttsOptions);
 	}
 
 	ngOnInit(): void {
