@@ -6,6 +6,7 @@ import { PathService } from "../../services/path.service";
 import { Router, ActivatedRoute } from '@angular/router';
 import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
+import { routeReuseStrategyLog } from "nativescript-angular";
 
 @Component({
 	selector: "Questions",
@@ -17,6 +18,7 @@ import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
 
 export class QuestionsComponent implements OnInit, OnDestroy {
 	@ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
+	
 	onOpenDrawerTap() {
 		this.drawerComponent.sideDrawer.showDrawer();
 	}
@@ -25,11 +27,14 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	questions: Question[];
 	question: Question;
 	qnum: number;
+	title:string;
 	private sub: any;
 
-	constructor(private pathservice: PathService, private route: ActivatedRoute) {
+	constructor(private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
 		this.questions = [];
 		this.qnum = 0;
+		var u = decodeURI(router.url);
+		this.title = u.substring(u.lastIndexOf('%2F')+3, u.lastIndexOf('.'));
 	}
 
 	onSwipe(args: SwipeGestureEventData) {
@@ -48,7 +53,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	ngOnInit(): void {
 		this.sub = this.route.params.subscribe(params => {
 			this.path = params['path'];
-			console.log(this.path);
 			this.pathservice.getQuestions(this.path)
 				.subscribe(
 					(d: Question[]) => {

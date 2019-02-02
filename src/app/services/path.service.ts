@@ -9,7 +9,7 @@ export class PathService {
     constructor(private http: Http) { }
 
     getLessons(path: string) {
-        let url = path + "/Lessons.json";
+        let url = "~/assets/Lessons" + path + "/Lessons.json";
         return this.http.get(url,
             { headers: this.getCommonHeaders() }
         ).pipe(
@@ -18,7 +18,8 @@ export class PathService {
     }
 
     getQuestions(path: string): Observable<Question[]> {
-        return this.http.get(path,
+        let url = "~/assets/Lessons" + path;
+        return this.http.get(url,
             { headers: this.getCommonHeaders() }
         ).pipe(map((response: Response) => response.json().data));
     }

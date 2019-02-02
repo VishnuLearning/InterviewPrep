@@ -13,18 +13,21 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class LessonComponent implements OnInit, OnDestroy {
 	path: string;
 	lessons: any;
+	topic: string;
 	private sub: any;
 
 
-	constructor(private pathservice: PathService, private route: ActivatedRoute) {
+	constructor(private pathservice: PathService, private route: ActivatedRoute, private router: Router ) {
 		this.lessons = [];
+		this.path="";
+		let u = decodeURI(router.url).replace("%2F","");
+		this.topic = u.substring(u.lastIndexOf('/')+1);
 	}
 
 	ngOnInit(): void {
 		this.sub = this.route.params.subscribe(params => {
-			this.path = params['path'];
-			if (this.path == undefined) this.path = "~/assets/Lessons";
-			//console.log(this.path);
+			if(params['path']) this.path = params['path'];
+			
 			this.pathservice.getLessons(this.path)
 				.subscribe(
 					(d: Response) => {
