@@ -7,6 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
 import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
+// import {Slider} from "tns-core-modules/ui/slider";
 
 @Component({
 	selector: "Questions",
@@ -45,7 +46,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	'julia_mouth_wide5.png','julia_mouth_wide_sh.png','julia_mouth_wide_sh.png','julia_mouth_wide_th.png','julia_mouth_wide_f.png',
 	'julia_mouth_wide_sh.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_closed.png'];
 
-	timing = 80;
+	speechRate = 0.9;
 
 	constructor(private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
 		this.questions = [];
@@ -70,6 +71,14 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			this.loadQuestion(this.qnum + 1);
 		}
 	}
+
+	// handle value change
+	// onSliderLoaded(args) {
+	// 	const sliderComponent: Slider = <Slider>args.object;
+	// 	sliderComponent.on("valueChange", (sargs) => {
+	// 		this.speechRate = (<Slider>sargs.object).value/10;
+	// 	});
+	// }
 
 	loadQuestion(i: number) {
 		this.question = this.questions[i];
@@ -116,7 +125,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 				clearInterval(this.speakinterval);
 				this.speakNextSentence();
 			}
-		}, this.timing);
+		}, this.speechRate*85);
 	}
 
 	textToSpeech(){
@@ -143,7 +152,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			language:"en",
 			locale:"en-IN",
 			finishedCallback: ()=>{
-				//enable speak button
 				console.log("intro done");
 			}
 		};

@@ -23,12 +23,16 @@ export class LessonComponent implements OnInit, OnDestroy {
 		this.path="";
 		let u = decodeURI(router.url).replace("%2F","");
 		this.topic = u.substring(u.lastIndexOf('/')+1);
-		this.speakTitle();
 	}
 
-	speakTitle() {
+	gotoLesson(lesson:any) {
+		this.speak(lesson);
+		console.log(lesson);
+	}
+
+	speak(lesson:any) {
 		let options = {
-			text: this.topic,
+			text: lesson.name,
 			pitch: 1.0,
 			speakRate: 0.9,
 			volume: 1.0,
@@ -36,7 +40,12 @@ export class LessonComponent implements OnInit, OnDestroy {
 			locale:"en-IN",
 			finishedCallback: ()=>{
 				//enable speak button
-				console.log("intro done");
+				console.log("routing");
+				if (lesson.path.endsWith(".json")) {
+					this.router.navigate(['/questions', this.path+'/'+lesson.path]);
+				} else {
+					this.router.navigate(['/lesson', this.path+'/'+lesson.path]);
+				}
 			}
 		};
 		

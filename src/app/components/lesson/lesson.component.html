@@ -1,8 +1,5 @@
 <ActionBar *ngIf="path!=''" title="{{topic}}" class="action-bar">
 </ActionBar>
 <StackLayout *ngFor="let lesson of lessons">
-    <Button text="{{lesson.name}}" class="btn btn-primary" [nsRouterLink]="['/lesson', path+'/'+lesson.path]"
-        *ngIf="!lesson.path.endsWith('.json')"></Button>
-    <Button text="{{lesson.name}}" class="btn btn-primary" [nsRouterLink]="['/questions', path+'/'+lesson.path]"
-        *ngIf="lesson.path.endsWith('.json')"></Button>
+    <Button text="{{lesson.name}}" class="btn btn-primary" (tap)="gotoLesson(lesson)"></Button>
 </StackLayout>
