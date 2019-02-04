@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from "@angular/core";
 import { Response } from "@angular/http";
 import { PathService } from "../../services/path.service";
 import { Router, ActivatedRoute } from '@angular/router';
+import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 
 @Component({
 	selector: "ns-lesson",
@@ -17,11 +18,29 @@ export class LessonComponent implements OnInit, OnDestroy {
 	private sub: any;
 
 
-	constructor(private pathservice: PathService, private route: ActivatedRoute, private router: Router ) {
+	constructor(private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router ) {
 		this.lessons = [];
 		this.path="";
 		let u = decodeURI(router.url).replace("%2F","");
 		this.topic = u.substring(u.lastIndexOf('/')+1);
+		this.speakTitle();
+	}
+
+	speakTitle() {
+		let options = {
+			text: this.topic,
+			pitch: 1.0,
+			speakRate: 0.9,
+			volume: 1.0,
+			language:"en",
+			locale:"en-IN",
+			finishedCallback: ()=>{
+				//enable speak button
+				console.log("intro done");
+			}
+		};
+		
+		this.tts.speak(options);
 	}
 
 	ngOnInit(): void {

@@ -1,4 +1,4 @@
-import { ViewChild } from "@angular/core";
+import { ViewChild, ElementRef } from "@angular/core";
 import { RadSideDrawerComponent, SideDrawerType } from "nativescript-ui-sidedrawer/angular";
 import { Component, OnInit, OnDestroy } from "@angular/core";
 // import { Response } from "@angular/http";
@@ -18,16 +18,25 @@ import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 
 export class QuestionsComponent implements OnInit, OnDestroy {
 	@ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
+	@ViewChild("avatar") avatarImage:ElementRef;
 	
 	onOpenDrawerTap() {
 		this.drawerComponent.sideDrawer.showDrawer();
 	}
 
 	path: string;
+	imagePath: string = "~/assets/images/dr_sinha/";
 	questions: Question[];
 	question: Question;
 	qnum: number;
 	title:string;
+	
+	speaking: boolean = false;
+	sentenceIndex: number = -1;
+	sentences: Array<string>;
+	speakinterval: number;
+	speakAndAnimateFlag: number = 1;
+
 	private sub: any;
 	ttsOptions: SpeakOptions;
 	AvatarImages = ['julia_full.png','julia_mouth_wide5.png','julia_mouth_wide5.png','julia_mouth_narrow_o.png','julia_mouth_wide_y.png',
@@ -35,14 +44,23 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	'julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_u.png','julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_wide_sh.png',
 	'julia_mouth_wide5.png','julia_mouth_wide_sh.png','julia_mouth_wide_sh.png','julia_mouth_wide_th.png','julia_mouth_wide_f.png',
 	'julia_mouth_wide_sh.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_closed.png'];
-	avatar = "";
-	timing = 160;
+
+	timing = 80;
 
 	constructor(private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
 		this.questions = [];
 		this.qnum = 0;
 		var u = decodeURI(router.url);
 		this.title = u.substring(u.lastIndexOf('%2F')+3, u.lastIndexOf('.'));
+		this.ttsOptions = {
+			text: "Question 1, ",
+			pitch: 1.0,
+			speakRate: 0.9,
+			volume: 1.0,
+			language:"en",
+			locale:"en-IN",
+			finishedCallback: ()=>{this.speakNextSentence();}
+		};
 	}
 
 	onSwipe(args: SwipeGestureEventData) {
@@ -55,29 +73,82 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
 	loadQuestion(i: number) {
 		this.question = this.questions[i];
+		this.sentences = this.question.text.split(". ");
+		console.log(this.sentences);
+		this.sentenceIndex = -1;
+		if(this.speakinterval) clearInterval(this.speakinterval);
+		this.speaking = false;
+		this.speakAndAnimateFlag = 1;
 		this.qnum = i;
+		this.speakTitle();
+	}
+
+	
+	
+	speakNextSentence(){
+		console.log("speakNextSentence called ", this.speakAndAnimateFlag, this.speaking, this.sentenceIndex);
+		this.speakAndAnimateFlag++;
+		if(this.speaking && this.speakAndAnimateFlag == 2) {
+			this.speakAndAnimateFlag = 0;
+			this.sentenceIndex++;
+			if(this.sentenceIndex<this.sentences.length) {
+				this.ttsOptions.text = this.sentences[this.sentenceIndex];
+				this.tts.speak(this.ttsOptions)
+				.then(()=>{
+					this.animateAvatar();
+					console.log("in then");}, 
+					(err)=>{console.log(err);});
+			} else {
+				this.sentenceIndex = -1;
+				this.speaking = false;
+				this.speakAndAnimateFlag = 1;
+			}
+		}
 	}
 
 	animateAvatar(): void {
-        console.log("Button was pressed");
-        let i = 0;
-        let speakinterval = setInterval(() => { 
-            this.avatar = this.AvatarImages[this.question.visemes[i]];
+		let i = 0;
+        this.speakinterval = setInterval(() => { 
+			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[this.question.visemes[this.sentenceIndex][i]];
+			
             i++;
-            if (i == this.question.visemes.length) clearInterval(speakinterval);
-        }, this.timing);
-    }
+            if (i == this.question.visemes[this.sentenceIndex].length) {
+				clearInterval(this.speakinterval);
+				this.speakNextSentence();
+			}
+		}, this.timing);
+	}
 
 	textToSpeech(){
-		this.animateAvatar();
-		this.ttsOptions = {
-			text: this.question.text,
+		var _this = this;
+		// this.tts.getAvailableLanguages()
+		// .then(function(res) {
+		// 	console.log(res);
+		// })
+		// .catch(function(error){
+		// 	console.log(error);
+		// });
+		// start speaking. This will do two things. speak a sentence and animate.
+		// when both end, it should call a function
+		this.speaking = true;
+		this.speakNextSentence();
+	}
+
+	speakTitle() {
+		let options = {
+			text: "Question " + String(this.qnum+1) + ", " + this.question.title,
 			pitch: 1.0,
-			finishedCallback: () => {
-				console.log("I'm Done");
+			speakRate: 0.9,
+			volume: 1.0,
+			language:"en",
+			locale:"en-IN",
+			finishedCallback: ()=>{
+				//enable speak button
+				console.log("intro done");
 			}
 		};
-		this.tts.speak(this.ttsOptions);
+		
+		this.tts.speak(options);
 	}
 
 	ngOnInit(): void {
@@ -88,13 +159,16 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 					(d: Question[]) => {
 						this.question = d[0];
 						this.questions = d;
-
+						this.sentences = this.question.text.split(". ");
+						this.speakTitle();
 					},
 					(error) => {
 						console.log(error);
 					}
 				)
 		});
+
+		
 	}
 
 	ngOnDestroy() {
