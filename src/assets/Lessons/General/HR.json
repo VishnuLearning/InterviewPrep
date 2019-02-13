@@ -1,0 +1,159 @@
+{
+	"data":[
+	{
+		"id":1,
+		"quest":"Tell me a little about yourself. ",
+		"visemes":[[19, 4, 14, 21, 6, 1, 14, 6, 19, 1, 14, 1, 21, 9, 19, 6, 5, 15, 4, 14, 18, 0], [0]],
+		"text":"I'm Anita Roy. I'm from Boston where I did my schooling. Since my childhood, I was very interested in computers. So I chose to study Computer Science and Engineering at the North-Eastern University. I am a good student. I like all subjects but Artificial Intelligence and Machine Learning are my favorite subjects. I am creative and love to solve challenging technical problems. I hope to work for an innovative company such as yours where I get the opportunity to learn new technologies and implement them to create products for the benefit of the company and the society."
+	},
+	{
+		"id":2,
+		"quest":" You said, you are creative. Can you give us an example when you have been creative?",
+		"visemes":[[6, 7, 15, 4, 19, 0, 6, 7, 2, 13, 20, 13, 6, 4, 19, 6, 18, 0], [20, 1, 19, 6, 7, 20, 6, 18, 1, 15, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 7, 4, 19, 6, 7, 12, 1, 18, 21, 6, 19, 20, 13, 6, 4, 19, 6, 18, 0], [0]],
+		"text":"I did a project using AI and machine learning to solve the files and documents organization problem (or the actual problem you solved). After searching the literature, I found that all current methods for solving this problem were very slow or inaccurate. So I thought for many weeks, tried several ideas and came up with a new algorithm, which can solve the problem 3 times faster and with 98% accuracy."
+	},
+	{
+		"id":3,
+		"quest":" You said you are a good student, but we see that your marks are not all that great. Can you explain why?",
+		"visemes":[[6, 7, 15, 4, 19, 6, 7, 2, 13, 1, 20, 4, 19, 15, 19, 7, 19, 1, 19, 19, 0, 21, 1, 19, 7, 6, 15, 6, 17, 1, 19, 6, 3, 13, 21, 2, 13, 20, 15, 2, 13, 19, 2, 19, 3, 14, 17, 1, 19, 20, 13, 4, 19, 0], [20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 7, 11, 0], [0]],
+		"text":"I focussed more on learning, especially my favorite subjects and implementing what I learn into something practical. I did not prepare too well for the examinations. I believe, it is more important for me to create something new with what I learn than to score high in the examinations. I have put in twice the time and effort needed to do my B.Tech. project and my guide and I are very happy with my work. I have brought the project report with me if you would like to see it."
+	},
+	{
+		"id":4,
+		"quest":" What is your greatest strength? or What are your strengths?",
+		"visemes":[[7, 1, 19, 6, 15, 6, 3, 13, 20, 13, 4, 19, 1, 15, 19, 15, 19, 13, 4, 20, 20, 17, 0], [3, 13, 7, 1, 19, 2, 13, 6, 3, 13, 15, 19, 13, 4, 20, 20, 17, 15, 0], [0]],
+		"text":"I work in a very systematic and organized way. I understand the objective, plan my work very well, break down the tasks, set priorities, work hard following the plan and finish my work before the deadlines."
+	},
+	{
+		"id":5,
+		"quest":" That's good. But, hard and organized work is not always enough. One has to have the knowledge and work smartly too. Is that not right?",
+		"visemes":[[17, 1, 19, 4, 15, 20, 4, 19, 0], [21, 1, 19, 0, 12, 2, 13, 19, 1, 19, 19, 3, 13, 20, 1, 19, 11, 15, 19, 7, 5, 20, 6, 15, 19, 2, 19, 3, 14, 7, 4, 15, 6, 19, 1, 18, 0], [7, 1, 19, 12, 1, 15, 19, 7, 12, 1, 18, 17, 1, 19, 2, 14, 1, 16, 1, 19, 19, 7, 5, 20, 15, 21, 2, 13, 19, 14, 6, 19, 7, 0], [6, 15, 17, 1, 19, 19, 2, 19, 13, 11, 19, 0], [0]],
+		"text":"Yes, ma'am. During the planning phase, I figure out, what knowledge is needed, what I already know and what knowledge I need to acquire to complete the task. Then I quickly learn it, try it, and implement it.  \n (Notice that, you did not say, I am smart and knowledgeable. which may sound arrogant. Instead, you said that you plan smartly and learn quickly.)"
+	},
+	{
+		"id":6,
+		"quest":" Was there a time when your plan went wrong? and what did you do?  Or Give me an example of something you have done in a planned and organized manner but you had to change your plan.",
+		"visemes":[[7, 2, 15, 17, 4, 13, 1, 19, 11, 21, 7, 4, 19, 6, 3, 13, 21, 14, 1, 19, 7, 4, 19, 19, 13, 3, 20, 0], [1, 19, 19, 7, 1, 19, 19, 6, 19, 6, 7, 19, 7, 0], [3, 13, 20, 6, 18, 21, 6, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 1, 18, 15, 1, 21, 17, 6, 20, 6, 7, 12, 1, 18, 19, 1, 19, 6, 19, 1, 21, 14, 1, 19, 19, 1, 19, 19, 3, 13, 20, 1, 19, 11, 15, 19, 21, 1, 19, 5, 21, 1, 19, 6, 7, 12, 1, 19, 19, 7, 16, 4, 19, 16, 6, 3, 13, 21, 14, 1, 19, 0], [0]],
+		"text":"When I was doing my project, I had planned it very well, and I was making good progress. Then a paper was published by a team from the UK which essentially had what I was planning to do. So, instead of changing my project (for which we did not have enough time left), I looked at what they had done. I found a more efficient way of doing it and worked long hours for five weeks to implement that in my project. Thus, I could do something new as well as finish my project in time. (note: You will be asked specifics of what that work was, so be ready.)"
+	},
+	{
+		"id":7,
+		"quest":" What other qualities do you have that would make you a reliable employee?",
+		"visemes":[[7, 1, 19, 1, 17, 5, 20, 7, 2, 14, 1, 19, 6, 15, 19, 7, 6, 7, 12, 1, 18, 17, 1, 19, 7, 4, 19, 21, 4, 20, 6, 7, 1, 13, 6, 14, 11, 1, 21, 1, 14, 4, 21, 21, 14, 10, 6, 0], [0]],
+		"text":"I have an extremely strong work ethic and sense of commitment. When I am working on something, I do not just want to meet the deadlines, rather I want to complete the work well ahead of schedule and spend some time in testing to ensure it is perfect the first time."
+	},
+	{
+		"id":8,
+		"quest":" Can you tell me about a time when you finished your work before the deadline?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 14, 21, 6, 1, 21, 9, 19, 1, 19, 11, 21, 7, 4, 19, 6, 7, 18, 6, 19, 6, 16, 19, 6, 3, 13, 7, 5, 20, 21, 6, 18, 3, 13, 17, 1, 19, 4, 19, 14, 11, 19, 0], [0]],
+		"text":"When I was doing my internship, I was given the task to analyze the existing system (name of the system) and prepare a report. I worked an extra 3 hours a day to learn the system, analyze it, run all standard tests, and produce the report a week ahead of time. Then I spent a few days coming up with ideas for improvements to the system and added that to the report. My supervisor was very happy and decided to implement one of my suggestions. (Make sure you can mention that suggestion if asked by the interviewer)"
+	},
+	{
+		"id":9,
+		"quest":" What is your biggest weakness? or What are your weaknesses?",
+		"visemes":[[7, 1, 19, 6, 15, 6, 3, 13, 21, 6, 20, 1, 15, 19, 7, 6, 20, 19, 1, 15, 0], [3, 13, 7, 1, 19, 2, 13, 6, 3, 13, 7, 6, 20, 19, 1, 15, 1, 15, 0], [0]],
+		"text":"I realize that I need to improve my verbal communication skill, especially my English. I am taking an online course on Professional Communication Skill. We have formed a group of students. We meet every weekend, hold group discussions, and help each other to improve our communication skills."
+	},
+	{
+		"id":10,
+		"quest":" What is this course you are taking? And what kind of topics do you discuss?",
+		"visemes":[[7, 1, 19, 6, 15, 17, 6, 15, 20, 3, 13, 15, 6, 7, 2, 13, 19, 4, 20, 6, 20, 0], [1, 19, 19, 7, 1, 19, 20, 11, 19, 19, 1, 18, 19, 2, 21, 6, 20, 15, 19, 7, 6, 7, 19, 6, 15, 20, 1, 15, 0], [0]],
+		"text":"I am taking an online course called English for Professional Communication. It is a 6-week long intensive course. In our discussion group, we discuss topics related to technology, economy, and sometimes social issues. For example, last week we discussed how Artificial intelligence and Robotics will change the jobs in the future."
+	},
+	{
+		"id":11,
+		"quest":" Why should we hire you? or Why do you want to work at our company? or  What makes you a better candidate than the others?",
+		"visemes":[[7, 11, 16, 4, 19, 7, 6, 12, 11, 5, 6, 7, 0], [3, 13, 7, 11, 19, 7, 6, 7, 7, 2, 19, 19, 19, 7, 7, 5, 20, 1, 19, 9, 5, 20, 1, 21, 21, 1, 19, 6, 0], [3, 13, 7, 1, 19, 21, 4, 20, 15, 6, 7, 1, 21, 4, 19, 5, 20, 1, 19, 19, 1, 19, 4, 19, 17, 1, 19, 17, 1, 1, 17, 5, 15, 0], [0]],
+		"text":"My educational qualifications, skills, interests, and goals match very well with the requirements of this position. I have always wanted to work in the area of software development (mention one major requirement from the job advertisement). Your company is one of the leaders in this area, one of the most innovative companies, and here I will have the best opportunity to learn and contribute to this company (name the company)."
+	},
+	{
+		"id":12,
+		"quest":"  What do you know about our company and our innovations?",
+		"visemes":[[7, 1, 19, 19, 7, 6, 7, 19, 8, 1, 21, 9, 19, 9, 5, 20, 1, 21, 21, 1, 19, 6, 1, 19, 19, 9, 5, 6, 19, 1, 18, 4, 16, 1, 19, 15, 0], [0]],
+		"text":"Your company (name) has a leading PLM product (name) with over 4,000 customers world-wide. Recently your company has announced the launch of a fully-integrated platform which will have a big advantage over the competitor's products (mention a competitor's and product's names). "
+	},
+	{
+		"id":13,
+		"quest":" What do you know about our current focus? ",
+		"visemes":[[7, 1, 19, 19, 7, 6, 7, 19, 8, 1, 21, 9, 19, 9, 5, 20, 5, 1, 19, 19, 18, 8, 20, 1, 15, 0], [0]],
+		"text":"To the best of my knowledge, your company is focusing on customized solutions, planning to start an R&D division in Asia, and is planning acquisitions to expand its business in IoT, robotics, and factory automation."
+	},
+	{
+		"id":14,
+		"quest":" How do you handle stress? Or How do you handle pressure or work-load or urgency?",
+		"visemes":[[12, 9, 19, 7, 6, 7, 12, 1, 19, 19, 1, 14, 15, 19, 13, 4, 15, 0], [3, 13, 12, 9, 19, 7, 6, 7, 12, 1, 19, 19, 1, 14, 21, 13, 4, 16, 5, 3, 13, 7, 5, 20, 14, 8, 19, 3, 13, 5, 16, 1, 19, 15, 6, 0], [0]],
+		"text":"I plan my work very well and work systematically. Still, sometimes, there may be unexpected workload, especially if something goes wrong. So I have to work several hours extra every day till the work is finished. However, I enjoy it and feel no stress. In fact, I work faster under pressure and urgency because I take full responsibility for my work and know how important it is for the success of the project and the entire team."
+	},
+	{
+		"id":15,
+		"quest":" Suppose, a customer is unhappy and your manager wants you to handle the problem in two days, and you have plans for holidays, what will you do?",
+		"visemes":[[15, 1, 21, 8, 15, 0, 1, 20, 1, 15, 19, 1, 21, 5, 6, 15, 1, 19, 12, 1, 21, 6, 1, 19, 19, 6, 3, 13, 21, 1, 19, 1, 16, 5, 7, 2, 19, 19, 15, 6, 7, 19, 7, 12, 1, 19, 19, 1, 14, 17, 1, 21, 13, 2, 21, 14, 1, 21, 6, 19, 19, 7, 19, 4, 15, 0, 1, 19, 19, 6, 7, 12, 1, 18, 21, 14, 1, 19, 15, 18, 3, 13, 12, 2, 14, 1, 19, 4, 15, 0, 7, 1, 19, 7, 6, 14, 6, 7, 19, 7, 0], [0]],
+		"text":"The customer and the work certainly come first. I will discuss with the manager the details to see if it can be done in two days. If yes, I will do it even if I have to postpone my holidays. If it seems impossible to do in two days, I will ask the manager to give me the support of another team member or negotiate the time with the customer. In any case, I will get it done and make the customer satisfied."
+	},
+	{
+		"id":16,
+		"quest":" Do you like to work alone or in a team? or Do you prefer working independently to working with others?",
+		"visemes":[[19, 7, 6, 7, 14, 11, 20, 19, 7, 7, 5, 20, 1, 14, 8, 19, 3, 13, 6, 19, 1, 19, 6, 21, 0], [3, 13, 19, 7, 6, 7, 21, 13, 1, 18, 5, 7, 5, 20, 6, 20, 6, 19, 19, 6, 21, 4, 19, 19, 1, 19, 19, 14, 6, 19, 7, 7, 5, 20, 6, 20, 7, 6, 17, 1, 17, 5, 15, 0], [0]],
+		"text":"I like working in a team. I get along very well with people and colleagues. After discussions with the team, once the exact tasks for individuals have been assigned, I like to fully concentrate and do my part alone. Naturally, keeping in touch with the team members to ensure my part fits in well with others' parts. I make sure there is no communication gap. Finally, it is the teamwork that makes a project successful."
+	},
+	{
+		"id":17,
+		"quest":" Suppose, you are doing your work and one of the team members is not getting ahead with his or her work. What will you do? Will you complain to the team leader or hide the problem?",
+		"visemes":[[15, 1, 21, 8, 15, 0, 6, 7, 2, 13, 19, 7, 6, 20, 6, 3, 13, 7, 5, 20, 1, 19, 19, 7, 1, 19, 1, 18, 17, 1, 19, 6, 21, 21, 4, 21, 21, 5, 15, 6, 15, 19, 2, 19, 20, 4, 19, 6, 20, 1, 12, 4, 19, 7, 6, 17, 12, 6, 15, 3, 13, 12, 5, 7, 5, 20, 0], [7, 1, 19, 7, 6, 14, 6, 7, 19, 7, 0], [7, 6, 14, 6, 7, 20, 1, 21, 21, 14, 4, 19, 19, 7, 17, 1, 19, 6, 21, 14, 6, 19, 5, 3, 13, 12, 11, 19, 17, 1, 21, 13, 2, 21, 14, 1, 21, 0], [0]],
+		"text":"I will surely help my colleague as much as I can to ensure we are all progressing together. I will surely not complain to the team leader. However, if it seems that the colleague and I cannot do that part of the work, I will encourage my colleague to directly talk to the team leader and ask for help."
+	},
+	{
+		"id":18,
+		"quest":" Suppose, some part of your work is very difficult, and you do not know how to do it. What will you do?",
+		"visemes":[[15, 1, 21, 8, 15, 0, 15, 1, 21, 21, 2, 13, 19, 1, 18, 6, 3, 13, 7, 5, 20, 6, 15, 18, 4, 13, 6, 19, 6, 18, 1, 20, 1, 14, 19, 0, 1, 19, 19, 6, 7, 19, 7, 19, 2, 19, 19, 8, 12, 9, 19, 7, 19, 7, 6, 19, 0], [7, 1, 19, 7, 6, 14, 6, 7, 19, 7, 0], [0]],
+		"text":"I will immediately get deeper into the problem to see what I need to learn. If I can learn something quickly from various sources and feel that I can do it in time, I will do it. But if I think, a colleague, the team leader or an internal expert can help me, I will seek the minimum help early enough so that the work is done in time."
+	},
+	{
+		"id":19,
+		"quest":" So, you are not confident that you can do everything alone.",
+		"visemes":[[15, 8, 0, 6, 7, 2, 13, 19, 2, 19, 20, 2, 19, 18, 1, 19, 1, 19, 19, 17, 1, 19, 6, 7, 20, 1, 19, 19, 7, 4, 18, 13, 6, 17, 6, 20, 1, 14, 8, 19, 0], [0]],
+		"text":"I like new challenges, that gives me opportunities to learn and apply. My fundamentals are strong and I am confident that I can learn anything and solve any problem. However, realistically, sometimes it is better and quicker to get help from someone who is more knowledgeable and experienced. I can imagine, in some rare cases, we may even need the expertise of another team."
+	},
+	{
+		"id":20,
+		"quest":" Where do you see yourself in five years from now? or What is your long-term career goal?",
+		"visemes":[[7, 4, 13, 19, 7, 6, 7, 15, 6, 6, 5, 15, 4, 14, 18, 6, 19, 18, 11, 18, 6, 6, 13, 15, 18, 13, 1, 21, 19, 9, 0], [3, 13, 7, 1, 19, 6, 15, 6, 3, 13, 14, 3, 20, 19, 5, 21, 20, 5, 6, 13, 20, 8, 14, 0], [0]],
+		"text":"Over the first few years, I would like to learn and produce as much as possible, and gain experience by working on projects. In future, I would like to develop management skills and become a team leader and then a project manager in this company. I would like to conceptualize, design and lead a team of engineers and programmers to create innovative products."
+	},
+	{
+		"id":21,
+		"quest":" Are you sure, after gaining experience you would still be with us? What if you get a better opportunity in some other company, would you leave?",
+		"visemes":[[2, 13, 6, 7, 16, 4, 13, 0, 1, 18, 19, 5, 20, 4, 19, 6, 20, 6, 20, 15, 21, 6, 13, 6, 1, 19, 15, 6, 7, 7, 4, 19, 15, 19, 6, 14, 21, 6, 7, 6, 17, 1, 15, 0], [7, 1, 19, 6, 18, 6, 7, 20, 4, 19, 1, 21, 4, 19, 5, 2, 21, 5, 19, 7, 19, 1, 19, 6, 6, 19, 15, 1, 21, 1, 17, 5, 20, 1, 21, 21, 1, 19, 6, 0, 7, 4, 19, 6, 7, 14, 6, 18, 0], [0]],
+		"text":"I am sure when I work hard and perform well, I will get great opportunities in this company. As I mentioned earlier, I am very interested in the kind of work you do. I would like to stay in this company and work loyally as long as possible."
+	},
+	{
+		"id":22,
+		"quest":" This position requires some traveling to other states and sometimes to other countries. If we send you somewhere, would you be able to go? ",
+		"visemes":[[17, 6, 15, 21, 1, 15, 6, 16, 1, 19, 13, 6, 20, 7, 11, 5, 15, 15, 1, 21, 19, 13, 1, 18, 1, 14, 6, 20, 19, 7, 1, 17, 5, 15, 19, 4, 19, 15, 1, 19, 19, 15, 1, 21, 19, 11, 21, 15, 19, 7, 1, 17, 5, 20, 1, 19, 19, 13, 6, 15, 0], [6, 18, 7, 6, 15, 4, 19, 19, 6, 7, 15, 1, 21, 7, 4, 13, 0, 7, 4, 19, 6, 7, 21, 6, 4, 21, 1, 14, 19, 7, 20, 8, 0], [0]],
+		"text":"Yes, I would surely like to travel whenever needed. That way I will get to know various teams, partners, and customers. Also, I adjust to different places and cultures very easily."
+	},
+	{
+		"id":23,
+		"quest":" Also, sometimes, you may have to accompany our sales team, meet with customers, support them, etc. Sometimes, you may have to work night-shifts, will you be able to do it?",
+		"visemes":[[3, 14, 15, 8, 0, 15, 1, 21, 19, 11, 21, 15, 0, 6, 7, 21, 4, 12, 1, 18, 19, 7, 1, 20, 1, 21, 21, 1, 19, 6, 9, 5, 15, 4, 14, 15, 19, 6, 21, 0, 21, 6, 19, 7, 6, 17, 20, 1, 15, 19, 1, 21, 5, 15, 0, 15, 1, 21, 3, 13, 19, 17, 4, 21, 0, 4, 19, 15, 4, 19, 5, 1, 0], [15, 1, 21, 19, 11, 21, 15, 0, 6, 7, 21, 4, 12, 1, 18, 19, 7, 7, 5, 20, 19, 11, 19, 16, 6, 18, 19, 15, 0, 7, 6, 14, 6, 7, 21, 6, 4, 21, 1, 14, 19, 7, 19, 7, 6, 19, 0], [0]],
+		"text":"Yes. I'd like to learn various parts of the business at every opportunity and help the company in every way. Meeting customers and supporting the sales team would broaden my experience. If I get this position, I will be a part of this company. And working night-shifts or different shifts is absolutely fine with me."
+	},
+	{
+		"id":24,
+		"quest":" Can you tell us about a time when you were given a task that was new to you and how you handled that?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 14, 1, 15, 1, 21, 9, 19, 1, 19, 11, 21, 7, 4, 19, 6, 7, 7, 5, 20, 6, 18, 1, 19, 1, 19, 1, 15, 20, 17, 1, 19, 7, 2, 15, 19, 7, 19, 7, 6, 7, 1, 19, 19, 12, 9, 6, 7, 12, 1, 19, 19, 1, 14, 19, 17, 1, 19, 0], [0]],
+		"text":"During my training at TATA (name of the organization), I was assigned to a team that was developing a system for recording and analyzing data related to heavy-vehicle drivers' driving habits. It was completely new to me. Fortunately, one experienced engineer explained the essentials to me for 2 hours and I understood the project fairly well, well enough to get started. I like learning about new domains and exploring how my field and knowledge can help in other domains. In fact, I like difficult inter-disciplinary work."
+	},
+	{
+		"id":25,
+		"quest":" Besides studies and work, what do you do? or How do you spend your extra time?",
+		"visemes":[[21, 6, 15, 11, 19, 15, 15, 19, 1, 19, 6, 15, 1, 19, 19, 7, 5, 20, 0, 7, 1, 19, 19, 7, 6, 7, 19, 7, 0], [3, 13, 12, 9, 19, 7, 6, 7, 15, 21, 4, 19, 19, 6, 3, 13, 4, 20, 15, 19, 13, 1, 19, 11, 21, 0], [0]],
+		"text":"I voluntarily teach programming at a local school. I read technology magazines and biographies. I like jogging and recently joined a fitness club, and sometimes on the weekends, I get together with a few friends for a game or discussions. So I keep myself busy."
+	},
+	{
+		"id":26,
+		"quest":" Do you have any question for us?",
+		"visemes":[[19, 7, 6, 7, 12, 1, 18, 4, 19, 6, 20, 7, 4, 15, 16, 1, 19, 18, 3, 13, 1, 15, 0], [0]],
+		"text":"Yes. Can you please tell me what employee improvement programs you have for special training, skill development and for higher studies?"
+	}]
+}

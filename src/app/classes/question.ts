@@ -1,6 +1,6 @@
 export class Question {
     id: number;
-    title: string;
+    quest: string;
     text: string;
-    visemes: any;
+    visemes: any; 
 };

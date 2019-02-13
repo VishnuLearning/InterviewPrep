@@ -14,16 +14,26 @@
             </StackLayout>
             <StackLayout>
                 <Button *ngFor="let question of questions; let i = index"
-                    text="{{question.title}}" (tap)="loadQuestion(i)"></Button>
+                    text="Question {{question.id}}" (tap)="loadQuestion(i)"></Button>
             </StackLayout>
         </StackLayout>
         <StackLayout tkMainContent *ngIf="question!=undefined">
             <StackLayout class="home-panel">
                 <Image src="~/assets/images/dr_sinha/julia_full.png" #avatar stretch="aspectFill" width="200" height="200"></Image>
                 <!-- <Slider value="9"  minValue="5" maxValue="15"></Slider> -->
-                <Label class="h2" text="{{question.title}}"></Label>
-                <Label class="body" textWrap="true" text="{{question.text}}"></Label>
-                <Button (tap)="textToSpeech()" text="Speak"></Button>
+                <StackLayout orientation="horizontal" horizontalAlignment="left" (tap)="textToSpeech()">
+                    <Image src="~/assets/images/speaker.png" clas="action-image" width="45" height="20"></Image>
+                    <Label class="h2" textWrap="true" text="{{question.quest}}"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <StackLayout orientation="horizontal" horizontalAlignment="left" (tap)="speakTextOnly()">
+                        <Image src="~/assets/images/speaker.png" clas="action-image" width="45" height="20" visibility="{{ showAnswer ? 'visible' : 'collapsed' }}"></Image>
+                        <Button text="{{ showAnswer ? 'Hide Answer' : 'Show Answer' }}" (tap)="displayAnswer()"></Button>
+                    </StackLayout>
+                    <ScrollView>
+                        <Label class="body" textWrap="true" text="{{question.text}}" visibility="{{ showAnswer ? 'visible' : 'collapsed' }}"></Label>
+                    </ScrollView>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </RadSideDrawer>

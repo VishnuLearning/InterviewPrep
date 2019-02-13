@@ -1,6 +1,10 @@
 [
     {
         "name": "Artificial Intelligence",
-        "path": "AI.json"
+        "path": "ArtIn.json"
+    },
+    {
+        "name": "Data Structures",
+        "path": "DS.json"
     }
 ]

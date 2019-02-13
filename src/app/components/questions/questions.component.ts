@@ -31,6 +31,9 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	question: Question;
 	qnum: number;
 	title:string;
+	variable: string;
+
+	showAnswer: boolean = false;
 	
 	speaking: boolean = false;
 	sentenceIndex: number = -1;
@@ -50,7 +53,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
 	constructor(private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
 		this.questions = [];
-		this.qnum = 0;
+		this.qnum = 1;
 		var u = decodeURI(router.url);
 		this.title = u.substring(u.lastIndexOf('%2F')+3, u.lastIndexOf('.'));
 		this.ttsOptions = {
@@ -82,17 +85,21 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
 	loadQuestion(i: number) {
 		this.question = this.questions[i];
-		this.sentences = this.question.text.split(". ");
+		this.variable = this.question.quest;
+		this.variable.replace(".","?");
+		this.sentences = this.variable.split("? ");
 		console.log(this.sentences);
 		this.sentenceIndex = -1;
 		if(this.speakinterval) clearInterval(this.speakinterval);
 		this.speaking = false;
 		this.speakAndAnimateFlag = 1;
 		this.qnum = i;
-		this.speakTitle();
+		// this.speakTitle();
 	}
 
-	
+	displayAnswer(){
+		this.showAnswer = !this.showAnswer;
+	}
 	
 	speakNextSentence(){
 		console.log("speakNextSentence called ", this.speakAndAnimateFlag, this.speaking, this.sentenceIndex);
@@ -143,19 +150,34 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 		this.speakNextSentence();
 	}
 
-	speakTitle() {
+	// speakTitle() {
+	// 	let options = {
+	// 		text: "Question " + String(this.qnum+1), //+ ", " + this.question.title,
+	// 		pitch: 1.0,
+	// 		speakRate: 0.9,
+	// 		volume: 1.0,
+	// 		language:"en",
+	// 		locale:"en-IN",
+	// 		finishedCallback: ()=>{
+	// 			console.log("intro done");
+	// 		}
+	// 	};
+		
+	// 	this.tts.speak(options);
+	// }
+
+	speakTextOnly(){
 		let options = {
-			text: "Question " + String(this.qnum+1) + ", " + this.question.title,
+			text: this.question.text,
 			pitch: 1.0,
-			speakRate: 0.9,
+			speakRate: 0.8,
 			volume: 1.0,
-			language:"en",
-			locale:"en-IN",
+			language: "en",
+			locale: "en-IN",
 			finishedCallback: ()=>{
-				console.log("intro done");
+				console.log("read the answer");
 			}
 		};
-		
 		this.tts.speak(options);
 	}
 
@@ -167,8 +189,11 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 					(d: Question[]) => {
 						this.question = d[0];
 						this.questions = d;
-						this.sentences = this.question.text.split(". ");
-						this.speakTitle();
+						this.variable = this.question.quest;
+						this.variable.replace(".","?");
+						this.sentences = this.variable.split("? ");
+						// this.sentences = this.question.quest.split("? ");
+						// this.speakTitle();
 					},
 					(error) => {
 						console.log(error);

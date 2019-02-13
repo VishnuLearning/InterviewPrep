@@ -9,8 +9,8 @@ export class PathService {
     constructor(private http: Http) { }
 
     getLessons(path: string) {
-        let url = "~/assets/Lessons" + path + "/Lessons.json";
-        return this.http.get(url,
+        let url = "~/assets/Lessons" + path + "/Lessons.json"; 
+        return this.http.get(url, 
             { headers: this.getCommonHeaders() }
         ).pipe(
             catchError(this.handleErrors)

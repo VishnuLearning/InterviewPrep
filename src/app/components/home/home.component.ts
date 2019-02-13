@@ -26,10 +26,10 @@ export class HomeComponent implements OnInit {
 		};
 		
 		this.tts.speak(options);
-  }
+	}
   
   ngOnInit() {
     this.speak("Welcome to Interview Preparation. Please choose your track.");
-  }
+  } 
 
 }
