@@ -7,6 +7,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
 import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
+import { SpeechRecognition, SpeechRecognitionTranscription, SpeechRecognitionOptions } from 'nativescript-speech-recognition';
+import { error } from "tns-core-modules/trace/trace";
 // import {Slider} from "tns-core-modules/ui/slider";
 
 @Component({
@@ -50,8 +52,8 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	'julia_mouth_wide_sh.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_closed.png'];
 
 	speechRate = 0.9;
-
-	constructor(private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
+	sttoptions: SpeechRecognitionOptions;
+	constructor(private speech: SpeechRecognition,private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
 		this.questions = [];
 		this.qnum = 1;
 		var u = decodeURI(router.url);
@@ -65,6 +67,12 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			locale:"en-IN",
 			finishedCallback: ()=>{this.speakNextSentence();}
 		};
+		this.sttoptions = {
+			locale: 'en-US',
+			onResult:(transcription: SpeechRecognitionTranscription)=>{
+				console.log(transcription.text);
+			}
+		}
 	}
 
 	onSwipe(args: SwipeGestureEventData) {
@@ -74,14 +82,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			this.loadQuestion(this.qnum + 1);
 		}
 	}
-
-	// handle value change
-	// onSliderLoaded(args) {
-	// 	const sliderComponent: Slider = <Slider>args.object;
-	// 	sliderComponent.on("valueChange", (sargs) => {
-	// 		this.speechRate = (<Slider>sargs.object).value/10;
-	// 	});
-	// }
 
 	loadQuestion(i: number) {
 		this.question = this.questions[i];
@@ -137,34 +137,33 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 
 	textToSpeech(){
 		var _this = this;
-		// this.tts.getAvailableLanguages()
-		// .then(function(res) {
-		// 	console.log(res);
-		// })
-		// .catch(function(error){
-		// 	console.log(error);
-		// });
-		// start speaking. This will do two things. speak a sentence and animate.
-		// when both end, it should call a function
 		this.speaking = true;
 		this.speakNextSentence();
 	}
+	
+	triggerListening(){
+		this.speech.available().then(result=>{
+			result ? this.startListening() : alert("Speech Recognition not available");
+		},error=>{
+			console.error(error);
+		})
+	}
+	
+	startListening(){
+		this.speech.startListening(this.sttoptions).then(()=>{
+			console.log('Recognition Strarted');
+		},error=>{
+			console.error(error);
+		})
+	}
 
-	// speakTitle() {
-	// 	let options = {
-	// 		text: "Question " + String(this.qnum+1), //+ ", " + this.question.title,
-	// 		pitch: 1.0,
-	// 		speakRate: 0.9,
-	// 		volume: 1.0,
-	// 		language:"en",
-	// 		locale:"en-IN",
-	// 		finishedCallback: ()=>{
-	// 			console.log("intro done");
-	// 		}
-	// 	};
-		
-	// 	this.tts.speak(options);
-	// }
+	stopListening(){
+		this.speech.stopListening().then(()=>{
+			console.log('Recognition Stopped');
+		},error=>{
+			console.error(error);
+		})
+	}
 
 	speakTextOnly(){
 		let options = {
@@ -192,8 +191,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 						this.variable = this.question.quest;
 						this.variable.replace(".","?");
 						this.sentences = this.variable.split("? ");
-						// this.sentences = this.question.quest.split("? ");
-						// this.speakTitle();
 					},
 					(error) => {
 						console.log(error);

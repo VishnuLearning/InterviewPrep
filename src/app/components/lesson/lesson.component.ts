@@ -36,11 +36,10 @@ export class LessonComponent implements OnInit, OnDestroy {
 			pitch: 1.0,
 			speakRate: 0.9,
 			volume: 1.0,
-			language:"en",
-			locale:"en-IN",
+			locale:"en-US",
 			finishedCallback: ()=>{
 				//enable speak button
-				console.log("routing");
+				console.log("routing" + " " + this.path);
 				if (lesson.path.endsWith(".json")) {
 					this.router.navigate(['/questions', this.path+'/'+lesson.path]);
 				} else {

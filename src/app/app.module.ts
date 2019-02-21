@@ -3,6 +3,7 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NativeScriptHttpModule } from "nativescript-angular";
 import {TNSTextToSpeech } from "nativescript-texttospeech";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { SpeechRecognition }from 'nativescript-speech-recognition';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -37,7 +38,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
         HomeComponent,
         QuestionComponent
     ],
-    providers: [TNSTextToSpeech],
+    providers: [TNSTextToSpeech,SpeechRecognition],
     schemas: [
         NO_ERRORS_SCHEMA
     ]
