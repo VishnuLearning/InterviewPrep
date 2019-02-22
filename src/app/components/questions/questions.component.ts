@@ -34,31 +34,37 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	qnum: number;
 	title:string;
 	variable: string;
-
 	showAnswer: boolean = false;
-	
 	speaking: boolean = false;
 	sentenceIndex: number = -1;
 	sentences: Array<string>;
 	speakinterval: number;
 	speakAndAnimateFlag: number = 1;
-
 	private sub: any;
-	ttsOptions: SpeakOptions;
 	AvatarImages = ['julia_full.png','julia_mouth_wide5.png','julia_mouth_wide5.png','julia_mouth_narrow_o.png','julia_mouth_wide_y.png',
 	'julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_w.png','julia_mouth_narrow_o.png',
 	'julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_u.png','julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_wide_sh.png',
 	'julia_mouth_wide5.png','julia_mouth_wide_sh.png','julia_mouth_wide_sh.png','julia_mouth_wide_th.png','julia_mouth_wide_f.png',
 	'julia_mouth_wide_sh.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_closed.png'];
-
 	speechRate = 0.9;
-	sttoptions: SpeechRecognitionOptions;
-	constructor(private speech: SpeechRecognition,private tts: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
+
+	private text2speech: TNSTextToSpeech;
+	private speech2text: SpeechRecognition;
+	private speakOptions : SpeakOptions;
+    microphoneEnabled: boolean = false;
+    recording: boolean = false;
+    lastTranscription: string = null;
+    spoken: boolean = false;
+    recognizedText: string;
+    pitch: number = 100;
+	private recordingAvailable: boolean;
+
+	constructor(private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
 		this.questions = [];
 		this.qnum = 1;
 		var u = decodeURI(router.url);
 		this.title = u.substring(u.lastIndexOf('%2F')+3, u.lastIndexOf('.'));
-		this.ttsOptions = {
+		this.speakOptions = {
 			text: "Question 1, ",
 			pitch: 1.0,
 			speakRate: 0.9,
@@ -67,12 +73,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			locale:"en-IN",
 			finishedCallback: ()=>{this.speakNextSentence();}
 		};
-		this.sttoptions = {
-			locale: 'en-US',
-			onResult:(transcription: SpeechRecognitionTranscription)=>{
-				console.log(transcription.text);
-			}
-		}
 	}
 
 	onSwipe(args: SwipeGestureEventData) {
@@ -108,8 +108,8 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			this.speakAndAnimateFlag = 0;
 			this.sentenceIndex++;
 			if(this.sentenceIndex<this.sentences.length) {
-				this.ttsOptions.text = this.sentences[this.sentenceIndex];
-				this.tts.speak(this.ttsOptions)
+				this.speakOptions.text = this.sentences[this.sentenceIndex];
+				this.text2speech.speak(this.speakOptions)
 				.then(()=>{
 					this.animateAvatar();
 					console.log("in then");}, 
@@ -136,37 +136,15 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
 
 	textToSpeech(){
+		this.text2speech.destroy();
 		var _this = this;
 		this.speaking = true;
 		this.speakNextSentence();
 	}
-	
-	triggerListening(){
-		this.speech.available().then(result=>{
-			result ? this.startListening() : alert("Speech Recognition not available");
-		},error=>{
-			console.error(error);
-		})
-	}
-	
-	startListening(){
-		this.speech.startListening(this.sttoptions).then(()=>{
-			console.log('Recognition Strarted');
-		},error=>{
-			console.error(error);
-		})
-	}
-
-	stopListening(){
-		this.speech.stopListening().then(()=>{
-			console.log('Recognition Stopped');
-		},error=>{
-			console.error(error);
-		})
-	}
 
 	speakTextOnly(){
-		let options = {
+		this.text2speech.destroy();
+		let options: SpeakOptions = {
 			text: this.question.text,
 			pitch: 1.0,
 			speakRate: 0.8,
@@ -177,10 +155,65 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 				console.log("read the answer");
 			}
 		};
-		this.tts.speak(options);
+		this.text2speech.speak(options);
 	}
+   
+	toggleRecording(): void {
+        this.recording = !this.recording;
+        if (this.recording) {
+			this.spoken = false;
+          	this.lastTranscription = null;
+          	this.startListening();
+		} 
+		else {
+          	this.stopListening();
+          	if (!this.spoken && this.lastTranscription !== null) {
+            	alert(this.lastTranscription);
+          	}
+        }
+    }
+    
+	private startListening(): void {
+		if (!this.recordingAvailable) {
+			alert({
+			title: "Not supported",
+			message: "Speech recognition not supported on this device. Try a different device please.",
+			okButtonText: "Oh, bummer"
+			});
+			this.recognizedText = "No support, Sorry";
+			this.recording = false;
+			return;
+		}
+		this.recording = true;
+		this.speech2text.startListening({
+			returnPartialResults: true,
+			onResult: (transcription: SpeechRecognitionTranscription) => {
+				// this.zone.run(() => this.recognizedText = transcription.text);
+				this.lastTranscription = transcription.text;
+				if (transcription.finished) {
+					this.spoken = true;
+					setTimeout(() => alert(transcription.text), 300);
+				}
+			},
+		}).then(
+			(started: boolean) => {console.log("started listening");},
+			(errorMessage: string) => {console.log(`Error: ${errorMessage}`);}
+		);
+	}
+    
+    private stopListening(): void {
+        this.recording = false;
+        this.speech2text.stopListening().then(() => {
+          	console.log("Stopped listening");
+        });
+    }
 
 	ngOnInit(): void {
+		this.speech2text = new SpeechRecognition();
+    	this.speech2text.available().then(avail => {
+      		this.recordingAvailable = avail;
+    	});
+		this.text2speech = new TNSTextToSpeech();
 		this.sub = this.route.params.subscribe(params => {
 			this.path = params['path'];
 			this.pathservice.getQuestions(this.path)
@@ -197,8 +230,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 					}
 				)
 		});
-
-		
 	}
 
 	ngOnDestroy() {

@@ -1,7 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NativeScriptHttpModule } from "nativescript-angular";
-import {TNSTextToSpeech } from "nativescript-texttospeech";
+import { TNSTextToSpeech } from "nativescript-texttospeech";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { SpeechRecognition }from 'nativescript-speech-recognition';
 
@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { QuestionComponent } from './components/question/question.component';
 
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
+// import { StsComponent } from "./components/sts/sts";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -29,7 +30,8 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
         AppRoutingModule,
         NativeScriptHttpModule,
         NativeScriptUISideDrawerModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+       
     ],
     declarations: [
         AppComponent,

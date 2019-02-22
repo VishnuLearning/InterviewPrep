@@ -3,7 +3,7 @@
         <Image src="~/assets/images/menu.png" class="action-image"></Image>
         <Label text="Questions" class="action-label"></Label>
     </StackLayout>
-</ActionBar>
+</ActionBar> 
 
 
 <GridLayout rows="*" height="1500px" (swipe)="onSwipe($event)">
@@ -22,7 +22,7 @@
                 <Image src="~/assets/images/dr_sinha/julia_full.png" #avatar stretch="aspectFill" width="200" height="200"></Image>
                 <!-- <Slider value="9"  minValue="5" maxValue="15"></Slider> -->
                 <StackLayout orientation="horizontal" horizontalAlignment="left" (tap)="textToSpeech()">
-                    <Image src="~/assets/images/speaker.png" clas="action-image" width="45" height="20"></Image>
+                    <Image src="~/assets/images/speaker.png" class="action-image" width="45" height="20"></Image>
                     <Label class="h2" textWrap="true" text="{{question.quest}}"></Label>
                 </StackLayout>
                 <StackLayout>
@@ -33,14 +33,12 @@
                     <ScrollView>
                         <Label class="body" textWrap="true" text="{{question.text}}" visibility="{{ showAnswer ? 'visible' : 'collapsed' }}"></Label>
                     </ScrollView>
-                    <!-- <StackLayout orientation="horizantal"> -->
-                        <StackLayout (tap)="startListening()">
-                            <Image src="~/assets/images/mic.png" class="action-image" width="50" height="50"></Image>
-                        </StackLayout>
-                        <StackLayout (tap)="stopListening()">
-                            <Image src="~/assets/images/micoff.png" class="action-image" width="50" height="50"></Image>
-                        <!-- </StackLayout> -->
-                        </StackLayout>
+                    <StackLayout alignItems="center" justifyContent="space-around" itemWidth="auto" itemHeight="auto" (tap)="toggleRecording()">
+                        <!-- <Button text="start listening" *ngIf="!recording" (tap)="toggleRecording()"></Button>
+                        <Button text="stop listening" *ngIf="recording" (tap)="toggleRecording()"></Button> -->
+                        <Image src="~/assets/images/mic.png" class="action-image" width="70" height="50" *ngIf="!recording"></Image>
+                        <Image src="~/assets/images/micoff.png" class="action-image" width="70" height="50" *ngIf="recording"></Image>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
