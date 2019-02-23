@@ -30,8 +30,7 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
         AppRoutingModule,
         NativeScriptHttpModule,
         NativeScriptUISideDrawerModule,
-        NativeScriptFormsModule,
-       
+        NativeScriptFormsModule,   
     ],
     declarations: [
         AppComponent,

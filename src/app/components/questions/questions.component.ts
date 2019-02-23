@@ -70,15 +70,21 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			speakRate: 0.9,
 			volume: 1.0,
 			language:"en",
-			locale:"en-IN",
+			locale:"en-US",
 			finishedCallback: ()=>{this.speakNextSentence();}
 		};
 	}
 
 	onSwipe(args: SwipeGestureEventData) {
-		if (args.direction == 1 && this.qnum > 0) {
+		if (args.direction == 1 && this.qnum > 0) {	
+			this.text2speech.pause();
+			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[0];
+			this.showAnswer = false;
 			this.loadQuestion(this.qnum - 1);
 		} else if (args.direction == 2 && this.qnum < this.questions.length - 1) {
+			this.text2speech.pause();
+			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[0];
+			this.showAnswer = false;
 			this.loadQuestion(this.qnum + 1);
 		}
 	}
@@ -136,21 +142,21 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
 
 	textToSpeech(){
-		this.text2speech.destroy();
+		this.text2speech.pause();
 		var _this = this;
 		this.speaking = true;
 		this.speakNextSentence();
 	}
 
 	speakTextOnly(){
-		this.text2speech.destroy();
+		this.text2speech.pause();
 		let options: SpeakOptions = {
 			text: this.question.text,
 			pitch: 1.0,
-			speakRate: 0.8,
+			speakRate: 0.9,
 			volume: 1.0,
 			language: "en",
-			locale: "en-IN",
+			locale: "en-US",
 			finishedCallback: ()=>{
 				console.log("read the answer");
 			}
@@ -193,6 +199,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 				if (transcription.finished) {
 					this.spoken = true;
 					setTimeout(() => alert(transcription.text), 300);
+					// alert(transcription.text);
 				}
 			},
 		}).then(
