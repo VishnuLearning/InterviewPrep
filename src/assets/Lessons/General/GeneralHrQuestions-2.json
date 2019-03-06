@@ -1,0 +1,115 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Teamwork 1",
+		"quest":"Do you like to work alone or in a team? or Do you prefer working independently to working with others?",
+		"visemes":[[19, 7, 6, 7, 14, 11, 20, 19, 7, 7, 5, 20, 1, 14, 8, 19, 3, 13, 6, 19, 1, 19, 6, 21, 0], [3, 13, 19, 7, 6, 7, 21, 13, 1, 18, 5, 7, 5, 20, 6, 20, 6, 19, 19, 6, 21, 4, 19, 19, 1, 19, 19, 14, 6, 19, 7, 7, 5, 20, 6, 20, 7, 6, 17, 1, 17, 5, 15, 0], [0]],
+		"text":"I like working in a team. I get along very well with people and colleagues. After discussions with the team, once the exact tasks for individuals have been assigned, I like to fully concentrate and do my part alone. Naturally, keeping in touch with the team members to ensure my part fits in well with others' parts. I make sure there is no communication gap. Finally, it is the teamwork that makes a project successful."
+	},
+	{
+		"id":2,
+		"q_label":"Team player",
+		"quest":"How would you build a rapport with your team members and co-workers?",
+		"visemes":[[12, 9, 7, 4, 19, 6, 7, 21, 6, 14, 19, 1, 13, 1, 21, 3, 13, 7, 6, 17, 6, 3, 13, 19, 6, 21, 21, 4, 21, 21, 5, 15, 1, 19, 19, 20, 8, 7, 5, 20, 5, 15, 0], [0]],
+		"text":"I will actively participate in the team meetings, show interest and excitement in what they are working on, and learn how everyone's work fits into the entire project. I will motivate them, help them when needed. Just that helping gesture builds trust and bond and boosts the team spirit. "
+	},
+	{
+		"id":3,
+		"q_label":"Conflict management",
+		"quest":"If you ever have a conflict with your boss of a colleague, how would you handle it?",
+		"visemes":[[6, 18, 6, 7, 4, 18, 5, 12, 1, 18, 1, 20, 2, 19, 18, 14, 6, 20, 19, 7, 6, 17, 6, 3, 13, 21, 2, 15, 1, 18, 1, 20, 2, 14, 6, 20, 0, 12, 9, 7, 4, 19, 6, 7, 12, 1, 19, 19, 1, 14, 6, 19, 0], [0]],
+		"text":"I believe, staying calm, respectful, open-minded, reasonable, and discussing the problem is the best way to resolve any conflict. In this way, one can find the actual problem, its root cause, and then solve it. Sometimes when someone is very upset and the conflict is about to escalate, it is better to back off, say 'sorry, we should think about it and discuss later.' That gives both sides time to calm down, rethink, and solve the problem. If it was because of something I did wrong, I will certainly admit it, apologize and make sure it doesn't happen again. That is what I would do. "
+	},
+	{
+		"id":4,
+		"q_label":"Team motivation",
+		"quest":"Can you give an example of how your colleagues may benefit by working with you? ",
+		"visemes":[[20, 1, 19, 6, 7, 20, 6, 18, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 1, 18, 12, 9, 6, 3, 13, 20, 2, 14, 6, 20, 15, 21, 4, 21, 4, 19, 1, 18, 6, 19, 21, 11, 7, 5, 20, 6, 20, 7, 6, 17, 6, 7, 0], [0]],
+		"text":"For example, during our project work, one of our team members had problems with his code. He worked hard to find the problem and he was getting frustrated. I volunteered to test his part of the program with simple test cases. I stayed up all night and meticulously went through the code, located the bug, and gave suggestions to correct it and he could fix it in a day. Then I tested it again for him before it was integrated into our project. That simple gesture really made our team stronger."
+	},
+	{
+		"id":5,
+		"q_label":"Cooperation",
+		"quest":"So, are you saying that you leave your work to help others or do you just want to act like their leader?",
+		"visemes":[[15, 8, 0, 2, 13, 6, 7, 15, 4, 6, 20, 17, 1, 19, 6, 7, 14, 6, 18, 6, 3, 13, 7, 5, 20, 19, 7, 12, 4, 14, 21, 1, 17, 5, 15, 3, 13, 19, 7, 6, 7, 16, 1, 15, 19, 7, 2, 19, 19, 19, 7, 1, 20, 19, 14, 11, 20, 17, 4, 13, 14, 6, 19, 5, 0], [0]],
+		"text":"I help only as much as is essential and urgent. I do not go out of my way to do others' work. My work always has top priority. However, in teamwork, it is not my style to try to outshine the others or take credit for helping, rather see that the entire team completes the project successfully. Yes, sometimes I do take the initiative to help, but I never want to act as if I am the leader or I am better in any way."
+	},
+	{
+		"id":6,
+		"q_label":"Project 1",
+		"quest":"You have mentioned your academic project several times. I would like to know what it is about. Can you describe your project to me in a minute?",
+		"visemes":[[6, 7, 12, 1, 18, 21, 4, 19, 16, 1, 19, 19, 6, 3, 13, 1, 20, 1, 19, 4, 21, 6, 20, 21, 13, 2, 16, 4, 20, 19, 15, 4, 18, 13, 1, 14, 19, 11, 21, 15, 0], [11, 7, 4, 19, 14, 11, 20, 19, 7, 19, 8, 7, 1, 19, 6, 19, 6, 15, 1, 21, 9, 19, 0], [20, 1, 19, 6, 7, 19, 6, 15, 20, 13, 11, 21, 6, 3, 13, 21, 13, 2, 16, 4, 20, 19, 19, 7, 21, 6, 6, 19, 1, 21, 6, 19, 1, 19, 0], [0]],
+		"text":"( This answer you have to prepare yourself. Take the abstract of your project, rewrite it in simple words, so someone unfamiliar with the subject can understand. Add an interesting and easily-understood example of where your work would be useful. Read it and describe it to someone to make sure it is clear and interesting. Memorize it, but narrate it slowly and clearly with some exciting gestures. Keep another more technically involved version ready for the technical interview. )"
+	},
+	{
+		"id":7,
+		"q_label":"Adaptability",
+		"quest":"That seems to be a very interesting project. But, your project work and experience seem to be very different from what we do. How would you handle this change?",
+		"visemes":[[17, 1, 19, 15, 6, 21, 15, 19, 7, 21, 6, 1, 18, 4, 13, 6, 6, 19, 19, 13, 1, 15, 19, 6, 20, 21, 13, 2, 16, 4, 20, 19, 0], [21, 1, 19, 0, 6, 3, 13, 21, 13, 2, 16, 4, 20, 19, 7, 5, 20, 1, 19, 19, 6, 20, 15, 21, 6, 13, 6, 1, 19, 15, 15, 6, 21, 19, 7, 21, 6, 18, 4, 13, 6, 19, 6, 18, 5, 1, 19, 19, 18, 13, 1, 21, 7, 1, 19, 7, 6, 19, 7, 0], [12, 9, 7, 4, 19, 6, 7, 12, 1, 19, 19, 1, 14, 17, 6, 15, 16, 4, 19, 16, 0], [0]],
+		"text":"I like the changes and challenges. My fundamentals are quite strong and I can apply the engineering principles I have learned equally well in various fields. I learn quickly and like solving problems using my newly acquired skills. I am sure this position will give me such challenges and opportunities to serve the company and the customers."
+	},
+	{
+		"id":8,
+		"q_label":"Problem solving",
+		"quest":"What is your approach to solving a problem? What are the general steps? Or If I give you a small project to do, how would you do it?",
+		"visemes":[[7, 1, 19, 6, 15, 6, 3, 13, 1, 21, 13, 8, 16, 19, 7, 15, 2, 14, 18, 6, 20, 1, 21, 13, 2, 21, 14, 1, 21, 0], [7, 1, 19, 2, 13, 17, 1, 16, 4, 19, 5, 1, 14, 15, 19, 4, 21, 15, 0], [3, 13, 6, 18, 11, 20, 6, 18, 6, 7, 1, 15, 21, 3, 14, 21, 13, 2, 16, 4, 20, 19, 19, 7, 19, 7, 0, 12, 9, 7, 4, 19, 6, 7, 19, 7, 6, 19, 0], [0]],
+		"text":"First, I study the problem, understand it and then, define the problem and our objective as precisely as possible. I write down what major steps are to be taken to solve the problem, what knowledge and resources we have, what we need to learn, What broader system this work would be a part of, what can go wrong, etc. in a rough plan. I do some literature survey to find out how the problem or a similar problem has been solved. Select the best methods and quickly build a model to solve a few sample problems. When I have some success, I finalize the steps and do a more detailed development. Of course, test it thoroughly to see if our solution really works, and document everything I have done, including assumptions, scope, limitations, and possible extension. Finally, I distribute it to those whom it may concern."
+	},
+	{
+		"id":9,
+		"q_label":"Quick learner",
+		"quest":"That's good. However, suppose your task is to solve a problem related to a domain very different from yours. Let's say a manufacturing plant has too much material wasted and the management wants to reduce it. How would you go about solving that problem?",
+		"visemes":[[17, 1, 19, 4, 15, 20, 4, 19, 0], [12, 9, 4, 18, 5, 0, 15, 1, 21, 8, 15, 6, 3, 13, 19, 1, 15, 20, 6, 15, 19, 7, 15, 2, 14, 18, 1, 21, 13, 2, 21, 14, 1, 21, 13, 6, 14, 4, 19, 6, 19, 19, 7, 1, 19, 8, 21, 4, 19, 18, 4, 13, 6, 19, 6, 18, 5, 1, 19, 19, 18, 13, 1, 21, 6, 4, 13, 15, 0], [14, 4, 19, 4, 15, 15, 4, 1, 21, 1, 19, 6, 1, 18, 1, 20, 16, 5, 6, 20, 21, 14, 1, 19, 19, 12, 1, 15, 19, 7, 21, 1, 16, 21, 1, 19, 6, 13, 6, 1, 14, 7, 4, 15, 19, 1, 19, 1, 19, 19, 17, 1, 21, 1, 19, 1, 16, 21, 1, 19, 19, 7, 2, 19, 19, 15, 19, 7, 13, 1, 19, 7, 15, 6, 19, 0], [12, 9, 7, 4, 19, 6, 7, 20, 8, 1, 21, 9, 19, 15, 2, 14, 18, 6, 20, 17, 1, 19, 21, 13, 2, 21, 14, 1, 21, 0], [0]],
+		"text":"I have to study that problem first and understand it, gather information from experienced workers in that particular plant, find the root causes, see at what step of the manufacturing process how much material is wasted. Then decide where is it worth saving, if the process itself can be improved or possibly the design of the product can be modified to save on raw materials, if in some parts of the process newer technology and machines can be used, if part of the waste can be recycled, etc. Possibly there are several options for reducing waste. Naturally, I have to do a detailed cost analysis to see what brings the best benefit-to-cost for the manufacturer."
+	},
+	{
+		"id":10,
+		"q_label":"Domain knowledge",
+		"quest":"Why would you gather information from the workers of the plant? And what kind of information would you need from them?",
+		"visemes":[[7, 11, 7, 4, 19, 6, 7, 20, 1, 17, 5, 6, 19, 18, 5, 21, 4, 16, 1, 19, 18, 13, 1, 21, 17, 1, 7, 5, 20, 5, 15, 1, 18, 17, 1, 21, 14, 1, 19, 19, 0], [1, 19, 19, 7, 1, 19, 20, 11, 19, 19, 1, 18, 6, 19, 18, 5, 21, 4, 16, 1, 19, 7, 4, 19, 6, 7, 19, 6, 19, 18, 13, 1, 21, 17, 4, 21, 0], [0]],
+		"text":"Those who are involved in the problem, generally, know the problems, at least part of the problems, quite closely. They can tell exactly how much raw material they use and how much is wasted and why. They may or may not have a solution to the entire problem, but their task-level information would be invaluable to me for the detailed analysis and help me put together an overall plan for saving raw materials waste and hence the cost. Talking to the workers has another big advantage of acceptability of the solution and necessary changes by the employees themselves."
+	},
+	{
+		"id":11,
+		"q_label":"Meeting deadlines 1",
+		"quest":"Can you tell me about a time when you finished your work before the deadline?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 14, 21, 6, 1, 21, 9, 19, 1, 19, 11, 21, 7, 4, 19, 6, 7, 18, 6, 19, 6, 16, 19, 6, 3, 13, 7, 5, 20, 21, 6, 18, 3, 13, 17, 1, 19, 4, 19, 14, 11, 19, 0], [0]],
+		"text":"When I was doing my internship, I was given the task to analyze the existing system (name of the system) and prepare a report. I worked an extra 3 hours a day to learn the system, analyze it, run all standard tests, and produce the report a week ahead of time. Then I spent a few days coming up with ideas for improvements to the system and added that to the report. My supervisor was very happy and decided to implement one of my suggestions. "
+	},
+	{
+		"id":12,
+		"q_label":"Handling stress 1",
+		"quest":"How do you handle stress? Or How do you handle pressure, work-load, and urgency?",
+		"visemes":[[12, 9, 19, 7, 6, 7, 12, 1, 19, 19, 1, 14, 15, 19, 13, 4, 15, 0], [3, 13, 12, 9, 19, 7, 6, 7, 12, 1, 19, 19, 1, 14, 21, 13, 4, 16, 5, 0, 7, 5, 20, 14, 8, 19, 0, 1, 19, 19, 5, 16, 1, 19, 15, 6, 0], [0]],
+		"text":"I plan my work very well and work systematically. Still, sometimes, there may be an unexpected workload, especially if something goes wrong. So I have to work several hours extra every day till the work is finished. However, I enjoy it and feel no stress. In fact, I work faster under pressure and urgency because I take full responsibility for my work and know how important it is for the success of the project and the entire team."
+	},
+	{
+		"id":13,
+		"q_label":"Teamwork 2",
+		"quest":"Suppose, you are doing your work and one of the team members is not getting ahead with his or her work. What will you do? Will you complain to the team leader or hide the problem?",
+		"visemes":[[15, 1, 21, 8, 15, 0, 6, 7, 2, 13, 19, 7, 6, 20, 6, 3, 13, 7, 5, 20, 1, 19, 19, 7, 1, 19, 1, 18, 17, 1, 19, 6, 21, 21, 4, 21, 21, 5, 15, 6, 15, 19, 2, 19, 20, 4, 19, 6, 20, 1, 12, 4, 19, 7, 6, 17, 12, 6, 15, 3, 13, 12, 5, 7, 5, 20, 0], [7, 1, 19, 7, 6, 14, 6, 7, 19, 7, 0], [7, 6, 14, 6, 7, 20, 1, 21, 21, 14, 4, 19, 19, 7, 17, 1, 19, 6, 21, 14, 6, 19, 5, 3, 13, 12, 11, 19, 17, 1, 21, 13, 2, 21, 14, 1, 21, 0], [0]],
+		"text":"I will surely help my colleague as much as I can to ensure we are all progressing together. I will surely not complain to the team leader. However, if it seems that the colleague and I cannot do that part of the work, I will encourage my colleague to directly talk to the team leader and ask for help."
+	},
+	{
+		"id":14,
+		"q_label":"Supporting teams 1",
+		"quest":"Also, sometimes, you may have to accompany our sales team, meet with customers, support them, and so on. How do you feel about that?",
+		"visemes":[[3, 14, 15, 8, 0, 15, 1, 21, 19, 11, 21, 15, 0, 6, 7, 21, 4, 12, 1, 18, 19, 7, 1, 20, 1, 21, 21, 1, 19, 6, 9, 5, 15, 4, 14, 15, 19, 6, 21, 0, 21, 6, 19, 7, 6, 17, 20, 1, 15, 19, 1, 21, 5, 15, 0, 15, 1, 21, 3, 13, 19, 17, 4, 21, 0, 1, 19, 19, 15, 8, 2, 19, 0], [12, 9, 19, 7, 6, 7, 18, 6, 14, 1, 21, 9, 19, 17, 1, 19, 0], [0]],
+		"text":"Yes. I'd like to learn various aspects of the business at every opportunity and help the company in every way possible. Meeting customers and supporting the sales team would broaden my experience."
+	},
+	{
+		"id":15,
+		"q_label":"Hobbies 1",
+		"quest":"Besides studies and work, what do you do? or How do you spend your extra time?",
+		"visemes":[[21, 6, 15, 11, 19, 15, 15, 19, 1, 19, 6, 15, 1, 19, 19, 7, 5, 20, 0, 7, 1, 19, 19, 7, 6, 7, 19, 7, 0], [3, 13, 12, 9, 19, 7, 6, 7, 15, 21, 4, 19, 19, 6, 3, 13, 4, 20, 15, 19, 13, 1, 19, 11, 21, 0], [0]],
+		"text":"I voluntarily teach programming at a local school. I read technology magazines and biographies. I like jogging and recently joined a fitness club. And sometimes on the weekends, I get together with a few friends for a game or discussions. So I keep myself busy."
+	},
+	{
+		"id":16,
+		"q_label":"Closure",
+		"quest":"OK. I think we are finished with this interview. We would like to have another round of interview with you next Monday at 11 A M. Can you make it?",
+		"visemes":[[8, 20, 4, 0], [11, 17, 6, 20, 20, 7, 6, 2, 13, 18, 6, 19, 6, 16, 19, 7, 6, 17, 17, 6, 15, 6, 19, 19, 5, 18, 6, 7, 0], [7, 6, 7, 4, 19, 14, 11, 20, 19, 7, 12, 1, 18, 1, 19, 1, 17, 5, 13, 9, 19, 19, 1, 18, 6, 19, 19, 5, 18, 6, 7, 7, 6, 17, 6, 7, 19, 4, 20, 15, 19, 21, 1, 19, 19, 6, 1, 19, 1, 4, 21, 0], [20, 1, 19, 6, 7, 21, 4, 20, 6, 19, 0], [0]],
+		"text":"Yes, sir (or ma'am). I can certainly make it. Thank you very much."
+	}]
+}

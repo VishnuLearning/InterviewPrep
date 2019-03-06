@@ -1,0 +1,127 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Cardinality",
+		"quest":"What is the cardinality of relationships?",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 1, 18, 13, 6, 14, 4, 16, 1, 19, 16, 6, 21, 15, 0], [0]],
+		"text":"Cardinality is the possible number of times an entity participates in a relationship with other entities."
+	},
+	{
+		"id":2,
+		"q_label":"Cardinality types",
+		"quest":"What are the various types of cardinality?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 18, 4, 13, 6, 1, 15, 19, 11, 21, 15, 1, 18, 0], [0]],
+		"text":"There are three types of cardinality of a relationship: one-to-one, one-to-many, and many-to-many. "
+	},
+	{
+		"id":3,
+		"q_label":"Cardinality example",
+		"quest":"Explain the various types of cardinality with examples.",
+		"visemes":[[6, 20, 15, 21, 14, 4, 19, 17, 1, 18, 4, 13, 6, 1, 15, 19, 11, 21, 15, 1, 18, 7, 6, 17, 6, 20, 15, 1, 21, 21, 1, 14, 15, 0], [0]],
+		"text":"An example of a one-to-one relationship would be, in a company's database, one employee is associated with only one employee ID or one national Identification number. An example of a one-to-many relationship would be one project associated with many departments. An example of many-to-many relationship would be many employees working on many tasks."
+	},
+	{
+		"id":4,
+		"q_label":"ACID",
+		"quest":"What is ACID? ",
+		"visemes":[[7, 1, 19, 6, 15, 1, 15, 1, 19, 0], [0]],
+		"text":"ACID is the acronym for Atomicity, Consistency, Isolation, and Durability which are a set of properties that guarantee the validity of the database in the event of errors, crashes, network failures, etc."
+	},
+	{
+		"id":5,
+		"q_label":"Intergrity",
+		"quest":"What is referential integrity?",
+		"visemes":[[7, 1, 19, 6, 15, 6, 19, 19, 4, 20, 13, 1, 19, 6, 0], [0]],
+		"text":"Referential integrity is a property of data stating references within it are valid. It requires every value of one attribute of a table to exist as a value of another attribute in a different (or the same) table."
+	},
+	{
+		"id":6,
+		"q_label":"Normalization",
+		"quest":"What is database normalization used for?",
+		"visemes":[[7, 1, 19, 6, 15, 19, 4, 19, 1, 21, 4, 15, 19, 3, 13, 21, 1, 14, 6, 15, 4, 16, 1, 19, 6, 7, 15, 19, 18, 3, 13, 0], [0]],
+		"text":"Database normalization is used to reduce data redundancy and improve data integrity in a relational database. It is carried out by restructuring the database in accordance with a series of normal forms such as the first normal form, second normal form, third normal form, etc."
+	},
+	{
+		"id":7,
+		"q_label":"ORDBMS",
+		"quest":"What is ORDBMS? ",
+		"visemes":[[7, 1, 19, 6, 15, 0], [0]],
+		"text":"An ORDBMS or object-relational database management system is a DBMS based on an object-oriented database model. In ORDBMS, objects, classes, and inheritance are directly supported in database schemas and in the query language."
+	},
+	{
+		"id":8,
+		"q_label":"Query 1",
+		"quest":"Can you write a query to get the scores of students of a class and sort from high to low? Assume some reasonable table name and field names.",
+		"visemes":[[20, 1, 19, 6, 7, 13, 11, 19, 1, 20, 7, 6, 13, 6, 19, 7, 20, 4, 19, 17, 1, 15, 20, 3, 13, 15, 1, 18, 15, 19, 7, 19, 1, 19, 19, 15, 1, 18, 1, 20, 14, 1, 15, 1, 19, 19, 15, 3, 13, 19, 18, 13, 1, 21, 12, 11, 19, 7, 14, 8, 0], [1, 15, 7, 21, 15, 1, 21, 13, 6, 15, 1, 19, 1, 21, 1, 14, 19, 4, 21, 1, 14, 19, 4, 21, 1, 19, 19, 18, 6, 14, 19, 19, 4, 21, 15, 0], [0]],
+		"text":"select * from StudentMarks order by score desc ;"
+	},
+	{
+		"id":9,
+		"q_label":"Query 2",
+		"quest":"Suppose I have historical share price data of 3000 different companies stored in my database. Write a query that gives me the top 10 best (percentage wise) performing stocks this year.",
+		"visemes":[[15, 1, 21, 8, 15, 11, 12, 1, 18, 12, 6, 15, 19, 3, 13, 6, 20, 1, 14, 16, 4, 13, 21, 13, 11, 15, 19, 4, 19, 1, 1, 18, 19, 6, 18, 5, 1, 19, 19, 20, 1, 21, 21, 1, 19, 6, 15, 15, 19, 3, 13, 19, 6, 19, 21, 11, 19, 4, 19, 1, 21, 4, 15, 0], [13, 11, 19, 1, 20, 7, 6, 13, 6, 17, 1, 19, 20, 6, 18, 15, 21, 6, 17, 1, 19, 2, 21, 21, 4, 15, 19, 21, 5, 15, 4, 19, 19, 1, 16, 7, 11, 15, 21, 5, 18, 3, 13, 21, 6, 20, 15, 19, 2, 20, 15, 17, 6, 15, 6, 6, 13, 0], [0]],
+		"text":"select *, ((B.closeprice-A.closeprice)/A.closeprice) as pctCahnge from (
+(select * from stocks_dailydata) as A
+inner join
+(select * from stocks_dailydata where date=(select max(date)-'365 days' from stocks_dailydata )) as B
+where A.tickerSymbol=B.tockerSymbol
+) order by pctCahnge desc 
+"
+	},
+	{
+		"id":10,
+		"q_label":"Query 3",
+		"quest":"Suppose I do not want any stocks whose prices are below $10. How would you modify the query?",
+		"visemes":[[15, 1, 21, 8, 15, 11, 19, 7, 19, 2, 19, 7, 2, 19, 19, 4, 19, 6, 15, 19, 2, 20, 15, 12, 7, 15, 21, 13, 11, 15, 1, 15, 2, 13, 21, 6, 14, 8, 0], [12, 9, 7, 4, 19, 6, 7, 21, 2, 19, 1, 18, 11, 17, 1, 20, 7, 6, 13, 6, 0], [0]],
+		"text":"select *, ((B.closeprice-A.closeprice)/A.closeprice) as pctCahnge from (
+(select * from stocks_dailydata) as A
+inner join
+(select * from stocks_dailydata where date=(select max(date)-'365 days' from stocks_dailydata )) as B
+where A.tickerSymbol=B.tickerSymbol
+and B.closePrice > 10
+) order by pctCahnge desc "
+	},
+	{
+		"id":11,
+		"q_label":"Followup Question",
+		"quest":"Why won't you first sort the stocks by price and filter only the stocks that are priced above $10? Will that not be faster?",
+		"visemes":[[7, 11, 7, 8, 6, 7, 18, 5, 15, 19, 15, 3, 13, 19, 17, 1, 15, 19, 2, 20, 15, 21, 11, 21, 13, 11, 15, 1, 19, 19, 18, 6, 14, 19, 5, 8, 19, 14, 6, 17, 1, 15, 19, 2, 20, 15, 17, 1, 19, 2, 13, 21, 13, 11, 15, 19, 1, 21, 1, 18, 0], [7, 6, 14, 17, 1, 19, 19, 2, 19, 21, 6, 18, 1, 15, 19, 5, 0], [0]],
+		"text":"If most of the stocks in the database are expected to be below $10, sorting first by price will be faster. Especially, if this query is to be run very often, we can maintain a table of stocks that are priced above $10."
+	},
+	{
+		"id":12,
+		"q_label":"PL SQL",
+		"quest":"Suppose you need to run a set of queries every day. Do you have to type them up one-by-one and run each time? ",
+		"visemes":[[15, 1, 21, 8, 15, 6, 7, 19, 6, 19, 19, 7, 13, 1, 19, 1, 15, 4, 19, 1, 18, 20, 7, 6, 13, 6, 15, 4, 18, 5, 6, 19, 4, 0], [19, 7, 6, 7, 12, 1, 18, 19, 7, 19, 11, 21, 17, 4, 21, 1, 21, 7, 1, 19, 21, 11, 7, 1, 19, 1, 19, 19, 13, 1, 19, 6, 16, 19, 11, 21, 0], [0]],
+		"text":"We could create a user-defined function or a stored procedure using PL / SQL with all the required queries in it and execute that whenver needed."
+	},
+	{
+		"id":13,
+		"q_label":"UI Front end",
+		"quest":"Suppose the end users do not know SQL, how can they get some useful information from a database? You can explain it with an example and use the drawing board if you like.",
+		"visemes":[[15, 1, 21, 8, 15, 17, 1, 4, 19, 19, 6, 7, 15, 5, 15, 19, 7, 19, 2, 19, 19, 8, 0, 12, 9, 20, 1, 19, 17, 4, 20, 4, 19, 15, 1, 21, 6, 7, 15, 18, 1, 14, 6, 19, 18, 5, 21, 4, 16, 1, 19, 18, 13, 1, 21, 1, 19, 4, 19, 1, 21, 4, 15, 0], [6, 7, 20, 1, 19, 6, 20, 15, 21, 14, 4, 19, 6, 19, 7, 6, 17, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 1, 19, 19, 6, 7, 15, 17, 1, 19, 13, 3, 6, 20, 21, 3, 13, 19, 6, 18, 6, 7, 14, 11, 20, 0], [0]],
+		"text":"One can create a simpler user interface as a form and controls and the actual SQL queries can be programmed in the code to run in the background."
+	},
+	{
+		"id":14,
+		"q_label":"Concurrency",
+		"quest":"Can you tell me a situation where concurrency control is needed? ",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 14, 21, 6, 1, 15, 6, 16, 7, 4, 16, 1, 19, 7, 4, 13, 20, 1, 19, 19, 13, 8, 14, 6, 15, 19, 6, 19, 1, 19, 0], [0]],
+		"text":"If multiple users access a database and attempt to perform transactions concurrently, while updating the data, it may introduce inconsistency in the database. Therefore, certain concurrency control methods are used to ensure that every transaction leaves the database in a consistent state."
+	},
+	{
+		"id":15,
+		"q_label":"Conc. Control 2",
+		"quest":"Can you name some of the concurrency control methods? ",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 15, 1, 21, 1, 18, 17, 1, 20, 1, 19, 19, 13, 8, 14, 21, 4, 17, 1, 19, 15, 0], [0]],
+		"text":"Some of the methods used for concurrency control are locking, serialization graph checking, timestamp ordering, commitment ordering, etc. or a combination of them, for example, Strong strict Two-phase locking or SS2PL which is a special case of Two-phase locking and commitment ordering methods."
+	},
+	{
+		"id":16,
+		"q_label":"Depth ok knowledge",
+		"quest":"Can you name some of the concurrency control methods? ",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 15, 1, 21, 1, 18, 17, 1, 20, 1, 19, 19, 13, 8, 14, 21, 4, 17, 1, 19, 15, 0], [0]],
+		"text":"Look into your text book, search the internet for an answer. Rewrite the answer and explain to someone. Get his or her feedback and improve your answer and way of explaining."
+	}]
+}

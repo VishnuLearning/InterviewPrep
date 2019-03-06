@@ -1,0 +1,87 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"AVL tree",
+		"quest":"What is an AVL tree? What does AVL stand for?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 19, 13, 6, 0], [7, 1, 19, 19, 1, 15, 15, 19, 1, 19, 19, 18, 3, 13, 0], [0]],
+		"text":"AVL tree is a self-balancing binary search tree. AVL is named after its inventors Adelson-Velsky and Landis. An AVL tree has the property that the heights of the two child subtrees of any node differ by at most one. If at any time they differ by more than one, for example, after an insertion or deletion operation, a rebalancing is done to restore this property."
+	},
+	{
+		"id":2,
+		"q_label":"B-Tree -1",
+		"quest":"What is a B-Tree? Is it just an abbreviation of Binary search tree? Where is a B-Tree used?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 21, 6, 19, 13, 6, 0], [6, 15, 6, 19, 16, 1, 15, 19, 1, 19, 1, 21, 13, 6, 18, 6, 4, 16, 1, 19, 1, 18, 21, 11, 19, 5, 6, 15, 5, 16, 19, 13, 6, 0], [7, 4, 13, 6, 15, 1, 21, 6, 19, 13, 6, 6, 7, 15, 19, 0], [0]],
+		"text":"B-trees are not the same as binary search trees. A B-tree is a self-balancing tree data structure where a node can have more than two child nodes. We may say that it is a generalization of a binary search tree. B-trees are commonly used in databases and file systems."
+	},
+	{
+		"id":3,
+		"q_label":"B-Tree advantages",
+		"quest":"What are the advantages of using a B-Tree for databases?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 1, 19, 18, 1, 19, 19, 6, 16, 6, 15, 1, 18, 6, 7, 15, 6, 20, 1, 21, 6, 19, 13, 6, 18, 3, 13, 19, 4, 19, 1, 21, 4, 15, 6, 15, 0], [0]],
+		"text":"Using B-Trees for databases has several advantages: 1) It keeps keys in sorted order for sequential traversing 2) It uses a hierarchical index to minimize the number of disk/drive reads 3) it can efficiently handle any number of insertions and deletions  "
+	},
+	{
+		"id":4,
+		"q_label":"Red-Black Tree",
+		"quest":"What is a Red-Black tree? Tell us about a situation where it has an advantage over a binary search tree?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 13, 4, 19, 21, 14, 1, 20, 19, 13, 6, 0], [19, 4, 14, 1, 15, 1, 21, 9, 19, 1, 15, 6, 16, 7, 4, 16, 1, 19, 7, 4, 13, 6, 19, 12, 1, 15, 1, 19, 1, 19, 18, 1, 19, 19, 6, 16, 8, 18, 5, 1, 21, 11, 19, 5, 6, 15, 5, 16, 19, 13, 6, 0], [0]],
+		"text":"Red-Black Trees are an improvement on Binary Search Trees. In Binary Search Trees, the depth of the tree is not limited or controlled, so the operations can take a significant amount of time. Red-Black Trees solve this issue by marking all nodes in the tree as red or black, and setting rules of how certain positions between nodes should be processed. This method guarantees that the longest branch is not more than twice as long as the shortest branch, so each branch is shorter than 2 log (N)."
+	},
+	{
+		"id":5,
+		"q_label":"Priority queue",
+		"quest":"What is a priority queue?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 21, 13, 11, 3, 13, 1, 19, 6, 20, 6, 7, 0], [0]],
+		"text":"A priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a priority associated with it according to which the element is served."
+	},
+	{
+		"id":6,
+		"q_label":"Object",
+		"quest":"How is a structure in C different from an object in C++?",
+		"visemes":[[12, 9, 6, 15, 1, 15, 19, 13, 1, 20, 16, 5, 6, 19, 15, 6, 19, 6, 18, 5, 1, 19, 19, 18, 13, 1, 21, 1, 19, 2, 21, 16, 4, 20, 19, 6, 19, 0], [0]],
+		"text":"A struct is just a structured piece of data. Whereas, an object is a self-contained entity that may have data and can perform some operations ( or methods ) as well."
+	},
+	{
+		"id":7,
+		"q_label":"Tuple",
+		"quest":"What is a tuple and where is it used?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 1, 19, 19, 7, 4, 13, 6, 15, 6, 19, 6, 7, 15, 19, 0], [0]],
+		"text":"A Tuple is a data structure consisting of multiple parts and is immutable, that is once assigned, it cannot be changed. Tuples are used whenever we want to return multiple results from a function. Tuples can also be used as keys for dictionaries."
+	},
+	{
+		"id":8,
+		"q_label":"JSON",
+		"quest":"What is JSON? What can you tell us about it?",
+		"visemes":[[7, 1, 19, 6, 15, 0], [7, 1, 19, 20, 1, 19, 6, 7, 19, 4, 14, 1, 15, 1, 21, 9, 19, 6, 19, 0], [0]],
+		"text":"JavaScript Object Notation ( or JSON) is a language independent open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types or any other serializable value. It is a very common data format used for asynchronous browser–server communication, including as a replacement for XML in some AJAX-style systems."
+	},
+	{
+		"id":9,
+		"q_label":"DS Calssification ",
+		"quest":"How would you classify the various types of data structures (for example in C)?",
+		"visemes":[[12, 9, 7, 4, 19, 6, 7, 20, 14, 1, 15, 1, 18, 11, 17, 1, 18, 4, 13, 6, 1, 15, 19, 11, 21, 15, 1, 18, 19, 4, 19, 1, 15, 19, 13, 1, 20, 16, 5, 15, 18, 3, 13, 6, 20, 15, 1, 21, 21, 1, 14, 6, 19, 15, 6, 0], [0]],
+		"text":"Data structures can be classified as primitive and non-primitive ( or composite ) type. In the primitive type, we have, Boolean, integers, floating point numbers, characters, pointers, etc. And in the non-primitive, we can have arrays, files, and lists. The lists can again be linear such as stacks and queues, and non-linear such as trees and graphs."
+	},
+	{
+		"id":10,
+		"q_label":"Detailed DS types",
+		"quest":"I want to see a more detailed classification of the non-primitive data structures or a collection of data as used in some of the newer high-level languages. Please draw it on the board.",
+		"visemes":[[11, 7, 2, 19, 19, 19, 7, 15, 6, 1, 21, 3, 13, 19, 6, 19, 4, 14, 19, 20, 14, 1, 15, 1, 18, 1, 20, 4, 16, 1, 19, 1, 18, 17, 1, 19, 2, 19, 21, 13, 6, 21, 1, 19, 6, 18, 19, 4, 19, 1, 15, 19, 13, 1, 20, 16, 5, 15, 3, 13, 1, 20, 1, 14, 4, 20, 16, 1, 19, 1, 18, 19, 4, 19, 1, 1, 15, 6, 7, 15, 19, 6, 19, 15, 1, 21, 1, 18, 17, 1, 19, 7, 5, 12, 11, 14, 4, 18, 1, 14, 14, 1, 20, 20, 7, 1, 16, 1, 15, 0], [21, 14, 6, 15, 19, 13, 3, 6, 19, 2, 19, 17, 1, 21, 3, 13, 19, 0], [0]],
+		"text":"A collection can be linear or non-linear. Linear can be with generalized indexing such as dictionary and hash table; it can be direct access type such as an array, record, and file. Or, it can be sequential access type such as a list, stack, queue, and priority queue.  Arrays can be unsorted or sorted type, and the list can have a linked representation or sequential representation. Now, the non-linear data structure can have a hierarchical structure like a tree or a heap, or it can have a group like a set or a graph."
+	},
+	{
+		"id":11,
+		"q_label":"Merge linked lists",
+		"quest":"How would you merge two sorted linked lists?",
+		"visemes":[[12, 9, 7, 4, 19, 6, 7, 21, 5, 16, 19, 7, 15, 3, 13, 19, 6, 19, 14, 6, 20, 20, 19, 14, 6, 15, 19, 15, 0], [0]],
+		"text":"Prepare own answer by searching the internet or from your textbook. Explain it to someone using paper and pen."
+	},
+	{
+		"id":12,
+		"q_label":"Merge sort",
+		"quest":"Can you merge two Trees? Merge sort tree? Explain how.",
+		"visemes":[[20, 1, 19, 6, 7, 21, 5, 16, 19, 7, 19, 13, 6, 15, 0], [21, 5, 16, 15, 3, 13, 19, 19, 13, 6, 0], [6, 20, 15, 21, 14, 4, 19, 12, 9, 0], [0]],
+		"text":"Prepare own answer by searching the internet or from your textbook. Explain it to someone using paper and pen."
+	}]
+}

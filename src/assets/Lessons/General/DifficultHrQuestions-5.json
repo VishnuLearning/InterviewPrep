@@ -1,0 +1,122 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Job change",
+		"quest":"Why are you changing your job? or why are you leaving your current job?",
+		"visemes":[[7, 11, 2, 13, 6, 7, 16, 4, 19, 16, 6, 20, 6, 3, 13, 16, 2, 21, 0], [3, 13, 7, 11, 2, 13, 6, 7, 14, 6, 18, 6, 20, 6, 3, 13, 20, 5, 1, 19, 19, 16, 2, 21, 0], [0]],
+		"text":"I have two years of experience at my current job. I have learned many things and gained technical expertise in software design, coding, testing etc. I find your company and particularly this position are better suited for my knowledge, interests and growth."
+	},
+	{
+		"id":2,
+		"q_label":"Reason for change",
+		"quest":"Is there any other reason you are changing the job? Something we should know about?",
+		"visemes":[[6, 15, 17, 4, 13, 4, 19, 6, 1, 17, 5, 13, 6, 15, 1, 19, 6, 7, 2, 13, 16, 4, 19, 16, 6, 20, 17, 1, 16, 2, 21, 0], [15, 1, 21, 17, 6, 20, 7, 6, 16, 4, 19, 19, 8, 1, 21, 9, 19, 0], [0]],
+		"text":"I believe your company will offer me many new and exciting challenges and I can contribute substantially more here."
+	},
+	{
+		"id":3,
+		"q_label":"Detailed reason",
+		"quest":"What exactly do you think is a better match for this position than your current job?",
+		"visemes":[[7, 1, 19, 6, 20, 15, 1, 20, 19, 14, 6, 19, 7, 6, 7, 17, 6, 20, 20, 6, 15, 1, 21, 4, 19, 5, 21, 1, 16, 18, 3, 13, 17, 6, 15, 21, 1, 15, 6, 16, 1, 19, 17, 1, 19, 6, 3, 13, 20, 5, 1, 19, 19, 16, 2, 21, 0], [0]],
+		"text":"As I see from the job description, there is more focus on developing the next generation software, application of big data and artificial intelligence. That is exactly where my main technical strength lies. I can surely help create the products that your company is developing. "
+	},
+	{
+		"id":4,
+		"q_label":"Reference",
+		"quest":"I see from your reference or recommendation letter that you have worked on only one project. How did you gain experience in all the different things that you mentioned?",
+		"visemes":[[11, 15, 6, 18, 13, 1, 21, 6, 3, 13, 13, 4, 18, 5, 1, 19, 15, 3, 13, 13, 4, 20, 1, 21, 1, 19, 19, 4, 16, 1, 19, 14, 4, 19, 5, 17, 1, 19, 6, 7, 12, 1, 18, 7, 5, 20, 19, 2, 19, 8, 19, 14, 6, 7, 1, 19, 21, 13, 2, 16, 4, 20, 19, 0], [12, 9, 19, 6, 19, 6, 7, 20, 4, 19, 6, 20, 15, 21, 6, 13, 6, 1, 19, 15, 6, 19, 3, 14, 17, 1, 19, 6, 18, 5, 1, 19, 19, 17, 6, 20, 15, 17, 1, 19, 6, 7, 21, 4, 19, 16, 1, 19, 19, 0], [0]],
+		"text":"We are a small team and it was easy for me to communicate with everyone. I used to spend some extra time every day learning about the entire project and all the various tasks others were working on. And slowly I got involved in them, helped them diagnose and solve problems, also some times fill in for them whenever needed. So I picked up skills in conceptual design, detailed development, testing, documentation etc."
+	},
+	{
+		"id":5,
+		"q_label":"specific experience",
+		"quest":"Tell us about one specific experience that you can bring in to our company.",
+		"visemes":[[19, 4, 14, 1, 15, 1, 21, 9, 19, 7, 1, 19, 15, 21, 1, 15, 6, 18, 6, 20, 6, 20, 15, 21, 6, 13, 6, 1, 19, 15, 17, 1, 19, 6, 7, 20, 1, 19, 21, 13, 6, 20, 6, 19, 19, 7, 9, 5, 20, 1, 21, 21, 1, 19, 6, 0], [0]],
+		"text":"I have solved many challenging problems in software integration at my current job. I am sure I can help your company and your customers in that area. As new challenges are given, I will learn the necessary skills and apply."
+	},
+	{
+		"id":6,
+		"q_label":"Why our company?",
+		"quest":"I guess you are applying for jobs to many other companies. Is there anything about our company or this position that you really like?",
+		"visemes":[[11, 20, 4, 15, 6, 7, 2, 13, 1, 21, 14, 11, 6, 20, 18, 3, 13, 16, 2, 21, 15, 19, 7, 21, 4, 19, 6, 1, 17, 5, 20, 1, 21, 21, 1, 19, 6, 15, 0], [6, 15, 17, 4, 13, 4, 19, 6, 17, 6, 20, 1, 21, 9, 19, 9, 5, 20, 1, 21, 21, 1, 19, 6, 3, 13, 17, 6, 15, 21, 1, 15, 6, 16, 1, 19, 17, 1, 19, 6, 7, 13, 6, 14, 6, 14, 11, 20, 0], [0]],
+		"text":"I know a couple of people who work at your company. I have checked with them and understood that your company encourages innovation. I have a few ideas I would like to propose. I am hoping your company would see the technological and economic benefits and someday, allow me to work on them."
+	},
+	{
+		"id":7,
+		"q_label":"Name dropping",
+		"quest":"Who do you know in this company and how?",
+		"visemes":[[12, 7, 19, 7, 6, 7, 19, 8, 6, 19, 17, 6, 15, 20, 1, 21, 21, 1, 19, 6, 1, 19, 19, 12, 9, 0], [0]],
+		"text":"Mr. Fred Wilson of business development department is a family friend and Mr. Bose of R&D is an alumnus of our college. I have been in touch with them for quite some time."
+	},
+	{
+		"id":8,
+		"q_label":"Missing information",
+		"quest":"We checked your profile on a professional network site and found that you worked for Inventus-systems for a while. But you did not mention it in your resume. Can you explain to me why?",
+		"visemes":[[7, 6, 16, 4, 20, 19, 6, 3, 13, 21, 13, 8, 18, 11, 14, 2, 19, 1, 21, 13, 1, 18, 4, 16, 1, 19, 1, 14, 19, 4, 19, 7, 5, 20, 15, 11, 19, 1, 19, 19, 18, 9, 19, 19, 17, 1, 19, 6, 7, 7, 5, 20, 19, 18, 3, 13, 15, 6, 15, 19, 1, 21, 15, 18, 3, 13, 1, 7, 11, 14, 0], [21, 1, 19, 6, 7, 19, 6, 19, 19, 2, 19, 21, 4, 19, 16, 1, 19, 6, 19, 6, 19, 6, 3, 13, 13, 6, 15, 7, 21, 0], [20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 19, 7, 21, 6, 7, 11, 0], [0]],
+		"text":"Yes, I worked for Inventus-systems for 5 months. I had a very interesting project that needed to be finished in 6 months. The gentleman who was responsible for this project was leaving. So I took up the challenge, worked very hard and finished it in 5 months. Unfortunately, I had some short-term health issues and had to quit. Before I left, I made sure that everything of the project had been thoroughly checked, documented, and that someone in the team knew every detail to proceed for final testing."
+	},
+	{
+		"id":9,
+		"q_label":"Cornering the candidate",
+		"quest":"But that does not explain why you did not mention it in your résumé.",
+		"visemes":[[21, 1, 19, 17, 1, 19, 19, 1, 15, 19, 2, 19, 6, 20, 15, 21, 14, 4, 19, 7, 11, 6, 7, 19, 6, 19, 19, 2, 19, 21, 4, 19, 16, 1, 19, 6, 19, 6, 19, 6, 3, 13, 0], [0]],
+		"text":"I am very sorry. But realistically speaking, mentioning just 5 months work at a company may raise a flag and my application may be rejected during preliminary screening and I would not have had this opportunity for an interview with you."
+	},
+	{
+		"id":10,
+		"q_label":"Lost job",
+		"quest":"Have you ever been fired or laid off?",
+		"visemes":[[12, 1, 18, 6, 7, 4, 18, 5, 21, 6, 19, 18, 11, 5, 19, 3, 13, 14, 4, 19, 3, 18, 0], [0]],
+		"text":"I have never been fired. I always worked to the highest standard, got along very well with colleagues and my managers. However, at my first job, the company was downsizing and everyone from our group was laid-off. Fortunately, I soon found a job in another company."
+	},
+	{
+		"id":11,
+		"q_label":"Honesty",
+		"quest":"Suppose, you have to lie to the customer for the company, would you do it?",
+		"visemes":[[15, 1, 21, 8, 15, 0, 6, 7, 12, 1, 18, 19, 7, 14, 11, 19, 7, 17, 1, 20, 1, 15, 19, 1, 21, 5, 18, 3, 13, 17, 1, 20, 1, 21, 21, 1, 19, 6, 0, 7, 4, 19, 6, 7, 19, 7, 6, 19, 0], [0]],
+		"text":"I try to be as honest as possible. But, if ever it becomes necessary for the benefit of the company and at the same time I do not see any serious harm to the customers, I may consider handling the situation as diplomatically as possible."
+	},
+	{
+		"id":12,
+		"q_label":"Overtime",
+		"quest":"Sometimes we have to work long hours and even weekends to finish the projects. Are you willing to do that?",
+		"visemes":[[15, 1, 21, 19, 11, 21, 15, 7, 6, 12, 1, 18, 19, 7, 7, 5, 20, 14, 3, 20, 9, 5, 15, 1, 19, 19, 6, 18, 6, 19, 7, 6, 20, 4, 19, 19, 15, 19, 7, 18, 6, 19, 6, 16, 17, 1, 21, 13, 2, 16, 4, 20, 19, 15, 0], [2, 13, 6, 7, 7, 6, 14, 6, 20, 19, 7, 19, 7, 17, 1, 19, 0], [0]],
+		"text":"Absolutely, yes. For me, finishing a project properly before the deadline is extremely important. And working hard and long hours are often necessary for that. I will gladly do it whenever necessary. "
+	},
+	{
+		"id":13,
+		"q_label":"Salary 1",
+		"quest":"How much salary are you expecting? Or What's your salary expectations?",
+		"visemes":[[12, 9, 21, 1, 16, 15, 1, 14, 5, 6, 2, 13, 6, 7, 6, 20, 15, 21, 4, 20, 19, 6, 20, 0], [3, 13, 7, 1, 19, 4, 15, 6, 3, 13, 15, 1, 14, 5, 6, 4, 20, 15, 21, 4, 20, 19, 4, 16, 1, 19, 15, 0], [0]],
+		"text":"Well for me, the type of work and culture is more important. Currently, I get 100k. I am hoping to get somewhat higher. So, I would accept any reasonable offer."
+	},
+	{
+		"id":14,
+		"q_label":"Salary 2",
+		"quest":"Well, we will surely pay a reasonable and competitive salary based on our structure. Here is our employee benefits brochure. As you will see, our pension and insurance benefits are quite competitive. ",
+		"visemes":[[7, 4, 14, 0, 7, 6, 7, 6, 14, 16, 4, 13, 14, 6, 21, 4, 1, 13, 6, 15, 1, 19, 1, 21, 1, 14, 1, 19, 19, 20, 1, 21, 21, 4, 19, 1, 19, 6, 18, 15, 1, 14, 5, 6, 21, 4, 15, 19, 2, 19, 9, 5, 15, 19, 13, 1, 20, 16, 5, 0], [12, 6, 13, 6, 15, 9, 5, 4, 21, 21, 14, 10, 6, 21, 4, 19, 1, 18, 6, 19, 15, 21, 13, 8, 16, 4, 13, 0], [1, 15, 6, 7, 7, 6, 14, 15, 6, 0, 9, 5, 21, 4, 19, 16, 1, 19, 1, 19, 19, 6, 19, 16, 4, 13, 1, 19, 15, 21, 4, 19, 1, 18, 6, 19, 15, 2, 13, 20, 7, 11, 19, 20, 1, 21, 21, 4, 19, 1, 19, 6, 18, 0], [0]],
+		"text":"Thank you. May I take this with me and look at it at a later time at home, please?"
+	},
+	{
+		"id":15,
+		"q_label":"Question for the Interviewer",
+		"quest":"Well, I think we have learned quite a bit about you. Do you have any question for us?",
+		"visemes":[[7, 4, 14, 0, 11, 17, 6, 20, 20, 7, 6, 12, 1, 18, 14, 5, 19, 19, 20, 7, 11, 19, 1, 21, 6, 19, 1, 21, 9, 19, 6, 7, 0], [19, 7, 6, 7, 12, 1, 18, 4, 19, 6, 20, 7, 4, 15, 16, 1, 19, 18, 3, 13, 1, 15, 0], [0]],
+		"text":"Thank you. I have gone through the job description. I would like to know a bit more about the kind of projects you are working on where I may contribute."
+	},
+	{
+		"id":16,
+		"q_label":"Reply of Interviewer",
+		"quest":"Well, currently we are in the process of upgrading our technology, it is a big challenge especially because each of our customers has some specific requirements. So you may have to go to the clients, help upgrade and trouble-shoot their problems, demo new releases and train them, and so on. Anything else? ",
+		"visemes":[[7, 4, 14, 0, 20, 5, 1, 19, 19, 14, 6, 7, 6, 2, 13, 6, 19, 17, 1, 21, 13, 2, 15, 4, 15, 1, 18, 1, 21, 20, 13, 4, 19, 6, 20, 9, 5, 19, 4, 20, 19, 2, 14, 1, 16, 6, 0, 6, 19, 6, 15, 1, 21, 6, 20, 16, 1, 14, 1, 19, 16, 1, 15, 21, 4, 16, 14, 6, 21, 6, 20, 3, 15, 6, 16, 1, 18, 9, 5, 20, 1, 15, 19, 1, 21, 5, 15, 12, 1, 15, 15, 1, 21, 15, 21, 1, 15, 6, 18, 6, 20, 13, 6, 20, 7, 11, 13, 21, 1, 19, 19, 15, 0], [15, 8, 6, 7, 21, 4, 12, 1, 18, 19, 7, 20, 8, 19, 7, 17, 1, 20, 14, 11, 1, 19, 19, 15, 0, 12, 4, 14, 21, 1, 21, 20, 13, 4, 19, 1, 19, 19, 19, 13, 1, 21, 1, 14, 16, 7, 19, 17, 4, 13, 21, 13, 2, 21, 14, 1, 21, 15, 0, 19, 4, 21, 8, 19, 7, 13, 6, 14, 6, 15, 6, 15, 1, 19, 19, 19, 13, 4, 19, 17, 4, 21, 0, 1, 19, 19, 15, 8, 2, 19, 0], [4, 19, 6, 17, 6, 20, 4, 14, 15, 0], [0]],
+		"text":"That sounds very exciting. That's all I wanted to know for now. Thank you very much."
+	},
+	{
+		"id":17,
+		"q_label":"Closing the Interview",
+		"quest":"Well, I think we are also finished with the interview. We have a few more candidates to interview and will let you know about our decision early next week.",
+		"visemes":[[7, 4, 14, 0, 11, 17, 6, 20, 20, 7, 6, 2, 13, 3, 14, 15, 8, 18, 6, 19, 6, 16, 19, 7, 6, 17, 17, 1, 6, 19, 19, 5, 18, 6, 7, 0], [7, 6, 12, 1, 18, 1, 18, 6, 7, 21, 3, 13, 20, 1, 19, 19, 1, 19, 4, 19, 15, 19, 7, 6, 19, 19, 5, 18, 6, 7, 1, 19, 19, 7, 6, 14, 14, 4, 19, 6, 7, 19, 8, 1, 21, 9, 19, 9, 5, 19, 6, 15, 6, 16, 1, 19, 5, 14, 6, 19, 4, 20, 15, 19, 7, 6, 20, 0], [0]],
+		"text":"Thank you very much for giving me this opportunity. I look forward to hearing from you."
+	}]
+}

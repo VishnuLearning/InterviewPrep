@@ -1,0 +1,108 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"DB definition",
+		"quest":"What is a database? ",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 4, 19, 1, 21, 4, 15, 0], [0]],
+		"text":"A database is an organized collection of interrelated data stored and managed electronically by a computer program called a database management system."
+	},
+	{
+		"id":2,
+		"q_label":"Use of DB",
+		"quest":"Can you give a simple example of where a database can be used?",
+		"visemes":[[20, 1, 19, 6, 7, 20, 6, 18, 1, 15, 6, 21, 21, 1, 14, 6, 20, 15, 1, 21, 21, 1, 14, 1, 18, 7, 4, 13, 1, 19, 4, 19, 1, 21, 4, 15, 20, 1, 19, 21, 6, 6, 7, 15, 19, 0], [0]],
+		"text":"An example of a database would be that of all the customers of a company, their contact addresses and the products they purchase."
+	},
+	{
+		"id":3,
+		"q_label":"D B M S 1",
+		"quest":"What is a Database management system?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 4, 19, 1, 21, 4, 15, 21, 1, 19, 1, 16, 21, 1, 19, 19, 15, 6, 15, 19, 1, 21, 0], [0]],
+		"text":"A Database Management System or D B M S is a software application that organizes a collection of interrelated data in a certain systematic way so that they can be efficiently stored, maintained, searched, retrieved, updated, processed and analyzed for useful purposes. "
+	},
+	{
+		"id":4,
+		"q_label":"D B M S interaction",
+		"quest":"Besides these, is there anything else a D B M S does?",
+		"visemes":[[21, 6, 15, 11, 19, 15, 17, 6, 15, 0, 6, 15, 17, 4, 13, 4, 19, 6, 17, 6, 20, 4, 14, 15, 1, 19, 6, 21, 6, 4, 21, 4, 15, 19, 1, 15, 0], [0]],
+		"text":"A D B M S also facilitates interaction with the administrators, programmers, other applications and the end users."
+	},
+	{
+		"id":5,
+		"q_label":"D B M S example",
+		"quest":"Can you name a few commonly used D B M S?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 1, 18, 6, 7, 20, 2, 21, 1, 19, 14, 6, 6, 7, 15, 19, 19, 6, 21, 6, 4, 21, 4, 15, 0], [0]],
+		"text":"Some commonly used D B M S are MyS Q L, Postgres, Oracle RD B M S, I B M DB2, Microsoft S Q L Server, MongoDB, SAP-HANA, Microsoft Access, etc."
+	},
+	{
+		"id":6,
+		"q_label":"DB experience 1",
+		"quest":"Which databases are you familiar with or have actually used?",
+		"visemes":[[7, 6, 16, 19, 4, 19, 1, 21, 4, 15, 6, 15, 2, 13, 6, 7, 18, 1, 21, 6, 14, 6, 5, 7, 6, 17, 3, 13, 12, 1, 18, 1, 20, 16, 1, 7, 1, 14, 6, 6, 7, 15, 19, 0], [0]],
+		"text":"I am familiar with PostgreS Q L, MyS Q L, S Q Lite, and Oracle. During my internship, I have used Oracle and for a part of my project, I have used MyS Q L."
+	},
+	{
+		"id":7,
+		"q_label":"DB tools 2",
+		"quest":"What Database development and management tools are you familiar with?",
+		"visemes":[[7, 1, 19, 19, 4, 19, 1, 21, 4, 15, 19, 6, 18, 4, 14, 1, 21, 21, 1, 19, 19, 1, 19, 19, 21, 1, 19, 1, 16, 21, 1, 19, 19, 19, 7, 14, 15, 2, 13, 6, 7, 18, 1, 21, 6, 14, 6, 5, 7, 6, 17, 0], [0]],
+		"text":"I am familiar with MyS Q L Workbench, S Q L server management studio SSMS, Oracle S Q L Developer, and PG-Admin for PostgreS Q L. "
+	},
+	{
+		"id":8,
+		"q_label":"S Q L 1",
+		"quest":"What is S Q L? Is there any Standard S Q L?",
+		"visemes":[[7, 1, 19, 6, 15, 4, 15, 20, 6, 7, 4, 14, 0], [6, 15, 17, 4, 13, 4, 19, 6, 15, 19, 1, 19, 19, 5, 19, 4, 15, 20, 6, 7, 4, 14, 0], [0]],
+		"text":"S Q L or Structured Query Language is a domain-specific programming language to create, manage and interact with a Relational database. There is a S Q L ANSI standard. However, various database vendors implement an extended subset of the Standard S Q L."
+	},
+	{
+		"id":9,
+		"q_label":"S Q L operations",
+		"quest":"Give me a few examples of some common operations used with S Q L.",
+		"visemes":[[20, 6, 18, 21, 6, 1, 18, 6, 7, 6, 20, 15, 1, 21, 21, 1, 14, 15, 1, 18, 15, 1, 21, 20, 2, 21, 1, 19, 2, 21, 5, 4, 16, 1, 19, 15, 6, 7, 15, 19, 7, 6, 17, 4, 15, 20, 6, 7, 4, 14, 0], [0]],
+		"text":"Some common operations that can be performed with S Q L on the database are create, insert, select, update, delete, etc. also, numerous queries can be written with S Q L to get desired information from the database."
+	},
+	{
+		"id":10,
+		"q_label":"DB server",
+		"quest":"What is a database server?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 4, 19, 1, 21, 4, 15, 15, 5, 18, 5, 0], [0]],
+		"text":"A database server is the backend software application of the database in a client-server model. It could also mean the computer hardware where the database is installed and run."
+	},
+	{
+		"id":11,
+		"q_label":"DB Front end",
+		"quest":"What is a database front end? How is it connected to the backend?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 4, 19, 1, 21, 4, 15, 18, 13, 1, 19, 19, 4, 19, 19, 0], [12, 9, 6, 15, 6, 19, 20, 1, 19, 4, 20, 19, 1, 19, 19, 7, 17, 1, 21, 1, 20, 4, 19, 19, 0], [0]],
+		"text":"A database front end is the user interface for accessing and interacting with the database. The front end and back-end may be connected either directly or through an API."
+	},
+	{
+		"id":12,
+		"q_label":"Relational DB",
+		"quest":"Can you explain in short what a relational database is? ",
+		"visemes":[[20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 6, 19, 16, 3, 13, 19, 7, 1, 19, 1, 13, 6, 14, 4, 16, 1, 19, 1, 14, 19, 4, 19, 1, 21, 4, 15, 6, 15, 0], [0]],
+		"text":"A relational database is based on a relational model of data where the data and their relations are organized in one or more tables of rows and columns. Each row or record is identified by a unique (primary) key which can also be used to refer to the corresponding records in other tables. The columns contain the various attributes or fields of a record. "
+	},
+	{
+		"id":13,
+		"q_label":"NoS Q L",
+		"quest":"Is there any other type of database? Where is it used?",
+		"visemes":[[6, 15, 17, 4, 13, 4, 19, 6, 1, 17, 5, 19, 11, 21, 1, 18, 19, 4, 19, 1, 21, 4, 15, 0], [7, 4, 13, 6, 15, 6, 19, 6, 7, 15, 19, 0], [0]],
+		"text":"There is also a Non-relational database or NoS Q L database that uses models other than tabular relations for ease of scaling to clusters of machines. It uses query languages that may be different from S Q L. It is often used in big data and real-time web applications."
+	},
+	{
+		"id":14,
+		"q_label":"Functionalities",
+		"quest":"What are the main functionalities of a D B M S?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 21, 4, 19, 1, 18, 1, 19, 6, 21, 6, 4, 21, 4, 15, 0], [0]],
+		"text":"The main functionalities of a database management system are active rules, access control, concurrency control, redundancy management, metadata management, performance optimization, backup, and recovery, etc. "
+	},
+	{
+		"id":15,
+		"q_label":"Codd 12 Rules",
+		"quest":"Do you know anything about Codd's twelve rules and can you name them?",
+		"visemes":[[19, 7, 6, 7, 19, 8, 4, 19, 6, 17, 6, 20, 1, 21, 9, 19, 20, 2, 19, 4, 15, 19, 7, 4, 14, 18, 13, 7, 14, 15, 1, 19, 19, 20, 1, 19, 6, 7, 19, 4, 21, 17, 4, 21, 0], [0]],
+		"text":"In a 1970 paper, Dr. Edgar Codd proposed twelve rules for a database management system to qualify as a relational database management system. They are the foundation rule, the information rule, the guaranteed access rule, systematic treatment of NULL values, dynamic catalog, the comprehensive data sublanguage rule, the view updating rule, High-level insert, update and delete possibility; physical data independence, logical data independence, integrity independence, distribution independence, non-subversion rule."
+	}]
+}

@@ -13,10 +13,12 @@
                 <Label text="Questions"></Label>
             </StackLayout>
             <StackLayout>
+                <ScrollView>
                 <Button *ngFor="let question of questions; let i = index"
-                    text="Question {{question.id}}" (tap)="loadQuestion(i)"></Button>
+                    text="{{question.q_label}}" (tap)="loadQuestion(i)"></Button>
+                </ScrollView>
             </StackLayout>
-        </StackLayout>
+        </StackLayout> 
         <StackLayout tkMainContent *ngIf="question!=undefined">
             <StackLayout class="home-panel">
                 <Image src="~/assets/images/dr_sinha/julia_full.png" #avatar stretch="aspectFill" width="200" height="200"></Image>

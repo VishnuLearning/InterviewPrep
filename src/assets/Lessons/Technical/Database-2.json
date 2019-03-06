@@ -1,0 +1,108 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Keys",
+		"quest":"What are keys? Why are they used? ",
+		"visemes":[[7, 1, 19, 2, 13, 20, 6, 15, 0], [7, 11, 2, 13, 17, 4, 6, 7, 15, 19, 0], [0]],
+		"text":"A key is a column (or field) used to uniquely identify a row or record in a table. A key can be used to access the other data fields of a particular record, access the corresponding records in other tables, and so on. (Keys can also be used to compare, filter, and select some records from all the records based on some given criteria or sort all the records, etc.)"
+	},
+	{
+		"id":2,
+		"q_label":"Primary key",
+		"quest":"What is a primary key? What are the restrictions on it?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 21, 13, 11, 21, 4, 13, 6, 20, 6, 0], [7, 1, 19, 2, 13, 17, 1, 13, 6, 15, 19, 13, 6, 20, 16, 1, 19, 15, 2, 19, 6, 19, 0], [0]],
+		"text":"The primary key is a column or field in a table that has a unique value for each row and thus, can uniquely identify a record. The primary key cannot have a NULL value. A table can have only one primary key and must be explicitly defined and once set cannot be changed. Actually, the primary key can be composed of more than one column, as long as it refers to the rows or records uniquely. "
+	},
+	{
+		"id":3,
+		"q_label":"Foreign key",
+		"quest":"What is a Foreign key? ",
+		"visemes":[[7, 1, 19, 6, 15, 1, 18, 3, 13, 1, 19, 20, 6, 0], [0]],
+		"text":"A foreign key is a key used in a table that refers to the primary key defined in another table. Unlike the primary key, a foreign key in a table can be NULL or non-unique."
+	},
+	{
+		"id":4,
+		"q_label":"PK and FK",
+		"quest":"Can you explain the difference between a primary key and a foreign key with an example?",
+		"visemes":[[20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 17, 1, 19, 6, 18, 5, 1, 19, 15, 21, 6, 19, 7, 6, 19, 1, 21, 13, 11, 21, 4, 13, 6, 20, 6, 1, 19, 19, 1, 18, 3, 13, 1, 19, 20, 6, 7, 6, 17, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 0], [0]],
+		"text":"For example, in a company's database, in the employee information table, the unique employee ID numbers can be used as the primary key. In another table of projects, staff, hours worked, and monthly cost calculation, one can use the employee ID as a foreign key. Then, if an employee has worked on several different projects, his employee ID would appear as a foreign key several times, and his total pay can be calculated, at the same time his hours can be charged separately to various projects."
+	},
+	{
+		"id":5,
+		"q_label":"Join operator",
+		"quest":"What is a join operation? Where is it used?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 16, 10, 19, 2, 21, 5, 4, 16, 1, 19, 0], [7, 4, 13, 6, 15, 6, 19, 6, 7, 15, 19, 0], [0]],
+		"text":"A join operation combines the columns of two tables using a common column to maintain the correct correspondence of the records such that the result of the join operation acts like one table. Join is used to retrieve desired data from two different tables of a relational database."
+	},
+	{
+		"id":6,
+		"q_label":"Join types",
+		"quest":"What are the different kinds of joins?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 19, 6, 18, 5, 1, 19, 19, 20, 11, 19, 19, 15, 1, 18, 16, 10, 19, 15, 0], [0]],
+		"text":"There are 4 types of join operations: inner join, left join, right join, and outer join."
+	},
+	{
+		"id":7,
+		"q_label":"Join types Explain",
+		"quest":"Can you explain what the various types of joins are are?",
+		"visemes":[[20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 7, 1, 19, 17, 1, 18, 4, 13, 6, 1, 15, 19, 11, 21, 15, 1, 18, 16, 10, 19, 15, 2, 13, 2, 13, 0], [0]],
+		"text":"The inner join, which is the default join operation, combines all records that match the specified condition in both tables. The left join combines all records of the left table with only the matching records of the right table. The right join combines All records of the right table with only the matching records of the left table. The full outer join operation combines records that match the condition in either table. "
+	},
+	{
+		"id":8,
+		"q_label":"Join types 2",
+		"quest":"Have you heard of Cross join and Self Join? What do they do?",
+		"visemes":[[12, 1, 18, 6, 7, 12, 5, 19, 1, 18, 20, 13, 3, 15, 16, 10, 19, 1, 19, 19, 15, 4, 14, 18, 16, 10, 19, 0], [7, 1, 19, 19, 7, 17, 4, 19, 7, 0], [0]],
+		"text":"Yes, sir. The cross join gives the Cartesian products the records of two tables, and self join joins a table to itself."
+	},
+	{
+		"id":9,
+		"q_label":"Schema",
+		"quest":"What is a schema? What is the purpose of a schema in a relational database? ",
+		"visemes":[[7, 1, 19, 6, 15, 1, 0], [7, 1, 19, 6, 15, 17, 1, 21, 5, 21, 1, 15, 1, 18, 1, 6, 19, 1, 13, 6, 14, 4, 16, 1, 19, 1, 14, 19, 4, 19, 1, 21, 4, 15, 0], [0]],
+		"text":"The schema is the overall logical design and structure of the database. It is used to visualize the organization of the tables and their relationships."
+	},
+	{
+		"id":10,
+		"q_label":"Hierarchy",
+		"quest":"Can you tell me what the containment hierarchy of a relational database is?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 14, 21, 6, 7, 1, 19, 17, 1, 20, 1, 19, 19, 4, 19, 21, 1, 19, 19, 12, 11, 5, 2, 13, 20, 6, 1, 18, 1, 13, 6, 14, 4, 16, 1, 19, 1, 14, 19, 4, 19, 1, 21, 4, 15, 6, 15, 0], [0]],
+		"text":"The containment hierarchy of a relational database is as follows: the catalog contains all the schemas, schemas contain all the tables and views, and the tables contain columns and rows."
+	},
+	{
+		"id":11,
+		"q_label":"Inner Querry",
+		"quest":"What is a nested query or an inner query? And where is it used?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 4, 15, 19, 1, 19, 20, 7, 6, 13, 6, 3, 13, 1, 19, 6, 19, 5, 20, 7, 6, 13, 6, 0], [1, 19, 19, 7, 4, 13, 6, 15, 6, 19, 6, 7, 15, 19, 0], [0]],
+		"text":"A nested query (or inner query or subquery) is a query within a query. It can be used to select certain data from another selected data set, which may be from the same or a different table."
+	},
+	{
+		"id":12,
+		"q_label":"Querry Example",
+		"quest":"Give me an example of a nested query which can be used in a realistic situation to solve a problem.",
+		"visemes":[[20, 6, 18, 21, 6, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 1, 18, 1, 19, 4, 15, 19, 1, 19, 20, 7, 6, 13, 6, 7, 6, 16, 20, 1, 19, 21, 6, 6, 7, 15, 19, 6, 19, 1, 13, 6, 1, 14, 6, 15, 19, 6, 20, 15, 6, 16, 7, 4, 16, 1, 19, 19, 7, 15, 2, 14, 18, 1, 21, 13, 2, 21, 14, 1, 21, 0], [0]],
+		"text":"For example, suppose a project seems to involve too many people and we want to reduce the size. Then first, we want to find out the names of the employees who have worked on the project for less than 10 hours in the past month. We can create a nested query where the inner query is to get a list of employee IDs from a project_work table of those who meet that condition, and then run an outer query on that list to get their names and email addresses from an employee_information table."
+	},
+	{
+		"id":13,
+		"q_label":"ER Model",
+		"quest":"What can you tell us about the ER model or the ER diagram?",
+		"visemes":[[7, 1, 19, 20, 1, 19, 6, 7, 19, 4, 14, 1, 15, 1, 21, 9, 19, 17, 1, 5, 21, 2, 19, 1, 14, 3, 13, 17, 1, 5, 19, 11, 1, 20, 13, 1, 21, 0], [0]],
+		"text":"An entity-relationship or ER model is a technique of conceptual design of a database using a diagram to represent the entities and their relationships to each other. "
+	},
+	{
+		"id":14,
+		"q_label":"ER example",
+		"quest":"Can you explain what an entity and and entity sets are with an example? ",
+		"visemes":[[20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 7, 1, 19, 1, 19, 4, 19, 19, 1, 19, 6, 1, 19, 19, 1, 19, 19, 4, 19, 19, 1, 19, 6, 15, 4, 19, 15, 2, 13, 7, 6, 17, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 0], [0]],
+		"text":"An entity is an object and is described by its attributes and is distinct from other objects. For example, for an online shop, a customer is an entity described by a set of attributes such as Customer_ID, Name, Age, Address, phone number etc. All customers form an entity set. Similarly, orders and products can be a different entity sets."
+	},
+	{
+		"id":15,
+		"q_label":"ER details",
+		"quest":"What is entity relationship? I want to to know how are entities and relationships actually modeled and implemented? Feel free to use the the white-board if you like.",
+		"visemes":[[7, 1, 19, 6, 15, 4, 19, 19, 1, 19, 6, 13, 6, 14, 4, 16, 1, 19, 16, 6, 21, 0], [11, 7, 2, 19, 19, 19, 7, 19, 7, 19, 8, 12, 9, 2, 13, 4, 19, 19, 6, 19, 6, 15, 1, 19, 19, 13, 6, 14, 4, 16, 1, 19, 16, 6, 21, 15, 1, 20, 16, 1, 7, 1, 14, 6, 21, 2, 19, 1, 14, 19, 1, 19, 19, 6, 21, 21, 14, 1, 21, 4, 19, 19, 1, 19, 0], [18, 6, 14, 18, 13, 6, 19, 7, 6, 7, 15, 17, 1, 17, 1, 7, 11, 19, 21, 3, 13, 19, 6, 18, 6, 7, 14, 11, 20, 0], [0]],
+		"text":"A relationship is an association between entities. For example, a customer has a relationship with an order_placed and the order_placed has a relationship with several products."
+	}]
+}

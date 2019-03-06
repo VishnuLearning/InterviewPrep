@@ -1,6 +1,22 @@
 [
     {
-        "name": "HR Questions",
-        "path": "HR.json"
+        "name": "HR Questions 1",
+        "path": "GeneralHrQuestions-1.json"
+    },
+    {
+        "name": "HR Questions 2",
+        "path": "GeneralHrQuestions-2.json"
+    },
+    {
+        "name": "HR Questions 3",
+        "path": "GeneralHrQuestions-3.json"
+    },
+    {
+        "name": "HR Questions 4",
+        "path": "GeneralHrQuestions-4.json"
+    },
+    {
+        "name": "HR Questions Level 2",
+        "path": "DifficultHrQuestions-5.json"
     }
 ]

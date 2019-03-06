@@ -13,7 +13,6 @@ import { HomeComponent } from './components/home/home.component';
 import { QuestionComponent } from './components/question/question.component';
 
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
-// import { StsComponent } from "./components/sts/sts";
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";

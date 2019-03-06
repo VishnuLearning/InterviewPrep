@@ -1,0 +1,122 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Definition DS 1",
+		"quest":"What  is a data structure?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 4, 19, 1, 15, 19, 13, 1, 20, 16, 5, 0], [0]],
+		"text":"A data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data. In short, we may say that data structures are the main memory constructs."
+	},
+	{
+		"id":2,
+		"q_label":"Application 1",
+		"quest":"What is the main purpose of data structures? Give some examples where data structures are useful.",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 21, 4, 19, 21, 5, 21, 1, 15, 1, 18, 19, 4, 19, 1, 15, 19, 13, 1, 20, 16, 5, 15, 0], [20, 6, 18, 15, 1, 21, 6, 20, 15, 1, 21, 21, 1, 14, 15, 7, 4, 13, 19, 4, 19, 1, 15, 19, 13, 1, 20, 16, 5, 15, 2, 13, 6, 7, 15, 18, 1, 14, 0], [0]],
+		"text":"Data structures provide a means of an efficient access and management of large amounts of data, for example, in databases, internet indexing services, data access and manipulations within a program, and so on. Different types of data structures are suited to different kinds of tasks."
+	},
+	{
+		"id":3,
+		"q_label":"File structure 1",
+		"quest":"What are file structures? What is its purpose?",
+		"visemes":[[7, 1, 19, 2, 13, 18, 11, 14, 15, 19, 13, 1, 20, 16, 5, 15, 0], [7, 1, 19, 6, 15, 6, 19, 15, 21, 5, 21, 1, 15, 0], [0]],
+		"text":"File structures are secondary storage  based constructs used for the purpose of minimizing the storage space and access time. A file structure allows applications to read, write and modify data efficiently from and to secondary storages such as disk or peripheral memory."
+	},
+	{
+		"id":4,
+		"q_label":"FS types -1",
+		"quest":"Can you name some of the types of file structures?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 15, 1, 21, 1, 18, 17, 1, 19, 11, 21, 15, 1, 18, 18, 11, 14, 15, 19, 13, 1, 20, 16, 5, 15, 0], [0]],
+		"text":"File structures for sequential access can be sequential files, and for random access, indexed files and hashed files.  B-trees are often used as file structures. An index table is used in FAT 32 which is an older file system but still commonly used in U S B flash drives. "
+	},
+	{
+		"id":5,
+		"q_label":"Indexed file",
+		"quest":"What is an indexed file?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 6, 19, 19, 4, 20, 15, 19, 18, 11, 14, 0], [0]],
+		"text":"An indexed file is a file structure with an index that allows easy random access to any record given its file key. The key must be such that it uniquely identifies an address of a record. The indices are created along with the file and maintained by the system. "
+	},
+	{
+		"id":6,
+		"q_label":"Hashed file 1",
+		"quest":"What is a hashed file? .",
+		"visemes":[[7, 1, 19, 6, 15, 1, 12, 1, 16, 19, 18, 11, 14, 0], [0], [0]],
+		"text":"A hashed file uses a mathematical function called hash function to map the key to index or address which is used by the operating system to access the record. "
+	},
+	{
+		"id":7,
+		"q_label":"Hashed file 2",
+		"quest":"Can you name some hashing methods and briefly describe how they work?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 15, 1, 21, 12, 1, 16, 6, 20, 21, 4, 17, 1, 19, 15, 1, 19, 19, 21, 13, 6, 18, 14, 6, 19, 6, 15, 20, 13, 11, 21, 12, 9, 17, 4, 7, 5, 20, 0], [0]],
+		"text":"There are several methods of hashing. For example, in the direct hashing, the key is the data file address without any algorithmic manipulations. In the Modulo division hashing the address is the remainder of key divided by the file size plus 1. In digit extraction hashing, selected digits are extracted from the key and used as the address."
+	},
+	{
+		"id":8,
+		"q_label":"Vector DS",
+		"quest":"What is a vector in data structures?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 18, 4, 20, 19, 5, 6, 19, 19, 4, 19, 1, 15, 19, 13, 1, 20, 16, 5, 15, 0], [0]],
+		"text":"A vector is a resizable array.  A vector can be expanded or shrunk using grow or shrink functions."
+	},
+	{
+		"id":9,
+		"q_label":"Implementation -1",
+		"quest":"How is a vector implemented in the computer memory? How does the size of a vector grow? ",
+		"visemes":[[12, 9, 6, 15, 1, 18, 4, 20, 19, 5, 6, 21, 21, 14, 1, 21, 4, 19, 19, 1, 19, 6, 19, 17, 1, 20, 1, 21, 21, 6, 7, 19, 5, 21, 4, 21, 5, 6, 0], [12, 9, 19, 1, 15, 17, 1, 15, 11, 15, 1, 18, 1, 18, 4, 20, 19, 5, 20, 13, 8, 0], [0]],
+		"text":"A vector is implemented as a contiguous memory block. A vector can be grown either explicitly or automatically by adding data. In practice, it grows by doubling its allocated space instead of incrementing it."
+	},
+	{
+		"id":10,
+		"q_label":"Implementation -1",
+		"quest":"When will you not use a vector?",
+		"visemes":[[7, 4, 19, 7, 6, 14, 6, 7, 19, 2, 19, 6, 7, 15, 1, 18, 4, 20, 19, 5, 0], [0]],
+		"text":"A vector is not suitable in some cases, for example, if we need to delete an entry in a vector, it would be an expensive operation. In that case, a linked list is better suited."
+	},
+	{
+		"id":11,
+		"q_label":"Linked list 1",
+		"quest":"What are linked lists in data structures? Why are lists better than vectors?",
+		"visemes":[[7, 1, 19, 2, 13, 14, 6, 20, 20, 19, 14, 6, 15, 19, 15, 6, 19, 19, 4, 19, 1, 15, 19, 13, 1, 20, 16, 5, 15, 0], [7, 11, 2, 13, 14, 6, 15, 19, 15, 21, 4, 19, 5, 17, 1, 19, 18, 4, 20, 19, 5, 15, 0], [0]],
+		"text":"A list is a data structure construct using pointers as links. A linked list is more efficient for deletions/addition of entries than a vector because it need not be stored as a contiguous block in the memory."
+	},
+	{
+		"id":12,
+		"q_label":"Linked list and array",
+		"quest":"So, why don't we just use linked lists, why use arrays at all? Are there any disadvantages of linked lists as compared to arrays?",
+		"visemes":[[15, 8, 0, 7, 11, 19, 7, 7, 6, 16, 1, 15, 19, 6, 7, 15, 14, 6, 20, 20, 19, 14, 6, 15, 19, 15, 0, 7, 11, 6, 7, 15, 5, 4, 15, 1, 19, 3, 14, 0], [2, 13, 17, 4, 13, 4, 19, 6, 19, 6, 15, 1, 19, 18, 1, 19, 19, 6, 16, 6, 15, 1, 18, 14, 6, 20, 20, 19, 14, 6, 15, 19, 15, 1, 15, 20, 1, 21, 21, 4, 13, 19, 19, 7, 5, 4, 15, 0], [0]],
+		"text":"Although linked lists have the advantage of easy insertion/deletion and dynamic sizing, they have a few disadvantages, for example, For each element, we need to store the corresponding pointers and we can access the elements only sequentially not randomly."
+	},
+	{
+		"id":13,
+		"q_label":"Doubly linked list",
+		"quest":"What are singly-linked lists, and doubly-linked lists?",
+		"visemes":[[7, 1, 19, 2, 13, 15, 6, 20, 20, 14, 6, 14, 6, 20, 20, 19, 14, 6, 15, 19, 15, 0, 1, 19, 19, 19, 1, 21, 14, 6, 14, 6, 20, 20, 19, 14, 6, 15, 19, 15, 0], [0]],
+		"text":"In a singly-linked list, for each node, the pointer links help traverse in only one direction in the list.  A doubly linked list stores pointer links for both the next-node and the previous-node which allows traversal in both directions of the list."
+	},
+	{
+		"id":14,
+		"q_label":"CSL list",
+		"quest":"Is there any other type of linked list that you are aware of? And where can it be used?",
+		"visemes":[[6, 15, 17, 4, 13, 4, 19, 6, 1, 17, 5, 19, 11, 21, 1, 18, 14, 6, 20, 20, 19, 14, 6, 15, 19, 17, 1, 19, 6, 7, 2, 13, 1, 7, 4, 13, 1, 18, 0], [1, 19, 19, 7, 4, 13, 20, 1, 19, 6, 19, 21, 6, 6, 7, 15, 19, 0], [0]],
+		"text":"There are other types of linked-lists, for example, a circular singly-linked list or circular doubly-linked list where all nodes are connected to form a loop or a circle, so any node can be a starting point for traversal. These can be useful in representing an array that is circular in structure, for example, the corners of a polygon or a set of processes that are to be time-shared in a round-robin order.  "
+	},
+	{
+		"id":15,
+		"q_label":"Map 1",
+		"quest":"What is a map or a dictionary in data structures?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 21, 1, 21, 3, 13, 1, 19, 6, 20, 16, 1, 19, 4, 13, 6, 6, 19, 19, 4, 19, 1, 15, 19, 13, 1, 20, 16, 5, 15, 0], [0]],
+		"text":"A map (which is also called a dictionary or an associative array) is key-value pair based abstract data type. The implementations may have different names in different languages. For example, in Python, it is called dictionaries and in Java, it is called HashMaps and Hashtables."
+	},
+	{
+		"id":16,
+		"q_label":"Maps advantage",
+		"quest":"What are the advantages of using the map as a data construct? Can you explain with an example?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 1, 19, 18, 1, 19, 19, 6, 16, 6, 15, 1, 18, 6, 7, 15, 6, 20, 17, 1, 21, 1, 21, 1, 15, 1, 19, 4, 19, 1, 20, 1, 19, 15, 19, 13, 1, 20, 19, 0], [20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 7, 6, 17, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 0], [0]],
+		"text":"A map is efficient for key-based lookup operations. For example, if we store the information such as scores or grades about the students of a school with their names as the key, it is very efficient and straight-forward to retrieve the information on any student by searching through the keys, names in this case."
+	},
+	{
+		"id":17,
+		"q_label":"Map implementation",
+		"quest":"What are the different implementations of the map?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 19, 6, 18, 5, 1, 19, 19, 1, 18, 17, 1, 21, 1, 21, 0], [0]],
+		"text":"A map is implemented either using hash map or binary search trees. "
+	}]
+}

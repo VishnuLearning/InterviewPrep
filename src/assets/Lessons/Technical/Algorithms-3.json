@@ -1,0 +1,126 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Dijkstra Algorithm",
+		"quest":"What is Dijkstra's algorithm and what is its purpose? Give a few practical examples.",
+		"visemes":[[7, 1, 19, 6, 15, 4, 15, 1, 14, 20, 5, 6, 17, 1, 21, 1, 19, 19, 7, 1, 19, 6, 15, 6, 19, 15, 21, 5, 21, 1, 15, 0], [20, 6, 18, 1, 18, 6, 7, 21, 13, 1, 20, 19, 1, 20, 1, 14, 6, 20, 15, 1, 21, 21, 1, 14, 15, 0], [0]],
+		"text":"The purpose of Dijkstra's algorithm is to find the shortest paths between the nodes in a weighted directed graph. Given a source node, Dijkstra's algorithm can find the shortest path to all other nodes producing a shortest-path tree. It is used in network routing protocols, finding the shortest route between one city and all other cities, etc."
+	},
+	{
+		"id":2,
+		"q_label":"Problem solving",
+		"quest":"So suppose, several companies representatives from various cities are to come for a meeting to be held in one of those cities. They all travel by cars. How would you choose a city for the meeting so that the total distance traveled by all the participants is minimum?",
+		"visemes":[[15, 8, 15, 1, 21, 8, 15, 0, 15, 4, 18, 13, 1, 14, 20, 1, 21, 21, 1, 19, 6, 15, 13, 4, 21, 13, 1, 15, 4, 19, 19, 1, 19, 6, 18, 15, 18, 13, 1, 21, 18, 4, 13, 6, 1, 15, 15, 6, 19, 6, 15, 2, 13, 19, 7, 20, 1, 21, 18, 3, 13, 1, 21, 6, 19, 6, 20, 19, 7, 21, 6, 12, 4, 14, 19, 6, 19, 7, 1, 19, 1, 18, 17, 8, 15, 15, 6, 19, 6, 15, 0], [17, 4, 3, 14, 19, 13, 1, 18, 1, 14, 21, 11, 20, 2, 13, 15, 0], [12, 9, 7, 4, 19, 6, 7, 16, 7, 15, 1, 15, 6, 19, 6, 18, 3, 13, 17, 1, 21, 6, 19, 6, 20, 15, 8, 17, 1, 19, 17, 1, 19, 8, 19, 1, 14, 19, 6, 15, 19, 1, 19, 15, 19, 13, 1, 18, 1, 14, 19, 21, 11, 3, 14, 17, 1, 21, 2, 13, 19, 6, 15, 1, 21, 1, 19, 19, 15, 6, 15, 21, 6, 19, 1, 21, 1, 21, 0], [0]],
+		"text":"We can reverse the problem as minimum distance traveled from a city to reach each of the other cities. We can choose one city as the source node and find the shortest paths to all other cities to generate a total distance traveled. Then we can repeat that process for each city as the source node. Finally, we have to select the city that gives the minimum of all these shortest total paths to be traveled. In fact, with some modifications to the algorithm, we can find the best car-pooling suggestions to reduce the fuel cost."
+	},
+	{
+		"id":3,
+		"q_label":"Encryption",
+		"quest":"Can you name a few encryption algorithms?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 1, 18, 6, 7, 4, 19, 20, 13, 6, 21, 16, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 15, 0], [0]],
+		"text":"Some commonly used encryption algorithms are RSA,  Triple DES, Advanced Encryption Standard or AES, Secured Hash Algorithm SHA 3, Blowfish, etc."
+	},
+	{
+		"id":4,
+		"q_label":"RSA algorithm",
+		"quest":"What can you tell us about the RSA algorithm?",
+		"visemes":[[7, 1, 19, 20, 1, 19, 6, 7, 19, 4, 14, 1, 15, 1, 21, 9, 19, 17, 1, 1, 14, 20, 5, 6, 17, 1, 21, 0], [0]],
+		"text":"RSA algorithm is an asymmetric cryptographic algorithm used by many computers to encrypt and decrypt messages. It uses a public key for encryption and a private key for decryption. It is essentially based on the idea that finding the factors of a large composite number is difficult. "
+	},
+	{
+		"id":5,
+		"q_label":"Genetic algorithm",
+		"quest":"What is a genetic algorithm and what kind of problems can be solved with it?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 16, 1, 19, 4, 19, 6, 20, 1, 14, 20, 5, 6, 17, 1, 21, 1, 19, 19, 7, 1, 19, 20, 11, 19, 19, 1, 18, 21, 13, 2, 21, 14, 1, 21, 15, 20, 1, 19, 21, 6, 15, 2, 14, 18, 19, 7, 6, 17, 6, 19, 0], [0]],
+		"text":"A genetic algorithm is an evolutionary algorithm inspired by the process of natural selection of Darwin's theory of evolution. It is used in global optimization and search problems such as automated design, Computational neuroscience, image processing, etc."
+	},
+	{
+		"id":6,
+		"q_label":"Matrix multiplication",
+		"quest":"Suppose you are working on the development of a computer graphics or image processing software and you need to multiply two matrices. What algorithm will you use and why?",
+		"visemes":[[15, 1, 21, 8, 15, 6, 7, 2, 13, 7, 5, 20, 6, 20, 2, 19, 17, 1, 19, 6, 18, 4, 14, 1, 21, 21, 1, 19, 19, 1, 18, 1, 20, 1, 21, 21, 6, 7, 19, 5, 20, 13, 1, 18, 6, 20, 15, 3, 13, 6, 21, 1, 16, 21, 13, 2, 15, 4, 15, 6, 20, 15, 3, 18, 19, 7, 4, 13, 1, 19, 19, 6, 7, 19, 6, 19, 19, 7, 21, 1, 14, 19, 1, 21, 14, 11, 19, 7, 21, 4, 19, 13, 6, 15, 6, 15, 0], [7, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 7, 6, 14, 6, 7, 6, 7, 15, 1, 19, 19, 7, 11, 0], [0]],
+		"text":"There are several algorithms for multiplying matrices. If we directly multiply following the definition of matrix multiplication as we do in hand calculations, that will take time of the order of n to the power 3 for two n by n matrices. So, for large matrices, we can use a more efficient algorithm, for example, Strassen algorithm whose time complexity is n to the power 2.8 or Coppersmith-Winograd algorithm whose time complexity is of the order of n to the power 2.375"
+	},
+	{
+		"id":7,
+		"q_label":"Dynamic programming",
+		"quest":"What is Dynamic programming?",
+		"visemes":[[7, 1, 19, 6, 15, 19, 11, 19, 1, 21, 6, 20, 21, 13, 8, 20, 13, 1, 21, 6, 20, 0], [0]],
+		"text":"Rewrite: Dynamic Programming is a method for solving a complex problem by breaking it down into a collection of simpler overlapping sub-problems, solving each of those sub-problems in a recursive manner, and storing their solutions using a memory-based data structure."
+	},
+	{
+		"id":8,
+		"q_label":"Bellman optimality",
+		"quest":"What is Bellman's Principle of optimality?",
+		"visemes":[[7, 1, 19, 6, 15, 21, 4, 14, 21, 1, 19, 4, 15, 21, 13, 6, 19, 15, 1, 21, 1, 14, 1, 18, 0], [0]],
+		"text":"Bellman's Principle of Optimality states that an optimal policy has the property that whatever the initial state and initial decision are, the remaining decisions must constitute an optimal policy with regard to the state resulting from the first decision."
+	},
+	{
+		"id":9,
+		"q_label":"Decision problem",
+		"quest":"What is a decision problem in Computability theory? ",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 6, 15, 6, 16, 1, 19, 21, 13, 2, 21, 14, 1, 21, 6, 19, 17, 6, 13, 6, 0], [0]],
+		"text":"In computability theory and computational complexity theory, a decision problem is a problem that can be posed as a yes or no question of the input values to arrive at a solution or decision. "
+	},
+	{
+		"id":10,
+		"q_label":"Decision Example",
+		"quest":"Can you give an example of a decision problem that can be used in industry?",
+		"visemes":[[20, 1, 19, 6, 7, 20, 6, 18, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 1, 18, 1, 19, 6, 15, 6, 16, 1, 19, 21, 13, 2, 21, 14, 1, 21, 17, 1, 19, 20, 1, 19, 21, 6, 6, 7, 15, 19, 6, 19, 6, 19, 19, 1, 15, 19, 13, 6, 0], [0]],
+		"text":"A practical application can be to screen candidates for a job based on a set of criteria."
+	},
+	{
+		"id":11,
+		"q_label":"Turing Machine",
+		"quest":"What is a Turing Machine? What is it used for? ",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 4, 13, 6, 20, 21, 1, 16, 6, 19, 0], [7, 1, 19, 6, 15, 6, 19, 6, 7, 15, 19, 18, 3, 13, 0], [0]],
+		"text":"A Turing machine is a mathematical model of computation that defines an abstract machine which manipulates symbols on a strip of tape according to a table of rules."
+	},
+	{
+		"id":12,
+		"q_label":"Turing complete",
+		"quest":"What is the meaning of Turing complete?",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 21, 6, 19, 6, 20, 1, 18, 19, 4, 13, 6, 20, 20, 1, 21, 21, 14, 6, 19, 0], [0]],
+		"text":"Turing completeness is the ability for a system of instructions to simulate a Turing machine. A programming language that is Turing complete is theoretically capable of expressing all tasks accomplishable by computers; nearly all programming languages are Turing complete if the limitations of finite memory are ignored. "
+	},
+	{
+		"id":13,
+		"q_label":"Data compression",
+		"quest":"Do you know of anything about the types of data-compression commonly used?",
+		"visemes":[[19, 7, 6, 7, 19, 8, 1, 18, 4, 19, 6, 17, 6, 20, 1, 21, 9, 19, 17, 1, 19, 11, 21, 15, 1, 18, 19, 4, 19, 1, 20, 1, 21, 21, 13, 4, 16, 1, 19, 20, 2, 21, 1, 19, 14, 6, 6, 7, 15, 19, 0], [0]],
+		"text":"Lossless data compression is used in ZIP file format. Image compressions such as PNG and GIF use lossless compression.  Whereas, lossy compression,  are used in MP3 Audio files."
+	},
+	{
+		"id":14,
+		"q_label":"Quick Sort",
+		"quest":"Explain Quick sort algorithm",
+		"visemes":[[6, 20, 15, 21, 14, 4, 19, 20, 7, 6, 20, 15, 3, 13, 19, 1, 14, 20, 5, 6, 17, 1, 21, 0]],
+		"text":"Try answering it yourself. Look up your textbook or the internet for the answer, write your answer on a sheet of paper. Explain it to a fellow student and get his or her feedback. Then improve on your explanation and the way of speaking. "
+	},
+	{
+		"id":15,
+		"q_label":"Master theorem",
+		"quest":"What's the use of the Master theorem in the analysis of algorithms?",
+		"visemes":[[7, 1, 19, 4, 15, 17, 1, 6, 7, 15, 1, 18, 17, 1, 21, 1, 15, 19, 5, 17, 6, 13, 1, 21, 6, 19, 17, 1, 1, 19, 1, 14, 1, 15, 1, 15, 1, 18, 1, 14, 20, 5, 6, 17, 1, 21, 15, 0], [0]],
+		"text":"The master theorem helps perform an asymptotic analysis for recurrence relations which occur in the analysis of many divide-and-conquer algorithms. "
+	},
+	{
+		"id":16,
+		"q_label":"MT details",
+		"quest":"Can you explain the details of the master theorem? Feel free to use the white-board.",
+		"visemes":[[20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 17, 1, 19, 6, 19, 4, 14, 15, 1, 18, 17, 1, 21, 1, 15, 19, 5, 17, 6, 13, 1, 21, 0], [18, 6, 14, 18, 13, 6, 19, 7, 6, 7, 15, 17, 1, 7, 11, 19, 21, 3, 13, 19, 0], [0]],
+		"text":"If the runtime of an algorithm can be expressed in the form T(n) = a T(n/b) + f(n) where a>= 1, b>1,  n is the size of the problem, a is the number of subproblems in the recursion, n/b is the size of each subproblem, f(n) is the cost of the work done outside the recursive calls, that is the cost of dividing and merging. Then the master theorem gives the asymptotic estimate of time in 3 different cases.  
+Case 1. When the running time is dominated by the cost at the leaves  If f(n) = O (n^logb(a) - epsilon) , then T(n) = Theta (n^logb(a) for epsilon >0       
+Case 2. When running time is evenly distributed throughout the tree.  If f(n) = Theta (n^ logb(a)), then  T(n) = Theta (n^ logb(a) times log(n))     
+Case 3. When the running time is dominated by the cost at the root. If f(n) = Omega (n^Logb(a) + epsilon) then T(n) = Theta(f(n)) for epsilon > 0.
+"
+	},
+	{
+		"id":17,
+		"q_label":"O notation",
+		"quest":"What are theta notation, big O notation, and Ω omega notation?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 4, 19, 1, 19, 8, 19, 4, 16, 1, 19, 0, 21, 6, 20, 8, 19, 8, 19, 4, 16, 1, 19, 0, 1, 19, 19, 8, 21, 4, 20, 1, 19, 8, 19, 4, 16, 1, 19, 0], [0]],
+		"text":"In Asymptotic analysis of algorithms, The theta notation bounds a function from above and below, the Big O notation defines an upper bound of an algorithm, and  Ω(omega) notation provides an asymptotic lower bound. "
+	}]
+}

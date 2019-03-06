@@ -1,0 +1,115 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Tree traversal",
+		"quest":"What is a tree traversal? ",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 13, 6, 0], [0]],
+		"text":"A tree traversal or tree search is the process of visiting each node in a tree data structure, exactly once."
+	},
+	{
+		"id":2,
+		"q_label":"Traversal approach",
+		"quest":"How would you classify the various types of binary tree traversal?",
+		"visemes":[[12, 9, 7, 4, 19, 6, 7, 20, 14, 1, 15, 1, 18, 11, 17, 1, 18, 4, 13, 6, 1, 15, 19, 11, 21, 15, 1, 18, 21, 11, 19, 5, 6, 19, 13, 6, 0], [0]],
+		"text":"A tree traversals can be classified into Breadth First (or level-order traversal) and Depth First Traversal. The Depth First traversal can be of the type preorder, in-order, or post-order traversal depending on the order in which the nodes are visited."
+	},
+	{
+		"id":3,
+		"q_label":"Breadth First Search",
+		"quest":"Can you describe the BFS algorithm briefly?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 6, 15, 20, 13, 11, 21, 17, 1, 1, 14, 20, 5, 6, 17, 1, 21, 21, 13, 6, 18, 14, 6, 0], [0]],
+		"text":"Breadth First Search or BFS is an algorithm for traversing a graph. In BFS, we start with a node and search the nodes layer-wise or breadth-wise and then move to the next level or layer and keep track of which nodes have been visited using, for example, a boolean array."
+	},
+	{
+		"id":4,
+		"q_label":"Monte Carlo search",
+		"quest":"What is Monte Carlo tree search? Give some examples where it is used.",
+		"visemes":[[7, 1, 19, 6, 15, 21, 2, 19, 19, 6, 20, 2, 13, 14, 8, 19, 13, 6, 15, 5, 16, 0], [20, 6, 18, 15, 1, 21, 6, 20, 15, 1, 21, 21, 1, 14, 15, 7, 4, 13, 6, 19, 6, 15, 6, 7, 15, 19, 0], [0]],
+		"text":"Monte Carlo tree search or MCTS is a heuristic search algorithm for some kinds of decision processes by random sampling of the search space, expanding the search tree, and analyzing the most promising decisions or moves. MCTS is used in computer games such as Go, chess, bridge, and poker."
+	},
+	{
+		"id":5,
+		"q_label":"Bellman Ford",
+		"quest":"What is the Bellman Ford algorithm for finding the single source shortest paths?",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 21, 4, 14, 21, 1, 19, 18, 3, 13, 19, 1, 14, 20, 5, 6, 17, 1, 21, 18, 3, 13, 18, 11, 19, 19, 6, 20, 17, 1, 15, 6, 20, 20, 1, 14, 15, 3, 13, 15, 16, 3, 13, 19, 6, 15, 19, 21, 1, 17, 15, 0], [0]],
+		"text":"The Bellman-Ford algorithm finds the single source shortest paths by repeatedly relaxing distances until there are no more distances to relax. Relaxing distances is done by checking if an intermediate point provides a better path than the currently chosen path. After a number of iterations that is slightly less than the node count, we can check if the solution is optimal. If not, there is a cycle of negative edges that will provide better paths infinitely long."
+	},
+	{
+		"id":6,
+		"q_label":"Dijkstra algorithm",
+		"quest":"What are the main advantages of Bellman Ford algorithm over Dijkstra's algorithm?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 21, 4, 19, 1, 19, 18, 1, 19, 19, 6, 16, 6, 15, 1, 18, 21, 4, 14, 21, 1, 19, 18, 3, 13, 19, 1, 14, 20, 5, 6, 17, 1, 21, 8, 18, 5, 4, 15, 1, 14, 20, 5, 6, 17, 1, 21, 0], [0]],
+		"text":"Bellman-Ford algorithm goes through each edge in every iteration whereas Dijkstra's algorithm looks only to the immediate neighbors of a vertex. Bellman Ford algorithm works also works with graphs in which the edges can have negative weights, where Dijkstra's algorithm may fail."
+	},
+	{
+		"id":7,
+		"q_label":"Pattern search",
+		"quest":"Can you name a few pattern searching algorithms?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 1, 18, 6, 7, 21, 1, 19, 5, 19, 15, 5, 16, 6, 20, 1, 14, 20, 5, 6, 17, 1, 21, 15, 0], [0]],
+		"text":"There are several pattern searching algorithms such as Naïve string search algorithm, Rabin-Karp algorithm, Knuth-Morris-Pratt or KMP algorithm, Boyer-Moore algorithm and so on."
+	},
+	{
+		"id":8,
+		"q_label":"Boyer Moore",
+		"quest":"Can you explain the idea behind the Boyer-Moore algorithm in simple words to us?",
+		"visemes":[[20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 17, 1, 11, 19, 6, 1, 21, 6, 12, 11, 19, 19, 17, 1, 21, 10, 5, 21, 4, 13, 1, 14, 20, 5, 6, 17, 1, 21, 6, 19, 15, 6, 21, 21, 1, 14, 7, 5, 19, 15, 19, 7, 1, 15, 0], [0]],
+		"text":"The Boyer-Moore algorithm searches for occurrences of pattern P in text T by performing explicit character comparisons at different alignments. It preprocesses the pattern and the information gained from that is used to skip as many alignments as possible. The main idea is to compare the end of the pattern to the text and thus, in case of a mismatch, avoid unnecessary backward search along the text. If the character of the text does not match any of the characters in the pattern, then the search can be skipped by the length of the pattern. This makes the Boyer-Moore algorithm quite efficient and it is the standard benchmark for string search algorithms. "
+	},
+	{
+		"id":9,
+		"q_label":"String search",
+		"quest":"Can you give us some practical applications where the string search is used?",
+		"visemes":[[20, 1, 19, 6, 7, 20, 6, 18, 1, 15, 15, 1, 21, 21, 13, 1, 20, 19, 1, 20, 1, 14, 1, 21, 14, 1, 20, 4, 16, 1, 19, 15, 7, 4, 13, 17, 1, 15, 19, 13, 6, 20, 15, 5, 16, 6, 15, 6, 7, 15, 19, 0], [0]],
+		"text":"String searching is used in text editors, word processors, syntax checkers, spam filters, DNA pattern matching, etc."
+	},
+	{
+		"id":10,
+		"q_label":"Aho Corasick",
+		"quest":"Do you know how the Aho-Corasick algorithm works? ",
+		"visemes":[[19, 7, 6, 7, 19, 8, 12, 9, 17, 1, 2, 12, 8, 1, 14, 20, 5, 6, 17, 1, 21, 7, 5, 20, 15, 0], [0]],
+		"text":"Aho-Corasick string searching algorithm constructs a finite-state machine that resembles a trie with additional links between the various internal nodes. These additional links allow fast transitions between failed string matches to other branches of the trie that share a common prefix. This allows the automation to transition between string matches without the need for back-tracking."
+	},
+	{
+		"id":11,
+		"q_label":"Hamiltonian Path",
+		"quest":"What is a Hamiltonian path? Do you know of any algorithm to find the Hamiltonian path?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 21, 1, 17, 0], [19, 7, 6, 7, 19, 8, 1, 18, 4, 19, 6, 1, 14, 20, 5, 6, 17, 1, 21, 19, 7, 18, 11, 19, 19, 17, 1, 21, 1, 17, 0], [0]],
+		"text":"The Hamiltonian path is a path in a directed or undirected graph that visits each vertex exactly once. The Steinhaus-Johnson-Trotter algorithm or SJT algorithm can be used to find the Hamiltonian paths. It generates all the permutations of a graph…( add more details)"
+	},
+	{
+		"id":12,
+		"q_label":"NP complete",
+		"quest":"What is an NP-complete problem? Can you explain it in simple terms?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 20, 1, 21, 21, 14, 6, 19, 21, 13, 2, 21, 14, 1, 21, 0], [20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 6, 19, 6, 19, 15, 6, 21, 21, 1, 14, 19, 5, 21, 15, 0], [0]],
+		"text":"A nondeterministic polynomial time or  NP-complete problem is a problem for which the time required to solve the problem using any known algorithm increases rapidly with the size of the problem and hence solved by heuristic methods and approximate algorithms.  There are many NP-complete problems, such as Graph coloring problem, Berth allocation problem, the Hamiltonian path problem, etc."
+	},
+	{
+		"id":13,
+		"q_label":"Scheduling algo",
+		"quest":"Can you name some scheduling algorithms used in Operating systems?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 15, 1, 21, 15, 20, 4, 16, 4, 14, 6, 20, 1, 14, 20, 5, 6, 17, 1, 21, 15, 6, 7, 15, 19, 6, 19, 2, 21, 5, 4, 19, 6, 20, 15, 6, 15, 19, 1, 21, 15, 0], [0]],
+		"text":"Some of the algorithms for OS job scheduling algorithms are First-come -First-served, Shortest-Job-Next, Priority Scheduling, Round Robin, Multiple-level Queues Scheduling etc. "
+	},
+	{
+		"id":14,
+		"q_label":"Round Robin",
+		"quest":"Can you describe how Round Robin Scheduling works?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 6, 15, 20, 13, 11, 21, 12, 9, 13, 9, 19, 19, 13, 2, 21, 1, 19, 15, 20, 4, 16, 4, 14, 6, 20, 7, 5, 20, 15, 0], [0]],
+		"text":"Round Robin is a preemptive process scheduling algorithm. Each process is provided a fixed time to execute. Once a process is executed for a given time period, it is preempted and the other process executes for a given time period. Context switching is used to save states of preempted processes."
+	},
+	{
+		"id":15,
+		"q_label":"Swarm intelligence",
+		"quest":"Can you name a few Swarm intelligence algorithms?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 1, 18, 6, 7, 15, 7, 3, 13, 21, 6, 19, 19, 4, 14, 1, 16, 1, 19, 15, 1, 14, 20, 5, 6, 17, 1, 21, 15, 0], [0]],
+		"text":"Some of the swarm intelligence algorithms are Altruism algorithm, Ant colony optimization, Artificial bee colony algorithm, Bat algorithm, particle swarm optimization, etc."
+	},
+	{
+		"id":16,
+		"q_label":"Ant colony",
+		"quest":"What do you know about ACO and where it is used?",
+		"visemes":[[7, 1, 19, 19, 7, 6, 7, 19, 8, 1, 21, 9, 19, 1, 19, 19, 7, 4, 13, 6, 19, 6, 15, 6, 7, 15, 19, 0], [0]],
+		"text":"Ant colony optimization or ACO algorithm is a probabilistic technique based on the actions of an ant colony for finding good paths through graphs. Artificial ants locate optimal solutions by moving through a parameter space representing all possible solutions and keeping track of their positions and quality of their solutions. ACO is used in job-shop scheduling, network routing, urban transportation systems, image processing, etc."
+	}]
+}

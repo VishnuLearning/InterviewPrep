@@ -1,5 +1,7 @@
 <ActionBar *ngIf="path!=''" title="{{topic}}" class="action-bar">
 </ActionBar>
-<StackLayout>
-    <Button text="{{lesson.name}}" class="btn btn-primary" *ngFor="let lesson of lessons" (tap)="gotoLesson(lesson)"></Button>
-</StackLayout>
+<ScrollView>
+    <StackLayout>
+        <Button text="{{lesson.name}}" class="btn btn-primary" *ngFor="let lesson of lessons" (tap)="gotoLesson(lesson)"></Button>
+    </StackLayout>
+</ScrollView>

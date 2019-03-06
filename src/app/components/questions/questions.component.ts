@@ -8,7 +8,7 @@ import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
 import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 import { SpeechRecognition, SpeechRecognitionTranscription, SpeechRecognitionOptions } from 'nativescript-speech-recognition';
-import { error } from "tns-core-modules/trace/trace";
+// import { error } from "tns-core-modules/trace/trace";
 // import {Slider} from "tns-core-modules/ui/slider";
 
 @Component({
@@ -47,10 +47,9 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	'julia_mouth_wide5.png','julia_mouth_wide_sh.png','julia_mouth_wide_sh.png','julia_mouth_wide_th.png','julia_mouth_wide_f.png',
 	'julia_mouth_wide_sh.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_closed.png'];
 	speechRate = 0.9;
-
-	private text2speech: TNSTextToSpeech;
+	// private text2speech: TNSTextToSpeech;
 	private speech2text: SpeechRecognition;
-	private speakOptions : SpeakOptions;
+	speakOptions : SpeakOptions;
     microphoneEnabled: boolean = false;
     recording: boolean = false;
     lastTranscription: string = null;
@@ -58,8 +57,9 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     recognizedText: string;
     pitch: number = 100;
 	private recordingAvailable: boolean;
+	private spokenText: string;
 
-	constructor(private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
+	constructor(private text2speech: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
 		this.questions = [];
 		this.qnum = 1;
 		var u = decodeURI(router.url);
@@ -165,13 +165,16 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
    
 	toggleRecording(): void {
-        this.recording = !this.recording;
+		this.recording = !this.recording;
+		// console.log(this.recording);
         if (this.recording) {
+			// console.log("toggleRecording true part");
 			this.spoken = false;
           	this.lastTranscription = null;
           	this.startListening();
 		} 
 		else {
+			// console.log("toggleRecording true part");
           	this.stopListening();
           	if (!this.spoken && this.lastTranscription !== null) {
             	alert(this.lastTranscription);
@@ -180,7 +183,9 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     }
     
 	private startListening(): void {
+		// console.log("Inside startlistening");
 		if (!this.recordingAvailable) {
+			console.log("inside if");
 			alert({
 			title: "Not supported",
 			message: "Speech recognition not supported on this device. Try a different device please.",
@@ -190,8 +195,10 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			this.recording = false;
 			return;
 		}
+		// console.log("else part");
 		this.recording = true;
 		this.speech2text.startListening({
+			locale: "en-US",
 			returnPartialResults: true,
 			onResult: (transcription: SpeechRecognitionTranscription) => {
 				// this.zone.run(() => this.recognizedText = transcription.text);
@@ -199,7 +206,9 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 				if (transcription.finished) {
 					this.spoken = true;
 					setTimeout(() => alert(transcription.text), 300);
-					// alert(transcription.text);
+					this.spokenText = transcription.text;
+					alert(transcription.text);
+					this.generateScore();
 				}
 			},
 		}).then(
@@ -207,8 +216,37 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			(errorMessage: string) => {console.log(`Error: ${errorMessage}`);}
 		);
 	}
+
+	private generateScore(): void {
+		let spokenSentences = this.spokenText.split(" ");
+		let givenSentences = this.question.text.split(" ");
+		let v=0;
+		while(v<givenSentences.length){
+			givenSentences[v].replace('.','');
+			v++;
+		}
+		let i=0;
+		let j=0;
+		let count=0;
+		while(i<spokenSentences.length && j<givenSentences.length){
+			// console.log(spokenSentences[i].toLowerCase());
+			// console.log(givenSentences[j].toLowerCase());
+			if(spokenSentences[i].toLowerCase() != givenSentences[j].toLowerCase()){
+				j++;
+				continue;
+			}
+			i++; j++; count++;
+		}
+		// console.log(givenSentences)
+		// console.log(spokenSentences)
+		// console.log(givenSentences.length)
+		// console.log(spokenSentences.length)
+		// console.log(count);
+		alert((count/givenSentences.length)*100);
+	}
     
     private stopListening(): void {
+		// console.log("stopListening");
         this.recording = false;
         this.speech2text.stopListening().then(() => {
           	console.log("Stopped listening");
@@ -220,7 +258,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     	this.speech2text.available().then(avail => {
       		this.recordingAvailable = avail;
     	});
-		this.text2speech = new TNSTextToSpeech();
+		// this.text2speech = new TNSTextToSpeech();
 		this.sub = this.route.params.subscribe(params => {
 			this.path = params['path'];
 			this.pathservice.getQuestions(this.path)

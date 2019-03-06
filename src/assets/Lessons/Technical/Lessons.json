@@ -1,10 +1,46 @@
 [
     {
-        "name": "Artificial Intelligence",
-        "path": "ArtIn.json"
+        "name": "Algorithm-1",
+        "path": "Algorithm-1.json"
     },
     {
-        "name": "Data Structures",
-        "path": "DS.json"
+        "name": "Algorithm-2",
+        "path": "Algorithm-2.json"
+    },
+    {
+        "name": "Algorithm-3",
+        "path": "Algorithm-3.json"
+    },
+    {
+        "name": "Artificial Intelligence 1",
+        "path": "ArtificialIntelligence-1.json"
+    },
+    {
+        "name": "Artificial Intelligence 2",
+        "path": "ArtificialIntelligence-2.json"
+    },
+    {
+        "name": "Data Structures 1",
+        "path": "DataStructures-1.json"
+    },
+    {
+        "name": "Data Structures 2",
+        "path": "DataStructures-2.json"
+    },
+    {
+        "name": "Data Structures 3",
+        "path": "DataStructures-3.json"
+    },
+    {
+        "name": "Data Base 1",
+        "path": "Database-1.json"
+    },
+    {
+        "name": "Data Base 2",
+        "path": "Database-2.json"
+    },
+    {
+        "name": "Data Base 3",
+        "path": "Database-3.json"
     }
 ]

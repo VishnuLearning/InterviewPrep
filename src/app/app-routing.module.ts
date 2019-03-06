@@ -5,7 +5,6 @@ import { Routes } from "@angular/router";
 import { HomeComponent } from "./components/home/home.component";
 import { LessonComponent } from "./components/lesson/lesson.component";
 import { QuestionsComponent } from "./components/questions/questions.component";
-// import { StsComponent } from "./components/sts/sts";
 
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },

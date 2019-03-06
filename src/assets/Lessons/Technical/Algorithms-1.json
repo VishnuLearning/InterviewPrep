@@ -1,0 +1,108 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Algorithm define",
+		"quest":"What is an algorithm in computer science? What is the use of an algorithm?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 6, 19, 20, 1, 21, 21, 6, 7, 19, 5, 15, 11, 1, 19, 15, 0], [7, 1, 19, 6, 15, 17, 1, 6, 7, 15, 1, 18, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 0], [0]],
+		"text":"An algorithm is a finite sequence of well-defined instructions to accomplish a given task, that is to transform the given input into the output. To solve any computational problem, an appropriate algorithm or the step-by-step procedure is followed to arrive at the desired solution."
+	},
+	{
+		"id":2,
+		"q_label":"Algo examples",
+		"quest":"Can you name a few algorithms you are familiar with and what kind of problems they can solve?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 1, 18, 6, 7, 1, 14, 20, 5, 6, 17, 1, 21, 15, 6, 7, 2, 13, 18, 1, 21, 6, 14, 6, 5, 7, 6, 17, 1, 19, 19, 7, 1, 19, 20, 11, 19, 19, 1, 18, 21, 13, 2, 21, 14, 1, 21, 15, 17, 4, 20, 1, 19, 15, 2, 14, 18, 0], [0]],
+		"text":"Some examples of computer algorithms are Merge sort, Quick sort, Heap sort for sorting a given set of data, Dijkstra's algorithm for shortest path in a graph search, Fast Fourier Transform for transforming time-domain data into frequency domain, RSA algorithm for encryption and decryption, Gear algorithm for solving differential equations, Gradient descent algorithm for optimization and so on."
+	},
+	{
+		"id":3,
+		"q_label":"Algo applied",
+		"quest":"Name one algorithm that you have actually used in a computer program. ",
+		"visemes":[[19, 4, 21, 7, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 17, 1, 19, 6, 7, 12, 1, 18, 1, 20, 16, 1, 7, 1, 14, 6, 6, 7, 15, 19, 6, 19, 1, 20, 1, 21, 21, 6, 7, 19, 5, 21, 13, 8, 20, 13, 1, 21, 0], [0]],
+		"text":"I have used the generalized reduced gradient or GRG algorithm in my project to optimize the cost function. It is a generalization of the reduced gradient descent algorithm that allows non-linear constraints and arbitrary bounds on the variables."
+	},
+	{
+		"id":4,
+		"q_label":"Explain an Algo",
+		"quest":"Can you explain the details of the algorithm you used, that is, how it works? Feel free to use the white-board or a sheet of paper.",
+		"visemes":[[20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 17, 1, 19, 6, 19, 4, 14, 15, 1, 18, 17, 1, 1, 14, 20, 5, 6, 17, 1, 21, 6, 7, 6, 7, 15, 19, 0, 17, 1, 19, 6, 15, 0, 12, 9, 6, 19, 7, 5, 20, 15, 0], [18, 6, 14, 18, 13, 6, 19, 7, 6, 7, 15, 17, 1, 7, 11, 19, 21, 3, 13, 19, 3, 13, 1, 16, 6, 19, 1, 18, 21, 4, 21, 5, 0], [0]],
+		"text":"The Generalized reduced gradient algorithm is used to  find the minimum (or maximum) of a function of n independent variables given non-linear constraints and arbitrary lower and upper bounds on the variables. We partition the independent variables, follow essentially the same steps as the reduced gradient algorithm to find the minimum, that is to update independent variables in the direction of  the reduced gradient. But then, depending on the active constraints, we adjust the step size and apply a correction procedure to return to the surface where f(x)=0. Then repeat till the convergence criteria are met and we arrive at an optimum."
+	},
+	{
+		"id":5,
+		"q_label":"Complexity 1",
+		"quest":"What is the complexity of an algorithm?  ",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 20, 1, 21, 21, 14, 4, 20, 15, 1, 19, 6, 1, 18, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 0], [0]],
+		"text":"The complexity of an algorithm is the amount of resources required for running it. In other words, it is an approximation of the number of steps necessary to execute an algorithm as a function of the input size."
+	},
+	{
+		"id":6,
+		"q_label":"Complexity types",
+		"quest":"What are the types of complexities of an algorithm? Please explain.",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 19, 11, 21, 15, 1, 18, 20, 1, 21, 21, 14, 4, 20, 15, 6, 19, 6, 15, 1, 18, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 0], [21, 14, 6, 15, 6, 20, 15, 21, 14, 4, 19, 0], [0]],
+		"text":"There are two types of complexities of an algorithm: time complexity and space complexity. Time complexity is a measure of the time it takes to run an algorithm. Space complexity is a measure of the amount of working storage or memory an algorithm needs."
+	},
+	{
+		"id":7,
+		"q_label":"suitable algo",
+		"quest":"Given a computational problem, how would you go about  choosing the best algorithm?",
+		"visemes":[[20, 6, 18, 1, 19, 1, 20, 2, 21, 21, 6, 7, 19, 4, 16, 1, 19, 1, 14, 21, 13, 2, 21, 14, 1, 21, 0, 12, 9, 7, 4, 19, 6, 7, 20, 8, 1, 21, 9, 19, 16, 7, 15, 6, 20, 17, 1, 21, 4, 15, 19, 1, 14, 20, 5, 6, 17, 1, 21, 0], [0]],
+		"text":"From all the well-known algorithms designed to solve the type of problem at hand, we have to choose the best based on the considerations of efficiency, accuracy, robustness, stability, memory usage, programming complexity, etc. Sometimes, one needs to even develop new or better algorithms to solve a special or new type of problem."
+	},
+	{
+		"id":8,
+		"q_label":"Sorting algo",
+		"quest":"Can you name a few Sorting algorithms?",
+		"visemes":[[20, 1, 19, 6, 7, 19, 4, 21, 1, 18, 6, 7, 15, 3, 13, 19, 6, 20, 1, 14, 20, 5, 6, 17, 1, 21, 15, 0], [0]],
+		"text":"Some of the commonly used sorting algorithms are Bubble sort, Heap sort, Insertion sort, Merge sort, Quick sort, Radix sort, Bucket sort, etc."
+	},
+	{
+		"id":9,
+		"q_label":"Full sorting",
+		"quest":"What is a k-sorted array and how would you fully sort it?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 20, 4, 15, 3, 13, 19, 6, 19, 5, 4, 1, 19, 19, 12, 9, 7, 4, 19, 6, 7, 18, 4, 14, 6, 15, 3, 13, 19, 6, 19, 0], [0]],
+		"text":"A k-sorted array is a partially sorted array where each element is at the most k positions away from its fully sorted position. Given such a partially sorted array, we can use, for example, the insertion sort algorithm to sort it fully."
+	},
+	{
+		"id":10,
+		"q_label":"Search algo",
+		"quest":"If we have to search for an element in a given array, what algorithms can we use?",
+		"visemes":[[6, 18, 7, 6, 12, 1, 18, 19, 7, 15, 5, 16, 18, 3, 13, 1, 19, 4, 14, 1, 21, 1, 19, 19, 6, 19, 1, 20, 6, 18, 1, 19, 5, 4, 0, 7, 1, 19, 1, 14, 20, 5, 6, 17, 1, 21, 15, 20, 1, 19, 7, 6, 6, 7, 15, 0], [0]],
+		"text":"We can use search algorithms such as linear search, binary search, interpolation search, exponential search, Fibonacci search, and so on."
+	},
+	{
+		"id":11,
+		"q_label":"Fibonacci search",
+		"quest":"What are the main differences between Linear search, Binary search, and Fibonacci search?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 21, 4, 19, 19, 6, 18, 5, 1, 19, 15, 6, 15, 21, 6, 19, 7, 6, 19, 14, 6, 19, 6, 5, 15, 5, 16, 0, 21, 11, 19, 5, 6, 15, 5, 16, 0, 1, 19, 19, 18, 6, 21, 1, 19, 2, 16, 6, 15, 5, 16, 0], [0]],
+		"text":"Given an array, a linear search scans one item at a time and progresses linearly through the elements. This works for both sorted and unsorted arrays. Whereas, given a sorted array, a Binary search is more efficient. It works by comparing the middle element, and determining which half to search and repeatedly the search interval is halved. In Fibonacci search, we divide the array into two parts that have sizes that are consecutive Fibonacci numbers. Fibonacci search has the advantage that one only needs addition and subtraction operations to calculate the indices of the accessed array elements."
+	},
+	{
+		"id":12,
+		"q_label":"Greedy algo",
+		"quest":"What is a greedy algorithm?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 20, 13, 6, 19, 6, 1, 14, 20, 5, 6, 17, 1, 21, 0], [0]],
+		"text":"A greedy algorithm is a strategy that makes the locally optimal choice at each stage with the intent of finding a global optimum."
+	},
+	{
+		"id":13,
+		"q_label":"Greedy Example",
+		"quest":"Can you give an example of a couple of problems where a greedy algorithm can be used?",
+		"visemes":[[20, 1, 19, 6, 7, 20, 6, 18, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 1, 18, 1, 20, 1, 21, 1, 14, 1, 18, 21, 13, 2, 21, 14, 1, 21, 15, 7, 4, 13, 1, 20, 13, 6, 19, 6, 1, 14, 20, 5, 6, 17, 1, 21, 20, 1, 19, 21, 6, 6, 7, 15, 19, 0], [0]],
+		"text":"A greedy algorithm can be used to solve the activity selection problem, where the goal is to pick the maximum number of activities that do not clash with each other. In currency change machines, a greedy algorithm can be used to give a minimum number of coins. A greedy algorithm can also be used in decision tree learning, as in the ID3 or Iterative Dichotomiser 3 algorithm, however it does not guarantee a globally optimal solution."
+	},
+	{
+		"id":14,
+		"q_label":"Traveling Salesman 1",
+		"quest":"Can the greedy algorithm be used to solve the traveling salesman problem?",
+		"visemes":[[20, 1, 19, 17, 1, 20, 13, 6, 19, 6, 1, 14, 20, 5, 6, 17, 1, 21, 21, 6, 6, 7, 15, 19, 19, 7, 15, 2, 14, 18, 17, 1, 19, 13, 1, 18, 1, 14, 6, 20, 15, 4, 14, 15, 21, 1, 19, 21, 13, 2, 21, 14, 1, 21, 0], [0]],
+		"text":"We can use a simple greedy strategy like nearest neighbor algorithm, for example At each step of the journey, go to the nearest unvisited city It will give a quick solution which may not be the optimal solution."
+	},
+	{
+		"id":15,
+		"q_label":"Traveling Salesman 2",
+		"quest":"What would be a good algorithm to solve the traveling salesman problem (or TSP)?",
+		"visemes":[[7, 1, 19, 7, 4, 19, 21, 6, 1, 20, 4, 19, 1, 14, 20, 5, 6, 17, 1, 21, 19, 7, 15, 2, 14, 18, 17, 1, 19, 13, 1, 18, 1, 14, 6, 20, 15, 4, 14, 15, 21, 1, 19, 21, 13, 2, 21, 14, 1, 21, 3, 13, 0], [0]],
+		"text":"There are several heuristic algorithms and exact algorithms for solving the travelling salesman problem. For example, Held-Karp algorithm, branch-and-bound algorithm, Christofides algorithm, Optimized Markov chain algorithms,  etc. There are many problems similar to the traveling salesman problem, for example, vehicle routing problem, Printed circuit layout optimization, etc."
+	}]
+}

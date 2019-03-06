@@ -1,0 +1,122 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Certificate verification",
+		"quest":"Can you show us your original academic and training certificates?",
+		"visemes":[[20, 1, 19, 6, 7, 16, 8, 1, 15, 6, 3, 13, 5, 6, 16, 1, 19, 1, 14, 1, 20, 1, 19, 4, 21, 6, 20, 1, 19, 19, 19, 13, 4, 19, 6, 20, 15, 5, 19, 6, 18, 6, 20, 1, 19, 15, 0], [0]],
+		"text":"Sure. Here are my academic certificates and here are my internship and training certificates. I have not graduated yet, I am in the final year. Here are the provisional certificate and Grade report."
+	},
+	{
+		"id":2,
+		"q_label":"Background mismatch",
+		"quest":"I see that your background is in Electronics and Communication engineering. Why do you want this job and not something closely related to your field?",
+		"visemes":[[11, 15, 6, 17, 1, 19, 6, 3, 13, 21, 1, 20, 20, 13, 9, 19, 19, 6, 15, 6, 19, 6, 14, 4, 20, 19, 13, 2, 19, 6, 20, 15, 1, 19, 19, 20, 1, 21, 6, 7, 19, 1, 20, 4, 16, 1, 19, 4, 19, 16, 1, 19, 6, 13, 6, 20, 0], [7, 11, 19, 7, 6, 7, 7, 2, 19, 19, 17, 6, 15, 16, 2, 21, 1, 19, 19, 19, 2, 19, 15, 1, 21, 17, 6, 20, 20, 14, 8, 15, 14, 6, 13, 6, 14, 4, 19, 6, 19, 19, 7, 6, 3, 13, 18, 6, 14, 19, 0], [0]],
+		"text":"My broad engineering background helps me to look at projects from a wider perspective. Your company is a leader in business solutions. You are already working on integrating your traditional ERP solution with AI and ML-based business analytics. I took a few courses in computer science, did a small project on that during my training and found it very exciting to see how much we can learn from the existing data and make smart decisions. I want to learn more about it and apply it to solve real problems. I think this position will give me the right opportunity to contribute something significant to a futuristic product of your company."
+	},
+	{
+		"id":3,
+		"q_label":"Achievement",
+		"quest":"What is your greatest achievement? Can you tell us about one accomplishment that you are really proud of? or What is the most difficult thing you have ever done?",
+		"visemes":[[7, 1, 19, 6, 15, 6, 3, 13, 20, 13, 4, 19, 1, 15, 19, 1, 16, 6, 18, 21, 1, 19, 19, 0], [20, 1, 19, 6, 7, 19, 4, 14, 1, 15, 1, 21, 9, 19, 7, 1, 19, 1, 20, 2, 21, 21, 14, 6, 16, 21, 1, 19, 19, 17, 1, 19, 6, 7, 2, 13, 13, 6, 14, 6, 21, 13, 9, 19, 1, 18, 0], [3, 13, 7, 1, 19, 6, 15, 17, 1, 21, 8, 15, 19, 19, 6, 18, 1, 20, 1, 14, 19, 17, 6, 20, 6, 7, 12, 1, 18, 4, 18, 5, 19, 1, 19, 0], [0]],
+		"text":"When I was working on my project (or at my current job, or during my internship), I hit an obstacle—our method just did not work; it produced unreasonable results. We tried many modifications, struggled for months, still the results were far from measured data. My guide and I thought we chose the wrong path and probably should abandon it. I was thinking about it day and night. One Saturday morning about 3 AM, I got an idea to solve that problem. I woke up and worked out the mathematics. I went to my lab and quickly changed our program and ran it, which produced quite reasonable results. I got very excited and refined the code and played with a few input parameters, the results were very satisfactory. On Monday morning, I showed my work to my guide, he was very happy. My project was essentially finished and we will publish our work soon. That was possibly my biggest accomplishment so far. "
+	},
+	{
+		"id":4,
+		"q_label":"Publication",
+		"quest":"So, in which journal are you planning to publish it? ",
+		"visemes":[[15, 8, 0, 6, 19, 7, 6, 16, 16, 5, 19, 1, 14, 2, 13, 6, 7, 21, 14, 1, 19, 6, 20, 19, 7, 21, 1, 21, 14, 6, 16, 6, 19, 0], [0]],
+		"text":"In the International Journal for Computational Science and Engineering. However, first, we will submit it as a conference paper. I hope it gets accepted. It will be exciting to go to a conference and present our paper. "
+	},
+	{
+		"id":5,
+		"q_label":"Continuous improvement",
+		"quest":"The technology is changing very fast. How do you plan to keep pace with the changes and stay productive?",
+		"visemes":[[17, 1, 19, 4, 20, 19, 2, 14, 1, 16, 6, 6, 15, 16, 4, 19, 16, 6, 20, 18, 4, 13, 6, 18, 1, 15, 19, 0], [12, 9, 19, 7, 6, 7, 21, 14, 1, 19, 19, 7, 20, 6, 21, 21, 4, 15, 7, 6, 17, 17, 1, 16, 4, 19, 16, 1, 15, 1, 19, 19, 15, 19, 4, 21, 13, 1, 19, 1, 20, 19, 6, 18, 0], [0]],
+		"text":"Yes, technology is changing rapidly. I like the changes and am always excited to learn new technologies. I spend some time every week learning about which institutes and industries are working on what new technology. And if something looks interesting, I delve into it, learn it and see how and where I can apply it to create new products to stay ahead instead of being a passive follower or user."
+	},
+	{
+		"id":6,
+		"q_label":"New technology",
+		"quest":"Can you give an example of some new technology you have learned recently and where it can be useful?",
+		"visemes":[[20, 1, 19, 6, 7, 20, 6, 18, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 1, 18, 15, 1, 21, 19, 7, 19, 4, 20, 19, 2, 14, 1, 16, 6, 6, 7, 12, 1, 18, 14, 5, 19, 19, 13, 6, 15, 1, 19, 19, 14, 6, 1, 19, 19, 7, 4, 13, 6, 19, 20, 1, 19, 21, 6, 6, 7, 15, 18, 1, 14, 0], [0]],
+		"text":"Yes, currently I am learning about semi-supervised learning. I am thinking that I can combine that with the expert systems in product design to increase the speed and reduce the cost of new product development."
+	},
+	{
+		"id":7,
+		"q_label":"Project management",
+		"quest":"If after a few months you are given a small project to manage, do you think you can handle it? or Do you have any project management experience that can be used at our company?",
+		"visemes":[[6, 18, 1, 18, 19, 5, 1, 18, 6, 7, 21, 1, 19, 17, 15, 6, 7, 2, 13, 20, 6, 18, 1, 19, 1, 15, 21, 3, 14, 21, 13, 2, 16, 4, 20, 19, 19, 7, 21, 1, 19, 1, 16, 0, 19, 7, 6, 7, 17, 6, 20, 20, 6, 7, 20, 1, 19, 12, 1, 19, 19, 1, 14, 6, 19, 0], [3, 13, 19, 7, 6, 7, 12, 1, 18, 4, 19, 6, 21, 13, 2, 16, 4, 20, 19, 21, 1, 19, 1, 16, 21, 1, 19, 19, 6, 20, 15, 21, 6, 13, 6, 1, 19, 15, 17, 1, 19, 20, 1, 19, 21, 6, 6, 7, 15, 19, 1, 19, 9, 5, 20, 1, 21, 21, 1, 19, 6, 0], [0]],
+		"text":"I have tried to manage my academic project like an industry project--planning, gathering requirements, setting milestones, progress reviews, and even budgeting. I have used Microsoft Project software to help me with project management. I am confident that at your company I can learn more about project management and the tools you use in a short time and take up such responsibilities."
+	},
+	{
+		"id":8,
+		"q_label":"Explaining gaps",
+		"quest":"You graduated last year. Can you tell us what you have been doing since then?",
+		"visemes":[[6, 7, 20, 13, 1, 16, 7, 4, 19, 6, 19, 14, 1, 15, 19, 6, 6, 13, 0], [20, 1, 19, 6, 7, 19, 4, 14, 1, 15, 7, 1, 19, 6, 7, 12, 1, 18, 21, 6, 19, 19, 7, 6, 20, 15, 6, 19, 15, 17, 4, 19, 0], [0]],
+		"text":"I had a good idea about designing a product. I wanted to finish it before taking up a job. I worked very hard and finally finished it a couple of months ago. Additionally, I took two online courses on advanced Data science and Machine learning, which will help me in my profession?"
+	},
+	{
+		"id":9,
+		"q_label":"Proof of claims",
+		"quest":"Do you have the certificates of those courses? And where is your product going to be used? Can you show us your product or the report?",
+		"visemes":[[19, 7, 6, 7, 12, 1, 18, 17, 1, 15, 5, 19, 6, 18, 6, 20, 1, 19, 15, 1, 18, 17, 8, 15, 20, 3, 13, 15, 1, 15, 0], [1, 19, 19, 7, 4, 13, 6, 15, 6, 3, 13, 21, 13, 2, 19, 1, 20, 19, 20, 8, 6, 20, 19, 7, 21, 6, 6, 7, 15, 19, 0], [20, 1, 19, 6, 7, 16, 8, 1, 15, 6, 3, 13, 21, 13, 2, 19, 1, 20, 19, 3, 13, 17, 1, 13, 6, 21, 3, 13, 19, 0], [0]],
+		"text":"Yes. I have the certificates, here are the copies. And here is a brief description of the product. It is currently used in our college laboratory. Hopefully, many other colleges will use it too. I can give a demo if you have time."
+	},
+	{
+		"id":10,
+		"q_label":"Right person",
+		"quest":"Why do you think you should get this job?, What makes you the best candidate for this job? or Why are you the right person for this job?",
+		"visemes":[[7, 11, 19, 7, 6, 7, 17, 6, 20, 20, 6, 7, 16, 4, 19, 20, 4, 19, 17, 6, 15, 16, 2, 21, 0], [0, 7, 1, 19, 21, 4, 20, 15, 6, 7, 17, 1, 21, 4, 15, 19, 20, 1, 19, 19, 1, 19, 4, 19, 18, 3, 13, 17, 6, 15, 16, 2, 21, 0], [3, 13, 7, 11, 2, 13, 6, 7, 17, 1, 13, 11, 19, 21, 5, 15, 1, 19, 18, 3, 13, 17, 6, 15, 16, 2, 21, 0], [0]],
+		"text":"I have checked all the requirements for this position. I sincerely believe I am qualified for it. I have seen the job description and it matches very well with what I would like to do. If I am given a chance, I will give my 100% to perform and deliver for the benefit of the company and for myself. I am confident that I am the right candidate for this position and surely will not disappoint you."
+	},
+	{
+		"id":11,
+		"q_label":"Salary",
+		"quest":"How much salary are you expecting? Or What's your salary expectations?",
+		"visemes":[[12, 9, 21, 1, 16, 15, 1, 14, 5, 6, 2, 13, 6, 7, 6, 20, 15, 21, 4, 20, 19, 6, 20, 0], [3, 13, 7, 1, 19, 4, 15, 6, 3, 13, 15, 1, 14, 5, 6, 4, 20, 15, 21, 4, 20, 19, 4, 16, 1, 19, 15, 0], [0]],
+		"text":"I am a recent graduate and money is not the biggest concern for me. I want to learn, contribute and grow in this company. So, I am just expecting whatever the standard salary for this kind of position is. "
+	},
+	{
+		"id":12,
+		"q_label":"Extra-curricular",
+		"quest":"How do you spend your non-working hours?, What extra-curricular activities do you do?",
+		"visemes":[[12, 9, 19, 7, 6, 7, 15, 21, 4, 19, 19, 6, 3, 13, 19, 2, 19, 7, 5, 20, 6, 20, 9, 5, 15, 0], [0, 7, 1, 19, 4, 20, 15, 19, 13, 1, 20, 5, 6, 20, 6, 1, 14, 5, 1, 20, 19, 6, 18, 1, 19, 6, 15, 19, 7, 6, 7, 19, 7, 0], [0]],
+		"text":"I have started taking an evening yoga class. On the weekends, I go jogging with a few friends. Sometimes we get together and hold discussions on various issues. I volunteer at a local school to teach programming to students."
+	},
+	{
+		"id":13,
+		"q_label":"self-improvement",
+		"quest":"Tell me one thing you want to get better at. Are you doing anything for self-improvement? ",
+		"visemes":[[19, 4, 14, 21, 6, 7, 1, 19, 17, 6, 20, 6, 7, 7, 2, 19, 19, 19, 7, 20, 4, 19, 21, 4, 19, 5, 1, 19, 0], [2, 13, 6, 7, 19, 7, 6, 20, 4, 19, 6, 17, 6, 20, 18, 3, 13, 15, 4, 14, 18, 6, 21, 21, 13, 7, 18, 21, 1, 19, 19, 0], [0]],
+		"text":"I realize that I can manage my time better. I am working on making myself more efficient by planning my time in half-hour slots and sticking to the plan."
+	},
+	{
+		"id":14,
+		"q_label":"Question for interviewer 1",
+		"quest":"Well, I think we have learned quite a bit about you. Do you have any question for us?",
+		"visemes":[[7, 4, 14, 0, 11, 17, 6, 20, 20, 7, 6, 12, 1, 18, 14, 5, 19, 19, 20, 7, 11, 19, 1, 21, 6, 19, 1, 21, 9, 19, 6, 7, 0], [19, 7, 6, 7, 12, 1, 18, 4, 19, 6, 20, 7, 4, 15, 16, 1, 19, 18, 3, 13, 1, 15, 0], [0]],
+		"text":"Yes, could you please tell me about the people in the team in which I will have to work? Are they all computer scientists, engineers, and programmers?"
+	},
+	{
+		"id":15,
+		"q_label":"Question for interviewer 2",
+		"quest":"Most of the team members are software developers and a few systems engineers from the electrical engineering background. There are also a couple of mathematicians in the group too. Anything else? ",
+		"visemes":[[21, 8, 15, 19, 1, 18, 17, 1, 19, 6, 21, 21, 4, 21, 21, 5, 15, 2, 13, 15, 3, 18, 19, 7, 4, 13, 19, 6, 18, 4, 14, 1, 21, 5, 15, 1, 19, 19, 1, 18, 6, 7, 15, 6, 15, 19, 1, 21, 15, 4, 19, 16, 1, 19, 6, 13, 15, 18, 13, 1, 21, 17, 1, 6, 14, 4, 20, 19, 13, 6, 20, 1, 14, 4, 19, 16, 1, 19, 6, 13, 6, 20, 21, 1, 20, 20, 13, 9, 19, 19, 0], [17, 4, 13, 2, 13, 3, 14, 15, 8, 1, 20, 1, 21, 1, 14, 1, 18, 21, 1, 17, 1, 21, 1, 19, 6, 16, 1, 19, 15, 6, 19, 17, 1, 20, 13, 7, 21, 19, 7, 0], [4, 19, 6, 17, 6, 20, 4, 14, 15, 0], [0]],
+		"text":"I have gone through the job description and have an overall idea about it. I would like to know a bit more about the day-to-day work I am expected to do in this position."
+	},
+	{
+		"id":16,
+		"q_label":"Job details",
+		"quest":"Initially, most of the work you would be expected to do would be to programming, testing, documentation, etc. Later you may have to go to the clients and trouble-shoot their problems, demo new releases and train them, and so on. Anything else? ",
+		"visemes":[[6, 19, 6, 16, 1, 14, 6, 0, 21, 8, 15, 19, 1, 18, 17, 1, 7, 5, 20, 6, 7, 7, 4, 19, 21, 6, 6, 20, 15, 21, 4, 20, 19, 1, 19, 19, 7, 19, 7, 7, 4, 19, 21, 6, 19, 7, 21, 13, 8, 20, 13, 1, 21, 6, 20, 0, 19, 4, 15, 19, 6, 20, 0, 19, 2, 20, 6, 1, 21, 4, 19, 19, 4, 16, 1, 19, 0, 4, 19, 15, 4, 19, 5, 1, 0], [14, 4, 19, 5, 6, 7, 21, 4, 12, 1, 18, 19, 7, 20, 8, 19, 7, 17, 1, 20, 14, 11, 1, 19, 19, 15, 1, 19, 19, 19, 13, 1, 21, 1, 14, 16, 7, 19, 17, 4, 13, 21, 13, 2, 21, 14, 1, 21, 15, 0, 19, 4, 21, 8, 19, 7, 13, 6, 14, 6, 15, 6, 15, 1, 19, 19, 19, 13, 4, 19, 17, 4, 21, 0, 1, 19, 19, 15, 8, 2, 19, 0], [4, 19, 6, 17, 6, 20, 4, 14, 15, 0], [0]],
+		"text":"That sounds very exciting. That's all I wanted to know for now. Thank you very much."
+	},
+	{
+		"id":17,
+		"q_label":"Ending",
+		"quest":"Well, we are also finished with the interview. We will let you know about our decision early next week.",
+		"visemes":[[7, 4, 14, 0, 7, 6, 2, 13, 3, 14, 15, 8, 18, 6, 19, 6, 16, 19, 7, 6, 17, 17, 1, 6, 19, 19, 5, 18, 6, 7, 0], [7, 6, 7, 6, 14, 14, 4, 19, 6, 7, 19, 8, 1, 21, 9, 19, 9, 5, 19, 6, 15, 6, 16, 1, 19, 5, 14, 6, 19, 4, 20, 15, 19, 7, 6, 20, 0], [0]],
+		"text":"Thank you very much for giving me this opportunity. I look forward to hearing from you."
+	}]
+}
