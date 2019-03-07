@@ -76,16 +76,10 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
 
 	onSwipe(args: SwipeGestureEventData) {
-		if (args.direction == 1 && this.qnum > 0) {	
-			this.text2speech.pause();
-			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[0];
-			this.showAnswer = false;
-			this.loadQuestion(this.qnum - 1);
-		} else if (args.direction == 2 && this.qnum < this.questions.length - 1) {
-			this.text2speech.pause();
-			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[0];
-			this.showAnswer = false;
-			this.loadQuestion(this.qnum + 1);
+		if (args.direction == 1) {	
+			this.goLeft();
+		} else if (args.direction == 2) {
+			this.goRight();
 		}
 	}
 	goLeft(){
