@@ -8,6 +8,8 @@ import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
 import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 import { SpeechRecognition, SpeechRecognitionTranscription, SpeechRecognitionOptions } from 'nativescript-speech-recognition';
+import { variable } from "@angular/compiler/src/output/output_ast";
+import { Variable } from "@angular/compiler/src/render3/r3_ast";
 // import { error } from "tns-core-modules/trace/trace";
 // import {Slider} from "tns-core-modules/ui/slider";
 
@@ -103,8 +105,10 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 		this.drawerComponent.sideDrawer.closeDrawer();
 		this.question = this.questions[i];
 		this.variable = this.question.quest;
-		this.variable.replace(".","?");
-		this.sentences = this.variable.split("? ");
+		let value = this.variable.replace(/\./gi,"?");
+		this.sentences = value.split("? ");
+		for(var v=0;v<this.sentences.length;v++)
+			console.log(this.sentences[v]);
 		console.log(this.sentences);
 		this.sentenceIndex = -1;
 		if(this.speakinterval) clearInterval(this.speakinterval);
@@ -153,7 +157,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
 
 	textToSpeech(){
-		this.text2speech.pause();
+		// this.text2speech.pause();
 		var _this = this;
 		this.speaking = true;
 		this.speakNextSentence();
