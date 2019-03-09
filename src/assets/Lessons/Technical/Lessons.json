@@ -42,5 +42,13 @@
     {
         "name": "Data Base 3",
         "path": "Database-3.json"
+    },
+    {
+        "name": "Programming-1",
+        "path": "Programming-1.json"
+    },
+    {
+        "name": "Programming-2",
+        "path": "Programming-2.json"
     }
 ]

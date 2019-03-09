@@ -1,0 +1,164 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"OOP features",
+		"quest":"What are the main features or characteristics of object-oriented programming? ",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 21, 4, 19, 18, 6, 16, 5, 15, 3, 13, 20, 4, 13, 1, 20, 19, 5, 6, 15, 19, 6, 20, 15, 1, 18, 2, 21, 16, 4, 20, 19, 3, 13, 6, 4, 19, 19, 1, 19, 21, 13, 8, 20, 13, 1, 21, 6, 20, 0], [0]],
+		"text":"The object oriented programming involves the concepts of objects, class, abstraction, encapsulation, inheritance, and polymorphism, etc."
+	},
+	{
+		"id":2,
+		"q_label":"Object-Class",
+		"quest":"What is an object and what is a class? Can you explain with an example?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 19, 2, 21, 16, 4, 20, 19, 1, 19, 19, 7, 1, 19, 6, 15, 1, 20, 14, 1, 15, 0], [20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 7, 6, 17, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 0], [0]],
+		"text":"Objects are computer models of individual entities represented by their own attributes, data, and methods. A class is a template of similar objects from which individual objects are created. For example, for a company, 'employee' can be a class and individual employees such as John, Lisa, and Tom can be objects or instances created from the same 'employee' class such that each employee has certain common attributes and methods but his or her data would vary."
+	},
+	{
+		"id":3,
+		"q_label":"Inheritance",
+		"quest":"What is Inheritance in O O P? What is its advantage?",
+		"visemes":[[7, 1, 19, 6, 15, 6, 19, 12, 4, 13, 1, 19, 1, 19, 15, 6, 19, 8, 8, 21, 6, 0], [7, 1, 19, 6, 15, 6, 19, 15, 1, 19, 18, 1, 19, 19, 6, 16, 0], [0]],
+		"text":"Inheritance is creating a derived class ( child class or subclass) from an existing parent class so that the variables and methods are automatically inherited. Therefore, we can reuse the codes of the parent class."
+	},
+	{
+		"id":4,
+		"q_label":"Child Class",
+		"quest":"So, why do we need the child class at all, why not just use the parent class? Explain with an example.",
+		"visemes":[[15, 8, 0, 7, 11, 19, 7, 7, 6, 19, 6, 19, 17, 1, 16, 11, 14, 19, 20, 14, 1, 15, 1, 19, 3, 14, 0, 7, 11, 19, 2, 19, 16, 1, 15, 19, 6, 7, 15, 17, 1, 21, 4, 13, 1, 19, 19, 20, 14, 1, 15, 0], [6, 20, 15, 21, 14, 4, 19, 7, 6, 17, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 0], [0]],
+		"text":"A child class, in addition to inheriting all of its parent's variables and functions, may have other variables and methods of its own. For example, one may derive a subclass driver from the employee class, who may have an additional accident_insurance function and driver's license information data which other employees such as the office clerks and secretaries are not required to have."
+	},
+	{
+		"id":5,
+		"q_label":"Abstraction",
+		"quest":"What is abstraction and why is it useful?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 21, 15, 19, 13, 1, 20, 16, 1, 19, 1, 19, 19, 7, 11, 6, 15, 6, 19, 6, 7, 15, 18, 1, 14, 0], [0]],
+		"text":"In O O P, abstraction is selecting essential data to show only the relevant features of an object. It helps to reduce programming complexity and effort."
+	},
+	{
+		"id":6,
+		"q_label":"Encapsulation",
+		"quest":"What is encapsulation?",
+		"visemes":[[7, 1, 19, 6, 15, 0], [0]],
+		"text":"Encapsulation is the inclusion of all the necessary resources (data and methods) within an object for the object to be completely defined and thus, publishing only its interfaces."
+	},
+	{
+		"id":7,
+		"q_label":"Polymorphism 1",
+		"quest":"What is polymorphism?",
+		"visemes":[[7, 1, 19, 6, 15, 21, 2, 14, 6, 21, 3, 13, 18, 6, 15, 1, 21, 0], [0]],
+		"text":"Polymorphism is a mechanism by which a function with the same name would perform different actions depending on the type of arguments passed to it."
+	},
+	{
+		"id":8,
+		"q_label":"Polymorphism 2",
+		"quest":"Can you give an example of polymorphism?",
+		"visemes":[[20, 1, 19, 6, 7, 20, 6, 18, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 1, 18, 21, 2, 14, 6, 21, 3, 13, 18, 6, 15, 1, 21, 0], [0]],
+		"text":"If we have to calculate the pay of an employee, we could have two separate ways of calculating it--one for permanent employees, who may have several benefits and another for temporary workers with no benefits. We can have a single method that does the salary calculation, but depending on the employee type, branches off to two different formulas for calculating the pay."
+	},
+	{
+		"id":9,
+		"q_label":"Overloading",
+		"quest":"Are overriding and overloading the same thing?",
+		"visemes":[[2, 13, 8, 18, 5, 13, 11, 19, 6, 20, 1, 19, 19, 8, 18, 5, 14, 8, 19, 6, 20, 17, 1, 15, 4, 21, 17, 6, 20, 0], [0]],
+		"text":"Overriding is substituting a method inherited from the parent class in the child class where the method name and the parameters remain the same. Whereas, overloading means using more than one method in a class with the same name but different parameters."
+	},
+	{
+		"id":10,
+		"q_label":"Method",
+		"quest":"What is a method and how is it different from a function?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 21, 4, 17, 1, 19, 1, 19, 19, 12, 9, 6, 15, 6, 19, 19, 6, 18, 5, 1, 19, 19, 18, 13, 1, 21, 1, 18, 1, 20, 20, 16, 1, 19, 0], [0]],
+		"text":"A method is similar to a function but it belongs to a class. The object is implicitly passed to a method on which it operates, whereas in case of a function, all data are explicitly passed. A method can operate on the data that is contained within the class. "
+	},
+	{
+		"id":11,
+		"q_label":"Setter Getter",
+		"quest":"What is the purpose of setter and getter methods?",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 21, 5, 21, 1, 15, 1, 18, 15, 4, 19, 5, 1, 19, 19, 20, 4, 19, 5, 21, 4, 17, 1, 19, 15, 0], [0]],
+		"text":"A setter method is used to control the changes to the value of a variable. A getter method is used to retrieve the value of a private member variable."
+	},
+	{
+		"id":12,
+		"q_label":"Lambda",
+		"quest":"What is a Lambda function / operator in Python?",
+		"visemes":[[7, 1, 19, 6, 15, 1, 14, 1, 21, 19, 1, 18, 1, 20, 20, 16, 1, 19, 2, 21, 5, 4, 19, 5, 6, 19, 21, 11, 17, 2, 19, 0], [0]],
+		"text":"Lambda is a small function written in just one expression. It can take any number of arguments…."
+	},
+	{
+		"id":13,
+		"q_label":"Web Technology",
+		"quest":"Do you have any experience with the Web technology and Web Apps?",
+		"visemes":[[19, 7, 6, 7, 12, 1, 18, 4, 19, 6, 6, 20, 15, 21, 6, 13, 6, 1, 19, 15, 7, 6, 17, 17, 1, 7, 4, 21, 19, 4, 20, 19, 2, 14, 1, 16, 6, 1, 19, 19, 7, 4, 21, 1, 21, 15, 0], [0]],
+		"text":"I have some experience. I have taken a course on web technology and I have developed a web App as a part of the course. "
+	},
+	{
+		"id":14,
+		"q_label":"JavaScript",
+		"quest":"What is JavaScript? Where is it used? How is it different from Java?",
+		"visemes":[[7, 1, 19, 6, 15, 16, 2, 18, 1, 15, 20, 13, 6, 21, 19, 0], [7, 4, 13, 6, 15, 6, 19, 6, 7, 15, 19, 0], [12, 9, 6, 15, 6, 19, 19, 6, 18, 5, 1, 19, 19, 18, 13, 1, 21, 16, 2, 18, 1, 0], [0]],
+		"text":"JavaScript is a powerful object-oriented interpreted programming language used in WebPages and WebApp development to make them dynamic and interactive. Java is entirely different from JavaScript, it is a full-fledged, general-purpose, object-oriented programming language. It is compiled to create a bytecode and run on a Java virtual machine making it platform independent."
+	},
+	{
+		"id":15,
+		"q_label":"HTML - CSS",
+		"quest":"What are H T M L and C S S?",
+		"visemes":[[7, 1, 19, 2, 13, 4, 16, 19, 6, 4, 21, 4, 14, 1, 19, 19, 15, 6, 4, 15, 4, 15, 0], [0]],
+		"text":"H T M L or Hypertext Markup Language is a standardized system of organizing and writing the contents to be displayed on the webpages. C S S or Cascading Stylesheets Language is used to control how a web page is presented. It helps to separate the presentation style from the content. "
+	},
+	{
+		"id":16,
+		"q_label":"PHP",
+		"quest":"What is P H P? Can I use P H P to get information from my database?",
+		"visemes":[[7, 1, 19, 6, 15, 21, 6, 4, 16, 21, 6, 0], [20, 1, 19, 11, 6, 7, 15, 21, 6, 4, 16, 21, 6, 19, 7, 20, 4, 19, 6, 19, 18, 5, 21, 4, 16, 1, 19, 18, 13, 1, 21, 21, 11, 19, 4, 19, 1, 21, 4, 15, 0], [0]],
+		"text":"P H P or Hypertext Preprocessor is a general-purpose scripting language that is especially suited for web development and can be embedded into H T M L. We can use P H P to connect to a database and fetch desired data from it using MySQLi."
+	},
+	{
+		"id":17,
+		"q_label":"Debugging",
+		"quest":"Tell me if you ever had a major problem with your code and how you traced and solved it.",
+		"visemes":[[19, 4, 14, 21, 6, 6, 18, 6, 7, 4, 18, 5, 12, 1, 19, 1, 21, 4, 16, 5, 21, 13, 2, 21, 14, 1, 21, 7, 6, 17, 6, 3, 13, 20, 8, 19, 1, 19, 19, 12, 9, 6, 7, 19, 13, 4, 15, 19, 1, 19, 19, 15, 2, 14, 18, 19, 6, 19, 0], [0]],
+		"text":"Try to answer this question on your own'"
+	},
+	{
+		"id":18,
+		"q_label":"Coding vs. development",
+		"quest":"What is the difference between software development and programming or coding?",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 19, 6, 18, 5, 1, 19, 15, 21, 6, 19, 7, 6, 19, 15, 3, 18, 19, 7, 4, 13, 19, 6, 18, 4, 14, 1, 21, 21, 1, 19, 19, 1, 19, 19, 21, 13, 8, 20, 13, 1, 21, 6, 20, 3, 13, 20, 8, 19, 6, 20, 0], [0]],
+		"text":"Software development involves the entire process of conceptual design, detailed design, data flow, algorithm development, programming, testing, documentation etc. Whereas, coding usually means converting the design Flowchart and Pseudo-code into detailed instructions using programming languages. So it is an essential part of the entire software development process. "
+	},
+	{
+		"id":19,
+		"q_label":"multi-threading",
+		"quest":"What is multi-Threading?",
+		"visemes":[[7, 1, 19, 6, 15, 21, 1, 14, 19, 6, 17, 13, 4, 19, 6, 20, 0], [0]],
+		"text":"Multi-threading is a type of program execution model that allows two or more parts or threads of the program to execute concurrently for better performance."
+	},
+	{
+		"id":19,
+		"q_label":"Java multi-threading",
+		"quest":"How do you implement it for example in Java?",
+		"visemes":[[12, 9, 19, 7, 6, 7, 6, 21, 21, 14, 1, 21, 1, 19, 19, 6, 19, 18, 3, 13, 6, 20, 15, 1, 21, 21, 1, 14, 6, 19, 16, 2, 18, 1, 0], [0]],
+		"text":"In Java, multithreading can be achieved in two ways. In the first, we extend the thread class, override the run() method with our code that we wish to run, create new objects from the class and call start() . In the second way, we pass an implementation of the Runnable interface to the constructor of Thread and then call start()."
+	},
+	{
+		"id":20,
+		"q_label":"Multi Process",
+		"quest":"What is the difference between multi-thread and multi-process?",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 19, 6, 18, 5, 1, 19, 15, 21, 6, 19, 7, 6, 19, 21, 1, 14, 19, 6, 17, 13, 4, 19, 1, 19, 19, 21, 1, 14, 19, 6, 21, 13, 2, 15, 4, 15, 0], [0]],
+		"text":"In Multi-thread, the threads use the same memory space and can run on the same processor. Whereas in multi-processes each process uses separate memory and it can take full advantage of multi-core processors."
+	},
+	{
+		"id":21,
+		"q_label":"Using GPU",
+		"quest":"We have to often train our in-house Machine learning software overnight with huge amounts of stockmarket data. Do you have any idea how to use the GPUs for that?",
+		"visemes":[[7, 6, 12, 1, 18, 19, 7, 3, 18, 1, 19, 19, 13, 4, 19, 9, 5, 6, 19, 12, 9, 15, 21, 1, 16, 6, 19, 14, 5, 19, 6, 20, 15, 3, 18, 19, 7, 4, 13, 8, 18, 5, 19, 11, 19, 7, 6, 17, 12, 6, 7, 16, 1, 21, 9, 19, 19, 15, 1, 18, 15, 19, 2, 20, 21, 2, 13, 20, 6, 19, 19, 4, 19, 1, 0], [19, 7, 6, 7, 12, 1, 18, 4, 19, 6, 11, 19, 6, 1, 12, 9, 19, 7, 6, 7, 15, 17, 1, 18, 3, 13, 17, 1, 19, 0], [0]],
+		"text":"Do some research on why and how GPUs are used in many Machine learning programs and try to answer this on your own. Also, memorize the names of a few high-performance GPU producers such as N-Vidia, AMD etc."
+	},
+	{
+		"id":22,
+		"q_label":"Prrof of work",
+		"quest":"Are you a member on GitHub? Do you have any code there that you can show us?",
+		"visemes":[[2, 13, 6, 7, 1, 21, 4, 21, 21, 5, 2, 19, 0], [19, 7, 6, 7, 12, 1, 18, 4, 19, 6, 20, 8, 19, 17, 4, 13, 17, 1, 19, 6, 7, 20, 1, 19, 16, 8, 1, 15, 0], [0]],
+		"text":"Try to answer this question on your own"
+	}]
+}

@@ -1,0 +1,115 @@
+{
+	"data":[
+	{
+		"id":1,
+		"q_label":"Programming experience",
+		"quest":"Have you ever written a computer program?",
+		"visemes":[[12, 1, 18, 6, 7, 4, 18, 5, 13, 6, 19, 1, 19, 1, 20, 1, 21, 21, 6, 7, 19, 5, 21, 13, 8, 20, 13, 1, 21, 0], [0]],
+		"text":"I have written a program for my academic project. Besides that, I have written a mobile App."
+	},
+	{
+		"id":2,
+		"q_label":"Language used",
+		"quest":"Which programming language did you use for your project?",
+		"visemes":[[7, 6, 16, 21, 13, 8, 20, 13, 1, 21, 6, 20, 14, 1, 20, 20, 7, 1, 16, 19, 6, 19, 6, 7, 6, 7, 15, 18, 3, 13, 6, 3, 13, 21, 13, 2, 16, 4, 20, 19, 0], [0]],
+		"text":"I have used Java for my project."
+	},
+	{
+		"id":3,
+		"q_label":"Languages known 1",
+		"quest":"Which programming languages are you familiar with?",
+		"visemes":[[7, 6, 16, 21, 13, 8, 20, 13, 1, 21, 6, 20, 14, 1, 20, 20, 7, 1, 16, 1, 15, 2, 13, 6, 7, 18, 1, 21, 6, 14, 6, 5, 7, 6, 17, 0], [0]],
+		"text":"I know Python, C, C++, and Java quite well. I am also familiar with Visual Basic and Ruby."
+	},
+	{
+		"id":4,
+		"q_label":"Language familiarity",
+		"quest":"Are you familiar with any languages needed to create Web Apps?",
+		"visemes":[[2, 13, 6, 7, 18, 1, 21, 6, 14, 6, 5, 7, 6, 17, 4, 19, 6, 14, 1, 20, 20, 7, 1, 16, 1, 15, 19, 6, 19, 1, 19, 19, 7, 20, 13, 6, 4, 19, 7, 4, 21, 1, 21, 15, 0], [0]],
+		"text":"I know HTML5, CSS, and JavaScript. For back-end development, I know Java, PHP, and Python."
+	},
+	{
+		"id":5,
+		"q_label":"C C++  1",
+		"quest":"Currently, we are looking for someone who can write C C++ code. Have you written any code in C and C++. Are you comfortable writing codes in C  C++?",
+		"visemes":[[20, 5, 1, 19, 19, 14, 6, 0, 7, 6, 2, 13, 14, 4, 20, 6, 20, 18, 3, 13, 15, 1, 21, 7, 1, 19, 12, 7, 20, 1, 19, 13, 11, 19, 15, 6, 20, 8, 19, 0], [12, 1, 18, 6, 7, 13, 6, 19, 1, 19, 4, 19, 6, 20, 8, 19, 6, 19, 15, 6, 1, 19, 19, 0], [2, 13, 6, 7, 20, 1, 21, 18, 5, 19, 1, 21, 1, 14, 13, 11, 19, 6, 20, 20, 8, 19, 15, 6, 19, 15, 6, 0], [0]],
+		"text":"Yes, sir ( or yes, maa'm ). I had to write C  C++ code for my homework assignments and the class project. Although that was a year ago, I believe, with a little practice, I can write C C++ code."
+	},
+	{
+		"id":6,
+		"q_label":"Pointers 1",
+		"quest":"OK, let's see how much C C++ you know. What is a pointer and how is it used in the code? Can you explain with a simple example?",
+		"visemes":[[8, 20, 4, 0, 14, 4, 19, 4, 15, 15, 6, 12, 9, 21, 1, 16, 15, 6, 6, 7, 19, 8, 0], [7, 1, 19, 6, 15, 1, 21, 10, 19, 19, 5, 1, 19, 19, 12, 9, 6, 15, 6, 19, 6, 7, 15, 19, 6, 19, 17, 1, 20, 8, 19, 0], [20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 7, 6, 17, 1, 15, 6, 21, 21, 1, 14, 6, 20, 15, 1, 21, 21, 1, 14, 0], [0]],
+		"text":"In C C++, a pointer is a variable that contains the address of another variable.  As an example, a pointer that points to a variable x, we can declare    int  *px; Then the pointer can be assigned as px = &x , that is, px holds the address of x. If we want to fetch the actual value of x through this pointer and assign to a variable y, we can write y = *px. "
+	},
+	{
+		"id":7,
+		"q_label":"Arrays 1",
+		"quest":"How do you get the value of an element from an array in C? ",
+		"visemes":[[12, 9, 19, 7, 6, 7, 20, 4, 19, 17, 1, 18, 1, 14, 6, 7, 1, 18, 1, 19, 4, 14, 1, 21, 1, 19, 19, 18, 13, 1, 21, 1, 19, 5, 4, 6, 19, 15, 6, 0], [0]],
+		"text":"In C, there are two ways to fetch the value of an element from an array. We can use the subscript for example x = a[i]. Or we can use a pointer pa = &a[0] or simply pa = a, which points to the zeroth element of the array a. Then to get the value of the i-th element we can write x = *(pa+i)"
+	},
+	{
+		"id":8,
+		"q_label":"Function 1",
+		"quest":"How would you change the value of an argument of a function in C?",
+		"visemes":[[12, 9, 7, 4, 19, 6, 7, 16, 4, 19, 16, 17, 1, 18, 1, 14, 6, 7, 1, 18, 1, 19, 2, 13, 20, 6, 1, 21, 1, 19, 19, 1, 18, 1, 18, 1, 20, 20, 16, 1, 19, 6, 19, 15, 6, 0], [0]],
+		"text":"Since in C the arguments are passed to a function by 'Call by value', we have to pass the pointer px to the argument instead of argument x itself. Then we can change the value of x as *px = z, for example."
+	},
+	{
+		"id":9,
+		"q_label":"Call by Value",
+		"quest":"What is Call by value and what is Call by reference?",
+		"visemes":[[7, 1, 19, 6, 15, 20, 3, 14, 21, 11, 18, 1, 14, 6, 7, 1, 19, 19, 7, 1, 19, 6, 15, 20, 3, 14, 21, 11, 13, 4, 18, 5, 1, 19, 15, 0], [0]],
+		"text":"In a function call, if we use call by value the actual value of the argument ( or parameter ) is passed, a copy is made within the function, stored at a different location and its change within the function is not reflected in the argument value of the caller function. Whereas, in call by reference, the argument location is passed to the function, so the calling and caller function share the same location of the argument Any change in the argument value made within the function changes the original argument value in the caller function."
+	},
+	{
+		"id":10,
+		"q_label":"C C++ difference",
+		"quest":"What is the difference between C and C++?",
+		"visemes":[[7, 1, 19, 6, 15, 17, 1, 19, 6, 18, 5, 1, 19, 15, 21, 6, 19, 7, 6, 19, 15, 6, 1, 19, 19, 0], [0]],
+		"text":"C is a procedural programming language. Whereas, C++ is a superset of C and may be used for procedural as well as object oriented programming?"
+	},
+	{
+		"id":11,
+		"q_label":"OOP 1",
+		"quest":"What is object-oriented programming?",
+		"visemes":[[7, 1, 19, 6, 15, 2, 21, 16, 4, 20, 19, 3, 13, 6, 4, 19, 19, 1, 19, 21, 13, 8, 20, 13, 1, 21, 6, 20, 0], [0]],
+		"text":"Object oriented programming is a way of creating computer programs that  model real-life objects, with their attributes, their activities and interactions with each other."
+	},
+	{
+		"id":12,
+		"q_label":"OOP advantage",
+		"quest":"What are the advantages of object-oriented programming over procedural programming?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 1, 19, 18, 1, 19, 19, 6, 16, 6, 15, 1, 18, 2, 21, 16, 4, 20, 19, 3, 13, 6, 4, 19, 19, 1, 19, 21, 13, 8, 20, 13, 1, 21, 6, 20, 8, 18, 5, 21, 13, 1, 15, 6, 16, 5, 1, 14, 21, 13, 8, 20, 13, 1, 21, 6, 20, 0], [0]],
+		"text":"Object-oriented programming approach has a great advantage in the development of large and complex programs with many developers working on various parts of the program. Additionally, code maintenance and code reusability are easier in OOP."
+	},
+	{
+		"id":13,
+		"q_label":"OOP disadvantage",
+		"quest":"What are the disadvantages of object-oriented programming over procedural programming?",
+		"visemes":[[7, 1, 19, 2, 13, 17, 1, 19, 6, 15, 1, 19, 18, 1, 19, 19, 6, 16, 6, 15, 1, 18, 2, 21, 16, 4, 20, 19, 3, 13, 6, 4, 19, 19, 1, 19, 21, 13, 8, 20, 13, 1, 21, 6, 20, 8, 18, 5, 21, 13, 1, 15, 6, 16, 5, 1, 14, 21, 13, 8, 20, 13, 1, 21, 6, 20, 0], [0]],
+		"text":"For certain specific purposes where much number crunching is necessary, procedural programming may be more efficient then object oriented programming. For example, for creating a numerical solver for large optimization problems."
+	},
+	{
+		"id":14,
+		"q_label":"Procedural and OOP",
+		"quest":"Can you give an example where object oriented programming and procedural programming are mixed in a software package?",
+		"visemes":[[20, 1, 19, 6, 7, 20, 6, 18, 1, 19, 6, 20, 15, 1, 21, 21, 1, 14, 7, 4, 13, 2, 21, 16, 4, 20, 19, 3, 13, 6, 4, 19, 19, 1, 19, 21, 13, 8, 20, 13, 1, 21, 6, 20, 1, 19, 19, 21, 13, 1, 15, 6, 16, 5, 1, 14, 21, 13, 8, 20, 13, 1, 21, 6, 20, 2, 13, 21, 6, 20, 15, 19, 6, 19, 1, 15, 3, 18, 19, 7, 4, 13, 21, 1, 20, 1, 16, 0], [0]],
+		"text":"The user interface and interactive modeling modules of many modern engineering design packages use object oriented programming. Whereas, the numerical solvers for the engineering analysis such as finite-element methods, are written following procedural programming."
+	},
+	{
+		"id":15,
+		"q_label":"Languages for OOP",
+		"quest":"Which languages support object oriented programming? ",
+		"visemes":[[7, 6, 16, 14, 1, 20, 20, 7, 1, 16, 1, 15, 15, 1, 21, 3, 13, 19, 2, 21, 16, 4, 20, 19, 3, 13, 6, 4, 19, 19, 1, 19, 21, 13, 8, 20, 13, 1, 21, 6, 20, 0], [0]],
+		"text":"Python, C++, Java,  Objective C, Visual Basic.NET support object oriented programming. "
+	},
+	{
+		"id":16,
+		"q_label":"Actual coding",
+		"quest":"Please go to the whiteboard and write the code for sorting an array of employee-name and salary by the salary in descending order.",
+		"visemes":[[21, 14, 6, 15, 20, 8, 19, 7, 17, 1, 1, 19, 19, 13, 11, 19, 17, 1, 20, 8, 19, 18, 3, 13, 15, 3, 13, 19, 6, 20, 1, 19, 5, 4, 1, 18, 4, 21, 21, 14, 10, 6, 19, 4, 21, 1, 19, 19, 15, 1, 14, 5, 6, 21, 11, 17, 1, 15, 1, 14, 5, 6, 6, 19, 19, 6, 15, 4, 19, 19, 6, 20, 3, 13, 19, 5, 0], [0]],
+		"text":"( Listen to the question carefully. You have to practise writing the code on your own. When you write the code on the whiteboard, keep talking about what you are doing so that the interviewer understands how you are thinking. You should write a few comments in English to explain the major steps involved.  Feel free to write the pseudo-code or draw a flowchart first, so that your approach, design and the logic are clear )"
+	}]
+}

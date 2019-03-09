@@ -110,11 +110,7 @@
 		"q_label":"MT details",
 		"quest":"Can you explain the details of the master theorem? Feel free to use the white-board.",
 		"visemes":[[20, 1, 19, 6, 7, 6, 20, 15, 21, 14, 4, 19, 17, 1, 19, 6, 19, 4, 14, 15, 1, 18, 17, 1, 21, 1, 15, 19, 5, 17, 6, 13, 1, 21, 0], [18, 6, 14, 18, 13, 6, 19, 7, 6, 7, 15, 17, 1, 7, 11, 19, 21, 3, 13, 19, 0], [0]],
-		"text":"If the runtime of an algorithm can be expressed in the form T(n) = a T(n/b) + f(n) where a>= 1, b>1,  n is the size of the problem, a is the number of subproblems in the recursion, n/b is the size of each subproblem, f(n) is the cost of the work done outside the recursive calls, that is the cost of dividing and merging. Then the master theorem gives the asymptotic estimate of time in 3 different cases.  
-Case 1. When the running time is dominated by the cost at the leaves  If f(n) = O (n^logb(a) - epsilon) , then T(n) = Theta (n^logb(a) for epsilon >0       
-Case 2. When running time is evenly distributed throughout the tree.  If f(n) = Theta (n^ logb(a)), then  T(n) = Theta (n^ logb(a) times log(n))     
-Case 3. When the running time is dominated by the cost at the root. If f(n) = Omega (n^Logb(a) + epsilon) then T(n) = Theta(f(n)) for epsilon > 0.
-"
+		"text":"If the runtime of an algorithm can be expressed in the form T(n) = a T(n/b) + f(n) where a>= 1, b>1,  n is the size of the problem, a is the number of subproblems in the recursion, n/b is the size of each subproblem, f(n) is the cost of the work done outside the recursive calls, that is the cost of dividing and merging. Then the master theorem gives the asymptotic estimate of time in 3 different cases. Case 1. When the running time is dominated by the cost at the leaves  If f(n) = O (n^logb(a) - epsilon) , then T(n) = Theta (n^logb(a) for epsilon >0 Case 2. When running time is evenly distributed throughout the tree.  If f(n) = Theta (n^ logb(a)), then  T(n) = Theta (n^ logb(a) times log(n)) Case 3. When the running time is dominated by the cost at the root. If f(n) = Omega (n^Logb(a) + epsilon) then T(n) = Theta(f(n)) for epsilon > 0."
 	},
 	{
 		"id":17,

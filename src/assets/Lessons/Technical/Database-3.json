@@ -61,26 +61,14 @@
 		"q_label":"Query 2",
 		"quest":"Suppose I have historical share price data of 3000 different companies stored in my database. Write a query that gives me the top 10 best (percentage wise) performing stocks this year.",
 		"visemes":[[15, 1, 21, 8, 15, 11, 12, 1, 18, 12, 6, 15, 19, 3, 13, 6, 20, 1, 14, 16, 4, 13, 21, 13, 11, 15, 19, 4, 19, 1, 1, 18, 19, 6, 18, 5, 1, 19, 19, 20, 1, 21, 21, 1, 19, 6, 15, 15, 19, 3, 13, 19, 6, 19, 21, 11, 19, 4, 19, 1, 21, 4, 15, 0], [13, 11, 19, 1, 20, 7, 6, 13, 6, 17, 1, 19, 20, 6, 18, 15, 21, 6, 17, 1, 19, 2, 21, 21, 4, 15, 19, 21, 5, 15, 4, 19, 19, 1, 16, 7, 11, 15, 21, 5, 18, 3, 13, 21, 6, 20, 15, 19, 2, 20, 15, 17, 6, 15, 6, 6, 13, 0], [0]],
-		"text":"select *, ((B.closeprice-A.closeprice)/A.closeprice) as pctCahnge from (
-(select * from stocks_dailydata) as A
-inner join
-(select * from stocks_dailydata where date=(select max(date)-'365 days' from stocks_dailydata )) as B
-where A.tickerSymbol=B.tockerSymbol
-) order by pctCahnge desc 
-"
+		"text":"select *, ((B.closeprice-A.closeprice)/A.closeprice) as pctCahnge from ((select * from stocks_dailydata) as A inner join (select * from stocks_dailydata where date=(select max(date)-'365 days' from stocks_dailydata )) as B where A.tickerSymbol=B.tockerSymbol) order by pctCahnge desc "
 	},
 	{
 		"id":10,
 		"q_label":"Query 3",
 		"quest":"Suppose I do not want any stocks whose prices are below $10. How would you modify the query?",
 		"visemes":[[15, 1, 21, 8, 15, 11, 19, 7, 19, 2, 19, 7, 2, 19, 19, 4, 19, 6, 15, 19, 2, 20, 15, 12, 7, 15, 21, 13, 11, 15, 1, 15, 2, 13, 21, 6, 14, 8, 0], [12, 9, 7, 4, 19, 6, 7, 21, 2, 19, 1, 18, 11, 17, 1, 20, 7, 6, 13, 6, 0], [0]],
-		"text":"select *, ((B.closeprice-A.closeprice)/A.closeprice) as pctCahnge from (
-(select * from stocks_dailydata) as A
-inner join
-(select * from stocks_dailydata where date=(select max(date)-'365 days' from stocks_dailydata )) as B
-where A.tickerSymbol=B.tickerSymbol
-and B.closePrice > 10
-) order by pctCahnge desc "
+		"text":"select *, ((B.closeprice-A.closeprice)/A.closeprice) as pctCahnge from ((select * from stocks_dailydata) as A inner join (select * from stocks_dailydata where date=(select max(date)-'365 days' from stocks_dailydata )) as B where A.tickerSymbol=B.tickerSymbol and B.closePrice > 10 ) order by pctCahnge desc "
 	},
 	{
 		"id":11,
