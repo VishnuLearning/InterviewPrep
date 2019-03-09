@@ -105,11 +105,11 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 		this.drawerComponent.sideDrawer.closeDrawer();
 		this.question = this.questions[i];
 		this.variable = this.question.quest;
-		this.variable.replace(/./g,"?");
-		this.sentences = this.variable.split("? ");
+		let value = this.variable.replace(/\./gi,"?");
+		this.sentences = value.split("? ");
 		for(var v=0;v<this.sentences.length;v++)
 			console.log(this.sentences[v]);
-		// console.log(this.sentences);
+		console.log(this.sentences);
 		this.sentenceIndex = -1;
 		if(this.speakinterval) clearInterval(this.speakinterval);
 		this.speaking = false;
