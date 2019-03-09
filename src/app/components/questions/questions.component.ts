@@ -100,6 +100,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
 	//loading question directly from navigation tab
 	loadQuestion(i: number) {
+		this.drawerComponent.sideDrawer.closeDrawer();
 		this.question = this.questions[i];
 		this.variable = this.question.quest;
 		this.variable.replace(".","?");
@@ -249,7 +250,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			}
 			i++; j=0;
 		}
-		alert((count/givenSentences.length)*100);
+		alert(((count/givenSentences.length)*100).toFixed(2));
 	}
     
     private stopListening(): void {

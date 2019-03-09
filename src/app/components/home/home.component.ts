@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
 	}
   
   ngOnInit() {
-    this.speak("Welcome to Interview Preparation. Please choose your track.");
+    this.speak("Welcome to Job Interview Skill Training. Please Choose the Type of Interview");
   } 
 
 }
