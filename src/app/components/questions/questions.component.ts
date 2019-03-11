@@ -2,7 +2,7 @@ import { ViewChild, ElementRef } from "@angular/core";
 import { RadSideDrawerComponent, SideDrawerType } from "nativescript-ui-sidedrawer/angular";
 import { Component, OnInit, OnDestroy } from "@angular/core";
 // import { Response } from "@angular/http";
-import { PathService } from "../../services/path.service";
+import { PathService } from "../../services/path/path.service";
 import { Router, ActivatedRoute } from '@angular/router';
 import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";

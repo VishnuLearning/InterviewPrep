@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import { Response } from "@angular/http";
-import { PathService } from "../../services/path.service";
+import { PathService } from "../../services/path/path.service";
 import { Router, ActivatedRoute } from '@angular/router';
 import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 
