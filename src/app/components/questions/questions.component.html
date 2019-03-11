@@ -1,10 +1,20 @@
-<ActionBar title="{{title}}" class="action-bar">
+<!-- <ActionBar title="{{title}}" class="action-bar">
         <StackLayout orientation="horizontal" horizontalAlignment="left" (tap)="onOpenDrawerTap()">
             <Image src="~/assets/images/menu.png" class="action-image"></Image>
             <Label text="Questions" class="action-label"></Label>
         </StackLayout>
-    </ActionBar> 
-    
+    </ActionBar>  -->
+    <Page class="page">
+        <Page.actionBar>
+          <ActionBar class="action-bar">
+            <StackLayout class="action-bar-title" horizontalAlignment="left" orientation="horizontal">
+              <Image src="~/assets/images/menu.png" class="action-image" (tap)="onOpenDrawerTap()"></Image>
+              <Label text="{{question.q_label}}" class="font-weight-bold" color="blue" ></Label>
+            </StackLayout>
+          </ActionBar>
+        </Page.actionBar>
+      </Page>
+      
     
     <GridLayout rows="*" height="1500px" (swipe)="onSwipe($event)"> 
         <RadSideDrawer>
@@ -19,7 +29,7 @@
                     </StackLayout>
                 </ScrollView>
             </StackLayout> 
-            <StackLayout tkMainContent *ngIf="question!=undefined">
+            <StackLayout tkMainContent *ngIf="question!=undefined" class="transparent-area">
                 <StackLayout class="home-panel">
                     <StackLayout orientation="horizontal" horizontalAlignment="center">
                         <Image src="~/assets/images/left.png" class="actionImage" (tap)="goLeft()"></Image>

@@ -1,16 +1,7 @@
 .home-panel{
     vertical-align: center;
     align-content: center;
-	/* background-color: black;
-    color: #900;
-    text-align: center;
-    font: 24px "Helvetica", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color-adjust: exact; */
-    /* background-image: linear-gradient(blue); */
-    /* background-image: linear-gradient(red,blue,green); */
+
 }
 .page{
     background-image: linear-gradient(to bottom right,skyblue,lightblue);
