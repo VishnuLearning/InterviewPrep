@@ -30,7 +30,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
 
 	path: string;
-	imagePath: string = "~/assets/images/dr_sinha/";
+	imagePath: string = "~/assets/images/Final_Avatar_small/";
 	questions: Question[];
 	question: Question;
 	qnum: number;
@@ -43,11 +43,11 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	speakinterval: number;
 	speakAndAnimateFlag: number = 1;
 	private sub: any;
-	AvatarImages = ['julia_full.png','julia_mouth_wide5.png','julia_mouth_wide5.png','julia_mouth_narrow_o.png','julia_mouth_wide_y.png',
-	'julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_w.png','julia_mouth_narrow_o.png',
-	'julia_mouth_wide_d_f_k_r_s.png','julia_mouth_narrow_u.png','julia_mouth_wide5.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_wide_sh.png',
-	'julia_mouth_wide5.png','julia_mouth_wide_sh.png','julia_mouth_wide_sh.png','julia_mouth_wide_th.png','julia_mouth_wide_f.png',
-	'julia_mouth_wide_sh.png','julia_mouth_wide_d_f_k_r_s.png','julia_mouth_closed.png'];
+	AvatarImages = ['jobs_full.png','jobs_mouth_wide5.png','jobs_mouth_wide5.png','jobs_mouth_narrow_o.png','jobs_mouth_wide_y.png',
+	'jobs_mouth_wide5.png','jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_narrow_w.png','jobs_mouth_narrow_o.png',
+	'jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_narrow_u.png','jobs_mouth_wide5.png','jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_wide_sh.png',
+	'jobs_mouth_wide5.png','jobs_mouth_wide_sh.png','jobs_mouth_wide_sh.png','jobs_mouth_wide_th.png','jobs_mouth_wide_f.png',
+	'jobs_mouth_wide_sh.png','jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_closed.png'];
 	speechRate = 0.9;
 	// private text2speech: TNSTextToSpeech;
 	private speech2text: SpeechRecognition;
