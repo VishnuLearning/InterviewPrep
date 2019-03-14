@@ -4,21 +4,16 @@ import { NativeScriptHttpModule } from "nativescript-angular";
 import { TNSTextToSpeech } from "nativescript-texttospeech";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { SpeechRecognition }from 'nativescript-speech-recognition';
+import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+// import { LoginComponent } from "./components/login/login.component";
 import { LessonComponent } from './components/lesson/lesson.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { HomeComponent } from './components/home/home.component';
-// import { QuestionComponent } from './components/question/question.component';
-
-import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
-
-// Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from "nativescript-angular/forms";
-
-// Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
-// import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+// import { PathService } from "./services/path/path.service";
+// import { UserService } from "./services/user/user.service"
 
 @NgModule({
     bootstrap: [
@@ -29,16 +24,21 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
         AppRoutingModule,
         NativeScriptHttpModule,
         NativeScriptUISideDrawerModule,
-        NativeScriptFormsModule,   
+        NativeScriptFormsModule,  
     ],
     declarations: [
         AppComponent,
         LessonComponent,
         QuestionsComponent,
         HomeComponent,
-        // QuestionComponent
+        //LoginComponent
     ],
-    providers: [TNSTextToSpeech,SpeechRecognition],
+    providers: [
+        TNSTextToSpeech,
+        SpeechRecognition,
+        // PathService,
+        // UserService
+    ],
     schemas: [
         NO_ERRORS_SCHEMA
     ]

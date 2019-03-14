@@ -55,6 +55,11 @@
                         <ScrollView>
                             <Label class="body" textWrap="true" text="{{question.text}}" style="font:18;" visibility="{{ showAnswer ? 'visible' : 'collapsed' }}"></Label>
                         </ScrollView>
+                        <StackLayout>
+                            <ScrollView>
+                                <Label [text]="recognizedText" textWrap="true" class="p-b-20" [visibility]="recognizedText === undefined ? 'collapse': 'visible'"></Label>
+                            </ScrollView>
+                        </StackLayout>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Http, Headers, Response } from "@angular/http";
 import { Observable, throwError } from "rxjs";
 import { catchError, map, tap } from "rxjs/operators";
-import { Question } from "../classes/question";
+import { Question } from "../../classes/question";
 
 @Injectable()
 export class PathService {

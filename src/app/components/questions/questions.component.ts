@@ -1,4 +1,4 @@
-import { ViewChild, ElementRef } from "@angular/core";
+import { ViewChild, ElementRef, NgZone } from "@angular/core";
 import { RadSideDrawerComponent, SideDrawerType } from "nativescript-ui-sidedrawer/angular";
 import { Component, OnInit, OnDestroy } from "@angular/core";
 // import { Response } from "@angular/http";
@@ -61,7 +61,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	private recordingAvailable: boolean;
 	private spokenText: string;
 
-	constructor(private text2speech: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router) {
+	constructor(private text2speech: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router, private zone: NgZone) {
 		this.questions = [];
 		this.qnum = 1;
 		var u = decodeURI(router.url);
@@ -216,14 +216,14 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			locale: "en-US",
 			returnPartialResults: true,
 			onResult: (transcription: SpeechRecognitionTranscription) => {
-				// this.zone.run(() => this.recognizedText = transcription.text);
+				this.zone.run(() => this.recognizedText = transcription.text);
 				this.lastTranscription = transcription.text;
 				if (transcription.finished) {
 					this.spoken = true;
 					setTimeout(() => alert(transcription.text), 300);
 					this.spokenText = transcription.text;
 					// alert(transcription.text);
-					this.generateScore();
+					this.stopListening();
 				}
 			},
 		}).then(
@@ -259,10 +259,13 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     
     private stopListening(): void {
 		// console.log("stopListening");
-        this.recording = false;
-        this.speech2text.stopListening().then(() => {
-          	console.log("Stopped listening");
-        });
+		if(this.recording==true){
+        	this.recording = false;
+			this.speech2text.stopListening().then(() => {
+				console.log("Stopped listening");
+			});
+		}
+		this.generateScore();
     }
 
 	ngOnInit(): void {
