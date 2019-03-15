@@ -1,4 +1,4 @@
-{
+﻿{
 	"data":[
 	{
 		"id":1,
@@ -19,7 +19,7 @@
 		"q_label":"Achievement",
 		"quest":"What is your greatest achievement? Can you tell us about one accomplishment that you are really proud of? or What is the most difficult thing you have ever done?",
 		"visemes":[[7, 1, 19, 6, 15, 6, 3, 13, 20, 13, 4, 19, 1, 15, 19, 1, 16, 6, 18, 21, 1, 19, 19, 0], [20, 1, 19, 6, 7, 19, 4, 14, 1, 15, 1, 21, 9, 19, 7, 1, 19, 1, 20, 2, 21, 21, 14, 6, 16, 21, 1, 19, 19, 17, 1, 19, 6, 7, 2, 13, 13, 6, 14, 6, 21, 13, 9, 19, 1, 18, 0], [3, 13, 7, 1, 19, 6, 15, 17, 1, 21, 8, 15, 19, 19, 6, 18, 1, 20, 1, 14, 19, 17, 6, 20, 6, 7, 12, 1, 18, 4, 18, 5, 19, 1, 19, 0], [0]],
-		"text":"When I was working on my project (or at my current job, or during my internship), I hit an obstacle�our method just did not work; it produced unreasonable results. We tried many modifications, struggled for months, still the results were far from measured data. My guide and I thought we chose the wrong path and probably should abandon it. I was thinking about it day and night. One Saturday morning about 3 AM, I got an idea to solve that problem. I woke up and worked out the mathematics. I went to my lab and quickly changed our program and ran it, which produced quite reasonable results. I got very excited and refined the code and played with a few input parameters, the results were very satisfactory. On Monday morning, I showed my work to my guide, he was very happy. My project was essentially finished and we will publish our work soon. That was possibly my biggest accomplishment so far. "
+		"text":"When I was working on my project (or at my current job, or during my internship), I hit an obstacle—our method just did not work; it produced unreasonable results. We tried many modifications, struggled for months, still the results were far from measured data. My guide and I thought we chose the wrong path and probably should abandon it. I was thinking about it day and night. One Saturday morning about 3 AM, I got an idea to solve that problem. I woke up and worked out the mathematics. I went to my lab and quickly changed our program and ran it, which produced quite reasonable results. I got very excited and refined the code and played with a few input parameters, the results were very satisfactory. On Monday morning, I showed my work to my guide, he was very happy. My project was essentially finished and we will publish our work soon. That was possibly my biggest accomplishment so far. "
 	},
 	{
 		"id":4,

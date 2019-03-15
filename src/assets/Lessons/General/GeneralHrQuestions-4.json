@@ -1,4 +1,4 @@
-{
+﻿{
 	"data":[
 	{
 		"id":1,
@@ -96,7 +96,7 @@
 		"q_label":"Unexpected questions 2",
 		"quest":"What can you do for our company?",
 		"visemes":[[7, 1, 19, 20, 1, 19, 6, 7, 19, 7, 18, 3, 13, 9, 5, 20, 1, 21, 21, 1, 19, 6, 0], [0]],
-		"text":"I know that your company is working on solving a problem on � I believe, with my knowledge, experience and out of the box thinking, I can help solve this problem."
+		"text":"I know that your company is working on solving a problem on … I believe, with my knowledge, experience and out of the box thinking, I can help solve this problem."
 	},
 	{
 		"id":15,
