@@ -99,7 +99,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			this.showAnswer = false;
 			this.loadQuestion(this.qnum + 1);
 		}
-	}
+	} 
 	//loading question directly from navigation tab
 	loadQuestion(i: number) {
 		this.drawerComponent.sideDrawer.closeDrawer();

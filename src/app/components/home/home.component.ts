@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   speak(text:string) {
 		let options = {
-			text: text,
+			text: text, 
 			pitch: 1.0,
 			speakRate: 0.9,
 			volume: 1.0,

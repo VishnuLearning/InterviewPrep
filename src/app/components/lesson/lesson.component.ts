@@ -29,7 +29,7 @@ export class LessonComponent implements OnInit, OnDestroy {
 		this.speak(lesson);
 		console.log(lesson);
 	}
-
+ 
 	speak(lesson:any) {
 		let options = {
 			text: lesson.name,
@@ -40,15 +40,20 @@ export class LessonComponent implements OnInit, OnDestroy {
 			finishedCallback: ()=>{
 				//enable speak button
 				console.log("routing" + " " + this.path);
-				if (lesson.path.endsWith(".json")) {
-					this.router.navigate(['/questions', this.path+'/'+lesson.path]);
-				} else {
-					this.router.navigate(['/lesson', this.path+'/'+lesson.path]);
-				}
+				console.log("inside finishedCallBack");
 			}
 		};
-		
-		this.tts.speak(options);
+		this.tts.speak(options)
+		.then(() => {
+			console.log("inside then");
+			if (lesson.path.endsWith(".json")) {
+				console.log('/questions'+this.path+'/'+lesson.path);
+				this.router.navigate(['/questions', this.path+'/'+lesson.path]);
+			} else {
+				console.log('/lessons'+this.path+'/'+lesson.path);
+				this.router.navigate(['/lesson', this.path+'/'+lesson.path]);
+			}
+		});
 	}
 
 	ngOnInit(): void {
