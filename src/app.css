@@ -10,3 +10,17 @@ of writing your own CSS rules. For a full list of class names in the theme
 refer to http://docs.nativescript.org/ui/theme.
 */
 @import '~nativescript-theme-core/css/core.light.css';
+
+.page {
+    background-image: linear-gradient(to bottom right,skyblue,lightblue);
+}
+
+.h3 {
+    font-size: 15%;
+    font-family: 'Source Sans Pro', SourceSansPro-Bold, system, sans-serif;
+}
+
+.h2 {
+    font-size: 10%;
+    font-family: 'Source Sans Pro', SourceSansPro-Bold, system, sans-serif;
+}

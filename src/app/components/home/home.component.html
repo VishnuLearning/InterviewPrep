@@ -1,13 +1,12 @@
 <ActionBar title="Interview Preparation" class="action-bar"></ActionBar>
-<ScrollView class="page">
+<Page class="page">
     <StackLayout class="home-panel">
-        <!--Add your page content here-->
-        <Image src="~/assets/images/Final_Avatar_small/0_Welcome.png" width="200" height="200"></Image>
-        <Label textWrap="true" text="Welcome to Job Interview Skill Training!" class="h3 text-center description-label"></Label>
-        <Label textWrap="true" text="Learn with our Avatar what to speak and how to speak for an interview!!"
-            class="body text-center description-label"></Label>
-        <Label textWrap="true" text="Choose from the below sections to start with:"
-            class="body text-center description-label"></Label>
-        <ns-lesson></ns-lesson>
+        <StackLayout class="home-elements">
+            <Image src="~/assets/images/Final_Avatar_small/0_Welcome.png" width="200" height="200"></Image>
+            <Label textWrap="true" text="Welcome to Job Interview Skill Training!" class="h1 text-center"></Label>
+            <Label textWrap="true" text="Learn with our Avatar what to speak and how to speak for an interview!!" class="h2 text-center"></Label>
+            <Label textWrap="true" text="Choose from the below sections to start with:" class="text-center"></Label>
+            <ns-lesson></ns-lesson>
+        </StackLayout>
     </StackLayout>
-</ScrollView> 
+</Page>

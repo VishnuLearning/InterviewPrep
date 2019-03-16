@@ -7,9 +7,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Question } from "../../classes/question";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
 import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
-import { SpeechRecognition, SpeechRecognitionTranscription, SpeechRecognitionOptions } from 'nativescript-speech-recognition';
-import { variable } from "@angular/compiler/src/output/output_ast";
-import { Variable } from "@angular/compiler/src/render3/r3_ast";
+import { SpeechRecognition, SpeechRecognitionTranscription } from 'nativescript-speech-recognition';
 // import { error } from "tns-core-modules/trace/trace";
 // import {Slider} from "tns-core-modules/ui/slider";
 

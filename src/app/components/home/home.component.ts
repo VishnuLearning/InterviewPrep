@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 
 @Component({
@@ -7,7 +7,7 @@ import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
   styleUrls: ['./home.component.css'],
   moduleId: module.id,
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor(private tts: TNSTextToSpeech) { }
 
@@ -23,12 +23,13 @@ export class HomeComponent implements OnInit {
 				console.log("intro done");
 			}
 		};
-		
 		this.tts.speak(options);
 	}
-  
-  ngOnInit() {
-    this.speak("Welcome to Job Interview Skill Training. Please Choose the Type of Interview");
-  } 
+	
+	ngAfterViewInit() {
+		this.speak("Welcome to Job Interview Skill Training. Please Choose the Type of Interview");
+	}
+
+  ngOnInit() {} 
 
 }
