@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'ns-home',
@@ -9,7 +10,7 @@ import { TNSTextToSpeech, SpeakOptions } from "nativescript-texttospeech";
 })
 export class HomeComponent implements OnInit, AfterViewInit {
 
-  constructor(private tts: TNSTextToSpeech) { }
+  constructor(private tts: TNSTextToSpeech, private router: Router) { }
 
   speak(text:string) {
 		let options = {
@@ -24,6 +25,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
 			}
 		};
 		this.tts.speak(options);
+	}
+
+	openTest() {
+		this.router.navigate(['/test']);
 	}
 	
 	ngAfterViewInit() {

@@ -53,7 +53,7 @@ export class LessonComponent implements OnInit, OnDestroy {
 				console.log('/lessons'+this.path+'/'+lesson.path);
 				this.router.navigate(['/lesson', this.path+'/'+lesson.path]);
 			}
-		});
+		}); 
 	}
 
 	ngOnInit(): void {
