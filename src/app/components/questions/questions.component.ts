@@ -22,7 +22,8 @@ import { SpeechRecognition, SpeechRecognitionTranscription } from 'nativescript-
 export class QuestionsComponent implements OnInit, OnDestroy {
 	@ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
 	@ViewChild("avatar") avatarImage:ElementRef;
-	
+	@ViewChild("micoff") micImage:ElementRef ;
+
 	onOpenDrawerTap() {
 		this.drawerComponent.sideDrawer.showDrawer();
 	}
@@ -190,7 +191,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			// console.log("toggleRecording true part");
           	this.stopListening();
           	if (!this.spoken && this.lastTranscription !== null) {
-            	alert(this.lastTranscription);
+            	alert("We understood that you said: "+ "'" +this.lastTranscription+"'");
           	}
         }
     }
@@ -218,9 +219,8 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 				this.lastTranscription = transcription.text;
 				if (transcription.finished) {
 					this.spoken = true;
-					setTimeout(() => alert(transcription.text), 300);
 					this.spokenText = transcription.text;
-					// alert(transcription.text);
+					alert("We understood that you said: \n"+ this.lastTranscription);
 					this.stopListening();
 				}
 			},
@@ -252,13 +252,14 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			}
 			i++; j=0;
 		}
-		alert(((count/givenSentences.length)*100).toFixed(2));
+		alert("Your Score is: "+((count/givenSentences.length)*100).toFixed(2));
 	}
     
     private stopListening(): void {
 		// console.log("stopListening");
 		if(this.recording==true){
-        	this.recording = false;
+			this.recording = false;
+			this.micImage.nativeElement.src = "~/assets/images/mic.png";
 			this.speech2text.stopListening().then(() => {
 				console.log("Stopped listening");
 			});

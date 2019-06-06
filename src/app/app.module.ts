@@ -12,7 +12,6 @@ import { AppComponent } from "./app.component";
 import { LessonComponent } from './components/lesson/lesson.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { HomeComponent } from './components/home/home.component';
-import { TestComponent } from './components/test/test.component';
 // import { PathService } from "./services/path/path.service";
 // import { UserService } from "./services/user/user.service"
 
@@ -32,7 +31,6 @@ import { TestComponent } from './components/test/test.component';
         LessonComponent,
         QuestionsComponent,
         HomeComponent,
-        TestComponent,
         //LoginComponent
     ],
     providers: [

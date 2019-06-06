@@ -1,10 +1,10 @@
 [
     {
-        "name": "General",
+        "name": "General Interview",
         "path": "General"
     },
     {
-        "name": "Technical",
+        "name": "Technical Interview",
         "path": "Technical"
     }
 ]
