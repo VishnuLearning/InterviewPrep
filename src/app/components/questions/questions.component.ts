@@ -22,7 +22,7 @@ import { SpeechRecognition, SpeechRecognitionTranscription } from 'nativescript-
 export class QuestionsComponent implements OnInit, OnDestroy {
 	@ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
 	@ViewChild("avatar") avatarImage:ElementRef;
-	@ViewChild("micoff") micImage:ElementRef ;
+	// @ViewChild("micoff") micImage:ElementRef ;
 
 	onOpenDrawerTap() {
 		this.drawerComponent.sideDrawer.showDrawer();
@@ -42,6 +42,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	speakinterval: number;
 	speakAndAnimateFlag: number = 1;
 	private sub: any;
+	score = 0;
 	AvatarImages = ['jobs_full.png','jobs_mouth_wide5.png','jobs_mouth_wide5.png','jobs_mouth_narrow_o.png','jobs_mouth_wide_y.png',
 	'jobs_mouth_wide5.png','jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_narrow_w.png','jobs_mouth_narrow_o.png',
 	'jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_narrow_u.png','jobs_mouth_wide5.png','jobs_mouth_wide_d_f_k_r_s.png','jobs_mouth_wide_sh.png',
@@ -85,6 +86,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
 	goLeft(){
 		if (this.qnum > 0) {	
+			this.recognizedText = undefined;
 			this.text2speech.pause();
 			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[0];
 			this.showAnswer = false;
@@ -93,6 +95,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	}
 	goRight(){
 		if (this.qnum < this.questions.length - 1) {
+			this.recognizedText = undefined;
 			this.text2speech.pause();
 			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[0];
 			this.showAnswer = false;
@@ -230,41 +233,68 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 		);
 	}
 
-	private generateScore(): void {
-		let spokenSentences = this.spokenText.split(" ");
-		let givenSentences = this.question.text.split(" ");
-		let v=0;
-		while(v<givenSentences.length){
-			givenSentences[v].replace('.','');
-			givenSentences[v].replace(',','');
-			v++;
-		}
-		let i=0;
-		let j=0;
-		let count=0;
-		while(i<spokenSentences.length ){
-			while(j<givenSentences.length){
-				if(spokenSentences[i].toLowerCase() == givenSentences[j].toLowerCase()){
-					count++;
-					break;
-				}
-				j++;
-			}
-			i++; j=0;
-		}
-		alert("Your Score is: "+((count/givenSentences.length)*100).toFixed(2));
-	}
+	getLongestCommonSubsequence(A, B, m, n){
+        var L = [];
+        let i=0, j=0;
+        for(i=0;i<=m;i++){
+          L.push([]);
+          for(j=0;j<=n;j++){
+            L[i].push(0);
+          }
+        }
+        for (i=0; i<=m; i++) 
+        { 
+          for (j=0; j<=n; j++) 
+          { 
+            if (i == 0 || j == 0) 
+              L[i][j] = 0; 
+        
+            else if (A[i-1] == B[j-1]) 
+              L[i][j] = L[i-1][j-1] + 1; 
+        
+            else
+              L[i][j] = Math.max(L[i-1][j], L[i][j-1]); 
+          } 
+        }
+        return L[m][n];
+    }
+
+    private generateScore(): void {
+        let spokenSentences = this.spokenText;
+        let givenSentences = this.question.text;
+        let re = /\./gi;
+        spokenSentences = spokenSentences.replace(re, '');
+        givenSentences = givenSentences.replace(re, '');
+        re = /\,/gi;
+        spokenSentences = spokenSentences.replace(re, '');
+        givenSentences = givenSentences.replace(re, '');
+        let givenWords = givenSentences.split(' ');
+        let spokenWords = spokenSentences.split(' ');
+        let l1 = givenWords.length;
+        let l2 = spokenWords.length;
+        if(l2-l1>10 || l1-l2>10){
+            this.recognizedText = undefined;
+            alert("Please re-check your answer!");
+            this.score = 0;
+        }
+        else {
+            let count = this.getLongestCommonSubsequence(givenWords, spokenWords, l1, l2);
+            this.score = Math.round(100*count/l1);
+            alert(this.score)
+        }
+    }
     
     private stopListening(): void {
 		// console.log("stopListening");
 		if(this.recording==true){
 			this.recording = false;
-			this.micImage.nativeElement.src = "~/assets/images/mic.png";
+			// this.micImage.nativeElement.src = "~/assets/images/mic.png";
 			this.speech2text.stopListening().then(() => {
 				console.log("Stopped listening");
 			});
 		}
 		this.generateScore();
+		this.recognizedText = undefined;
     }
 
 	ngOnInit(): void {

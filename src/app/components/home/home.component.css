@@ -1,12 +1,6 @@
 .home-panel{
     vertical-align: center; 
     align-content: center;
-    border-radius: 20;
-    border-color: black;
-    border-width: 1;
-    margin: 4%;
-    padding-top: 20px;
-    height: 90%;
 }
 
 .home-elements{
