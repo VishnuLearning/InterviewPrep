@@ -22,7 +22,6 @@ import { SpeechRecognition, SpeechRecognitionTranscription } from 'nativescript-
 export class QuestionsComponent implements OnInit, OnDestroy {
 	@ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
 	@ViewChild("avatar") avatarImage:ElementRef;
-	// @ViewChild("micoff") micImage:ElementRef ;
 
 	onOpenDrawerTap() {
 		this.drawerComponent.sideDrawer.showDrawer();
@@ -60,6 +59,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     pitch: number = 100;
 	private recordingAvailable: boolean;
 	private spokenText: string;
+	flag: boolean = false;
 
 	constructor(private text2speech: TNSTextToSpeech, private pathservice: PathService, private route: ActivatedRoute, private router: Router, private zone: NgZone) {
 		this.questions = [];
@@ -87,6 +87,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	goLeft(){
 		if (this.qnum > 0) {	
 			this.recognizedText = undefined;
+			this.recording = false;
 			this.text2speech.pause();
 			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[0];
 			this.showAnswer = false;
@@ -96,12 +97,14 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 	goRight(){
 		if (this.qnum < this.questions.length - 1) {
 			this.recognizedText = undefined;
+			this.recording = false;
 			this.text2speech.pause();
 			this.avatarImage.nativeElement.src = this.imagePath + this.AvatarImages[0];
 			this.showAnswer = false;
 			this.loadQuestion(this.qnum + 1);
 		}
 	} 
+
 	//loading question directly from navigation tab
 	loadQuestion(i: number) {
 		this.drawerComponent.sideDrawer.closeDrawer();
@@ -169,7 +172,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 		this.text2speech.pause();
 		let options: SpeakOptions = {
 			text: this.question.text,
-			pitch: 1.0,
+			pitch: 1.3,
 			speakRate: 0.9,
 			volume: 1.0,
 			language: "en",
@@ -181,21 +184,16 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 		this.text2speech.speak(options);
 	}
    
+	//to initailize the speech recording
 	toggleRecording(): void {
 		this.recording = !this.recording;
-		// console.log(this.recording);
         if (this.recording) {
-			// console.log("toggleRecording true part");
 			this.spoken = false;
           	this.lastTranscription = null;
           	this.startListening();
 		} 
 		else {
-			// console.log("toggleRecording true part");
           	this.stopListening();
-          	if (!this.spoken && this.lastTranscription !== null) {
-            	alert("We understood that you said: "+ "'" +this.lastTranscription+"'");
-          	}
         }
     }
     
@@ -212,8 +210,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 			this.recording = false;
 			return;
 		}
-		// console.log("else part");
-		this.recording = true;
+		// this.recording = true;
 		this.speech2text.startListening({
 			locale: "en-US",
 			returnPartialResults: true,
@@ -223,8 +220,6 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 				if (transcription.finished) {
 					this.spoken = true;
 					this.spokenText = transcription.text;
-					alert("We understood that you said: \n"+ this.lastTranscription);
-					this.stopListening();
 				}
 			},
 		}).then(
@@ -233,6 +228,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
 		);
 	}
 
+	// logic to check number of words matching
 	getLongestCommonSubsequence(A, B, m, n){
         var L = [];
         let i=0, j=0;
@@ -260,7 +256,7 @@ export class QuestionsComponent implements OnInit, OnDestroy {
     }
 
     private generateScore(): void {
-        let spokenSentences = this.spokenText;
+        let spokenSentences = this.recognizedText;
         let givenSentences = this.question.text;
         let re = /\./gi;
         spokenSentences = spokenSentences.replace(re, '');
@@ -273,28 +269,25 @@ export class QuestionsComponent implements OnInit, OnDestroy {
         let l1 = givenWords.length;
         let l2 = spokenWords.length;
         if(l2-l1>10 || l1-l2>10){
-            this.recognizedText = undefined;
-            alert("Please re-check your answer!");
-            this.score = 0;
+			this.recognizedText = undefined;
+			this.score = 0;
+            alert("Please repeat your answer loudly and clearly! We did not hear you.");
         }
         else {
             let count = this.getLongestCommonSubsequence(givenWords, spokenWords, l1, l2);
-            this.score = Math.round(100*count/l1);
-            alert(this.score)
+			this.score = Math.round(100*count/l1);
+			alert("Your answer: \n" + this.recognizedText + "\n\n" + "Your Score: " + this.score);
+			this.recognizedText = undefined;
         }
     }
     
     private stopListening(): void {
-		// console.log("stopListening");
-		if(this.recording==true){
-			this.recording = false;
-			// this.micImage.nativeElement.src = "~/assets/images/mic.png";
+		if(this.recording==false){
+			// this.recording = true;
 			this.speech2text.stopListening().then(() => {
 				console.log("Stopped listening");
 			});
 		}
-		this.generateScore();
-		this.recognizedText = undefined;
     }
 
 	ngOnInit(): void {
