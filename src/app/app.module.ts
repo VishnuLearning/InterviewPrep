@@ -5,21 +5,20 @@ import { TNSTextToSpeech } from "nativescript-texttospeech";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { SpeechRecognition }from 'nativescript-speech-recognition';
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
-
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-// import { LoginComponent } from "./components/login/login.component";
+import { AuthModule } from "./auth/auth.module";
 import { LessonComponent } from './components/lesson/lesson.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { HomeComponent } from './components/home/home.component';
-// import { PathService } from "./services/path/path.service";
-// import { UserService } from "./services/user/user.service"
+
 
 @NgModule({
     bootstrap: [
         AppComponent
     ],
     imports: [
+        AuthModule,
         NativeScriptModule,
         AppRoutingModule,
         NativeScriptHttpModule,
@@ -31,13 +30,10 @@ import { HomeComponent } from './components/home/home.component';
         LessonComponent,
         QuestionsComponent,
         HomeComponent,
-        //LoginComponent
     ],
     providers: [
         TNSTextToSpeech,
         SpeechRecognition,
-        // PathService,
-        // UserService
     ],
     schemas: [
         NO_ERRORS_SCHEMA

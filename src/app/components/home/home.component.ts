@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor(private tts: TNSTextToSpeech, private router: Router) { }
 
-  speak(text:string) {
+  speak(text:string) { 
 		let options = {
 			text: text, 
 			pitch: 1.0,
