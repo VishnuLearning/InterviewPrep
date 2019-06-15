@@ -24,6 +24,7 @@
         "@ngx-pwa/local-storage": "^7.4.2",
         "@types/jest": "^23.3.13",
         "nativescript-angular": "~7.1.0",
+        "nativescript-oauth2": "^1.4.3",
         "nativescript-permissions": "^1.2.3",
         "nativescript-speech-recognition": "^1.4.1",
         "nativescript-texttospeech": "^2.0.2",
@@ -36,11 +37,11 @@
         "zone.js": "^0.8.26"
     },
     "devDependencies": {
-        "@nativescript/schematics": "~0.5.0",
-        "nativescript-dev-typescript": "~0.7.0",
-        "nativescript-dev-webpack": "~0.19.0",
         "@angular/compiler-cli": "~7.1.0",
-        "@ngtools/webpack": "~7.1.0"
+        "@nativescript/schematics": "~0.5.0",
+        "@ngtools/webpack": "~7.1.0",
+        "nativescript-dev-typescript": "~0.7.0",
+        "nativescript-dev-webpack": "^0.24.1"
     },
     "readme": "NativeScript Application"
 }

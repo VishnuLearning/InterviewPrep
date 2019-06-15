@@ -5,8 +5,10 @@ import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [LoginComponent],
   imports: [
-    NativeScriptCommonModule
+    NativeScriptCommonModule,
   ],
-  schemas: [NO_ERRORS_SCHEMA]
+  schemas: [NO_ERRORS_SCHEMA],
+  providers: [],
 })
 export class AuthModule { }
+ 
