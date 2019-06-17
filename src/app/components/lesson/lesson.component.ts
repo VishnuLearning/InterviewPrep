@@ -62,7 +62,7 @@ export class LessonComponent implements OnInit, OnDestroy {
 			
 			this.pathservice.getLessons(this.path)
 				.subscribe(
-					(d: Response) => {
+					(d: Response) => { 
 						this.lessons = JSON.parse(d.text());
 						console.log(this.lessons);
 					},

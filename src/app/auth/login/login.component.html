@@ -1,6 +1,7 @@
 <StackLayout>
     <StackLayout *ngIf="!loggedIn">
         <Button text="Login" class="btn btn-primary" (tap)="login()"></Button>
+        <Button text="My Home" class="btn btn-primary" (tap)="goToHome()"></Button>
     </StackLayout>
     <StackLayout *ngIf="loggedIn">
         <Label text="You're logged In!"></Label>

@@ -26,6 +26,7 @@
         "nativescript-angular": "~7.1.0",
         "nativescript-oauth2": "^1.4.3",
         "nativescript-permissions": "^1.2.3",
+        "nativescript-social-login": "^4.0.1",
         "nativescript-speech-recognition": "^1.4.1",
         "nativescript-texttospeech": "^2.0.2",
         "nativescript-theme-core": "~1.0.4",
