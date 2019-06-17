@@ -1,0 +1,6 @@
+<StackLayout>
+    <Button text="login!" class="btn btn-primary" (tap)="login()" *ngIf="!loggedIn"></Button>
+    <StackLayout>
+        <Button text="logout!" class="btn btn-primary" (tap)="logout()" *ngIf="loggedIn"></Button>
+    </StackLayout>
+</StackLayout>
