@@ -1,7 +1,9 @@
 import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
-import { TnsOAuthClient, ITnsOAuthTokenResult } from "nativescript-oauth2";
-import { RouterExtensions } from "nativescript-angular";
+import Application = require("application");
+import SocialLogin = require("nativescript-social-login");
+ 
+
 
 @Component({
   selector: 'ns-login',
@@ -10,57 +12,38 @@ import { RouterExtensions } from "nativescript-angular";
   moduleId: module.id,
 })
 export class LoginComponent implements OnInit {
-  private client: TnsOAuthClient;
   private loggedIn: boolean = false;
 
-  constructor(private route: Router, private routerExtensions: RouterExtensions) {}
+  constructor(private route: Router, private zone: NgZone) {
+      if (Application.android) {
+        console.log("android app detected");
+        let result = SocialLogin.init({
+          google: {
+              serverClientId: '52111376902-b7lsr3ik43p77ruf4p2dj1rbmo6sjp1o.apps.googleusercontent.com'
+          }});
+        console.log(result);
+    }
+  }
 
-  public tnsOauthLogin(providerType): Promise<ITnsOAuthTokenResult> {
-    this.client = new TnsOAuthClient(providerType);
-
-    return new Promise<ITnsOAuthTokenResult>((resolve, reject) => {
-      this.client.loginWithCompletion(
-        (tokenResult: ITnsOAuthTokenResult, error) => {
-          if (error) {
-            console.error("back to main page with error: ");
-            console.error(error);
-            reject(error);
-          } else {
-            console.log("back to main page with access token: ");
-            console.log(tokenResult);
-            resolve(tokenResult);
-          }
-        }
-      );
+  login() {
+    console.log("calling login with google");
+    SocialLogin.loginWithGoogle((result) => {
+        this.zone.run(() => {
+            console.log("code: " + result.code);
+            console.log("error: " + result.error);
+            console.log("userToken: " + result.userToken);
+            console.log("displayName: " + result.displayName);
+            console.log("photo: " + result.photo);
+            console.log("authToken: " + result.authToken);
+        });
+        this.loggedIn = true;
     });
   }
 
-  public tnsOauthLogout() {
-    if (this.client) {
-      this.client.logout();
-    }
-  }
-
- 
-  login() {
-    console.log("login clicked");
-    this.tnsOauthLogin("google")
-        .then((result: ITnsOAuthTokenResult) => {
-          console.log("back to login component with token " + result.accessToken);
-          this.loggedIn = true;
-          // this.routerExtensions
-          //     .navigate((["../authenticated"]))
-          //     .then(() => console.log("navigated to /authenticated"))
-          //     .catch(err => console.log("error navigating to /authenticated: " + err));
-        })
-        .catch(e => console.log("Error: " + e));
-  }
-
   logout() {
-    if(this.client) {
-      this.client.logout();
-      this.loggedIn = false;
-    }
+    // SocialLogin.logout(); // write a callback?
+    console.log("should logout");
+    this.loggedIn = false;
   }
 
   goToHome() {
