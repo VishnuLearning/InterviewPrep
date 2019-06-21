@@ -7,10 +7,10 @@ import { SpeechRecognition }from 'nativescript-speech-recognition';
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { AuthModule } from "./auth/auth.module";
 import { LessonComponent } from './components/lesson/lesson.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { HomeComponent } from './components/home/home.component';
+import { InstructionsComponent } from './components/instructions/instructions.component';
 
 
 @NgModule({
@@ -18,7 +18,6 @@ import { HomeComponent } from './components/home/home.component';
         AppComponent
     ],
     imports: [
-        AuthModule,
         NativeScriptModule,
         AppRoutingModule,
         NativeScriptHttpModule,
@@ -30,6 +29,7 @@ import { HomeComponent } from './components/home/home.component';
         LessonComponent,
         QuestionsComponent,
         HomeComponent,
+        InstructionsComponent,
     ],
     providers: [
         TNSTextToSpeech,

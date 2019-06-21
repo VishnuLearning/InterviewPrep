@@ -32,8 +32,3 @@ if(settingsGradleFile.exists())
 {
     apply from: settingsGradleFile;
 }
-
-// dependencies {
-//   compile 'com.google.android.gms.auth.api:signin:^27.0.2'
-//   compile 'com.google.android.gms.common:^27.0.2'
-// }

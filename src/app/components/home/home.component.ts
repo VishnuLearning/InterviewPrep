@@ -31,6 +31,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
 		this.speak("Welcome to Job Interview Skill Training. Please Choose the Type of Interview");
 	}
 
+	goToInstructions() {
+		this.router.navigate(["/instructions"]);
+	}
+
   ngOnInit() {} 
 
 }
