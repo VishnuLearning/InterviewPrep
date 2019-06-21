@@ -1,1 +1,8 @@
 /* Add mobile styles for the component here.  */
+Label{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    padding:2px;
+    margin-left: 2px;
+}

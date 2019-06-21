@@ -1,1 +1,11 @@
-<Button text="instructions works!" class="btn btn-primary"></Button>
+<StackLayout>
+<ListView [items]="data" class="list-group">
+    <ng-template let-i="index" >
+        <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
+        <StackLayout orientation="horizontal" style="padding:5%">
+            <Label text="*{{points[i]}}" textWrap="true"></Label>
+        </StackLayout>
+    </ng-template>
+</ListView>
+    <Button text="Close!" class="btn btn-primary btn-rounded-lg" (tap)="backToHomePage()"></Button>
+</StackLayout>
