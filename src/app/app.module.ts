@@ -11,13 +11,14 @@ import { LessonComponent } from './components/lesson/lesson.component';
 import { QuestionsComponent } from './components/questions/questions.component';
 import { HomeComponent } from './components/home/home.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
-
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
     bootstrap: [
         AppComponent
     ],
     imports: [
+        AuthModule,
         NativeScriptModule,
         AppRoutingModule,
         NativeScriptHttpModule,
