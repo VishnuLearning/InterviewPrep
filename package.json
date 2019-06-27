@@ -24,6 +24,7 @@
         "@ngx-pwa/local-storage": "^7.4.2",
         "@types/jest": "^23.3.13",
         "nativescript-angular": "~7.1.0",
+        "nativescript-google-auth": "file:../login_plugin/nativescript-googleauth/src",
         "nativescript-permissions": "^1.2.3",
         "nativescript-speech-recognition": "^1.4.1",
         "nativescript-texttospeech": "^2.0.2",

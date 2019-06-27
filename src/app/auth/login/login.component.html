@@ -1,5 +1,7 @@
-<StackLayout>
-    <Button text="login!" class="btn btn-primary" (tap)="login()"></Button>
-    <Button text="Home" class="btn btn-primary" (tap) = "goToHome()"></Button>
-    <Button text="logout!" class="btn btn-primary" (tap)="logout()"></Button>
-</StackLayout>
+ <StackLayout orientation="vertical" backgroundColor="lightgray">
+    <Button text="login" (tap)="login()"></Button>
+    <Label text="{{displayname}}"  backgroundColor="red"></Label>
+    <Label text="{{email}}" backgroundColor="green"></Label>
+    <Button text="logout" (tap)="logout()"></Button>
+    <Button text="Home" (tap)="goToHome()"></Button> 
+  </StackLayout>
