@@ -3,6 +3,7 @@ Label{
     font-size: 14px;
     font-weight: bold;
     color: black;
-    padding:2px;
+    padding:4px;
     margin-left: 2px;
+    /* text-align: center; */
 }

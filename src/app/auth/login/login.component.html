@@ -1,7 +1,11 @@
- <StackLayout orientation="vertical" backgroundColor="lightgray">
-    <Button text="login" (tap)="login()"></Button>
-    <Label text="{{displayname}}"  backgroundColor="red"></Label>
-    <Label text="{{email}}" backgroundColor="green"></Label>
-    <Button text="logout" (tap)="logout()"></Button>
-    <Button text="Home" (tap)="goToHome()"></Button> 
-  </StackLayout>
+ <Page class="page">
+    <StackLayout orientation="vertical">
+        <Label *ngIf="display" text="You are successfully Loggedin as" style="color:black"></Label>
+        <Image src={{photoUrl}} width='200' height='200'></Image>
+        <Label text="{{displayname}}"></Label>
+        <Label text="{{email}}"></Label>
+        <Button *ngIf="!display" text="login" class="btn btn-primary btn-rounded-lg" (tap)="login()"></Button>
+        <Button *ngIf="display" text="Home" class="btn btn-primary btn-rounded-lg" (tap)="goToHome()"></Button>
+        <Button *ngIf="display" text="logout" class="btn btn-primary btn-rounded-lg" (tap)="logout()"></Button>
+    </StackLayout>
+  </Page>

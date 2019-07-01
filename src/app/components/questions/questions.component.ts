@@ -268,15 +268,21 @@ export class QuestionsComponent implements OnInit, OnDestroy {
         let spokenWords = spokenSentences.split(' ');
         let l1 = givenWords.length;
         let l2 = spokenWords.length;
-        if(l2-l1>10 || l1-l2>10){
+        if(l2<5){
 			this.recognizedText = undefined;
-			this.score = 0;
-            alert("Please repeat your answer loudly and clearly! We did not hear you.");
+			this.score = 0;;
+            alert("We did not hear you. Please check your Microphone, Voice input setting. Then repeat your answer loudly and clearly!");
         }
         else {
             let count = this.getLongestCommonSubsequence(givenWords, spokenWords, l1, l2);
 			this.score = Math.round(100*count/l1);
-			alert("Your answer: \n" + this.recognizedText + "\n\n" + "Your Score: " + this.score);
+			let tag = '';
+			if(this.score>90) tag = "Excellent!";
+			else if (this.score>80) tag = "Very Good!";
+			else if (this.score>70) tag = "Keep it Up";
+			else if (this.score>60) tag = "You did Decent, Keep trying";
+			else tag = "Please concentrate and Try again";
+			alert("Your Score: " + this.score+ "%" +"\n\n"+tag + "\n\nYour answer: \n" + this.recognizedText );
 			this.recognizedText = undefined;
         }
     }

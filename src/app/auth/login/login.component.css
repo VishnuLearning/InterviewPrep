@@ -1,1 +1,13 @@
 /* Add mobile styles for the component here.  */
+
+.page {
+    background-image: linear-gradient(to bottom right,skyblue,lightblue);
+}
+
+Label{
+    font: 18;
+    font-weight: bold;
+    font-style: italic;
+    padding: 3%;
+    text-align: center;
+}

@@ -11,7 +11,9 @@ import { GoogleAuth } from 'nativescript-google-auth';
 export class LoginComponent implements OnInit {
   displayname: string;
   email: string;
+  photoUrl:string;
   private googleAuth:GoogleAuth;
+  display : boolean = false;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -23,21 +25,25 @@ export class LoginComponent implements OnInit {
             console.log(loginresult);
             this.displayname = loginresult.displayName;
             this.email = loginresult.email;
+            this.photoUrl = loginresult.photoUrl;
         },
         ()=>{
             console.log("logged out successfully");
             this.displayname = "";
             this.email = "";
+            this.photoUrl='';
         });
     }
 
   login() {
     this.googleAuth.login();
+    this.display = true;
     this.router.navigate(['/login']);
   }
 
   logout() {
     this.googleAuth.logout();
+    this.display = false;
     this.router.navigate(['/login']);
   }
 

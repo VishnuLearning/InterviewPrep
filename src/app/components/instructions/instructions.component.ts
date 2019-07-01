@@ -35,7 +35,7 @@ export class InstructionsComponent implements OnInit {
    }
    
   backToHomePage(){
-    this.router.navigate(['']);
+    this.router.navigate(['/home']);
   }
 
   ngOnInit() {
