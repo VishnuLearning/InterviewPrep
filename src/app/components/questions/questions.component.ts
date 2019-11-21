@@ -20,8 +20,8 @@ import { SpeechRecognition, SpeechRecognitionTranscription } from 'nativescript-
 })
 
 export class QuestionsComponent implements OnInit, OnDestroy {
-	@ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
-	@ViewChild("avatar") avatarImage:ElementRef;
+	@ViewChild(RadSideDrawerComponent, {static: false}) public drawerComponent: RadSideDrawerComponent;
+	@ViewChild("avatar", {static: false}) avatarImage:ElementRef;
 
 	onOpenDrawerTap() {
 		this.drawerComponent.sideDrawer.showDrawer();
